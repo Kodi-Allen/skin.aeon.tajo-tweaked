@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="1106">
+	<defaultcontrol always="true">11005</defaultcontrol>
+	<controls>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<height>450</height>
+			<centertop>40%</centertop>
+			<width>600</width>
+			<control type="image">
+				<description>background image</description>
+				<left>-200</left>
+				<top>-20</top>
+				<width>1000</width>
+				<height>450</height>
+				<texture border="40">dialogs/default/bg.png</texture>
+			</control>
+			<control type="label">
+				<top>-5</top>
+				<width>600</width>
+				<height>60</height>
+				<textoffsetx>15</textoffsetx>
+				<align>center</align>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<font>font15_title</font>
+				<label>32073</label>
+			</control>
+			<control type="image">
+				<left>-150</left>
+				<top>78</top>
+				<width>224</width>
+				<height>319</height>
+				<texture>$VAR[ratings_path]logos_search.png</texture>
+			</control>
+			<control type="group" id="11005">
+				<left>100</left>
+				<top>80</top>
+				<control type="grouplist" id="12100">
+					<width>600</width>
+					<height>568</height>
+					<itemgap>1</itemgap>
+					<onup>12100</onup>
+					<ondown>12100</ondown>
+					<orientation>vertical</orientation>
+					<control type="button" id="12102">
+						<width>600</width>
+						<height>80</height>
+						<font>font15</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[32095]</label>
+						<onclick>Dialog.Close(1106)</onclick>
+						<onclick condition="System.hasAddon(script.globalsearch)">RunScript(script.globalsearch)</onclick>
+						<onclick condition="!System.hasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
+					</control>
+					<control type="button" id="12104">
+						<width>600</width>
+						<height>80</height>
+						<font>font15</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[32096]</label>
+						<onclick>Dialog.Close(1106)</onclick>
+						<onclick condition="System.hasAddon(script.embuary.info)">RunScript(script.embuary.info)</onclick>
+						<onclick condition="!System.hasAddon(script.embuary.info)">InstallAddon(script.embuary.info)</onclick>
+					</control>
+					<control type="button" id="12101">
+						<width>600</width>
+						<height>80</height>
+						<font>font15</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[32071]</label>
+						<onclick>Dialog.Close(1106)</onclick>
+						<onclick condition="System.hasAddon(script.wikipedia)">ActivateWindow(1104)</onclick>
+						<onclick condition="!System.hasAddon(script.wikipedia)">InstallAddon(script.wikipedia)</onclick>
+					</control>
+					<control type="button" id="12103">
+						<width>600</width>
+						<height>80</height>
+						<font>font15</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31972]</label>
+						<onclick>Dialog.Close(1106)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.youtube)">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/list/",return)</onclick>
+						<onclick condition="!System.hasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

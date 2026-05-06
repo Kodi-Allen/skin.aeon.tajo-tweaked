@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1107">
+	<visible>!String.IsEmpty(skin.string(snow_type)) + !Player.HasVideo</visible>
+	<controls>
+		<include>Snowing</include>
+	</controls>
+</window>

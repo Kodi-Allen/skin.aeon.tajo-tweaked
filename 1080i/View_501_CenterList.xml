@@ -1,0 +1,1975 @@
+<includes>
+	<!--##################################################################################   VISTA CenterList - ID 501   ##################################################################################-->
+	<include name="ViewCenterList">
+		<control type="group">
+			<visible>Control.IsVisible(501)</visible>
+			<left>-100</left>
+			<top>-87</top>
+			<!-- default group -->
+			<control type="group">
+				<left>110</left>
+				<top>93</top>
+				<control type="group">
+					<visible>!Container.Content(episodes)</visible>
+					<animation effect="fade" start="100" end="0" time="1000" delay="2000" reversible="false" condition="Skin.HasSetting(playTrailer) + !String.IsEmpty(ListItem.Trailer) + !VideoPlayer.IsFullscreen + Player.Playing + Player.HasVideo + !String.IsEqual(Player.Filename,theme.mp3) + !Control.HasFocus(8551)">Conditional</animation>
+					<control type="image">
+						<left>-15</left>
+						<top>-8</top>
+						<width>700</width>
+						<height>400</height>
+						<visible>String.IsEmpty(ListItem.Art(fanart1))</visible>
+						<aspectratio aligny="top">scale</aspectratio>
+						<texture diffuse="tajo/mask_cover3.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					<control type="multiimage">
+						<left>-15</left>
+						<top>-8</top>
+						<width>700</width>
+						<height>400</height>
+						<aspectratio aligny="top">scale</aspectratio>
+						<fadetime>500</fadetime>
+						<visible>!String.IsEmpty(ListItem.Art(fanart1))</visible>
+						<imagepath background="true">$INFO[Control.GetLabel(4410)]</imagepath>
+					</control>
+				</control>
+				<control type="image">
+					<left>-15</left>
+					<top>-8</top>
+					<width>700</width>
+					<height>400</height>
+					<visible>Container.Content(episodes) + !ListItem.IsParentFolder</visible>
+					<aspectratio aligny="center">scale</aspectratio>
+					<texture diffuse="tajo/mask_cover3.png" background="true">$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="image">
+					<animation effect="slide" start="0,0" end="-23,0" time="100" condition="Control.HasFocus(50160)">Conditional</animation>
+					<top>778</top>
+					<left>1352.5</left>
+					<width>559</width>
+					<height>3</height>
+					<aspectratio align="center">stretch</aspectratio>
+					<texture diffuse="tajo/mask_cover3.png">tajo/$VAR[GlobalCaseVarTajo]</texture>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(extraposters) | [Skin.HasSetting(extraposters) + String.IsEmpty(ListItem.Art(poster1))] | ListItem.IsCollection</visible>
+					<animation effect="slide" start="0,0" end="-23,0" time="100" condition="Control.HasFocus(50160)">Conditional</animation>
+					<left>1352</left>
+					<top>-9</top>
+					<width>560</width>
+					<height>790</height>
+					<fadetime>200</fadetime>
+					<aspectratio aligny="top" align="left">stretch</aspectratio>
+					<texture colordiffuse="FFbababa" diffuse="tajo/mask_cover3.png" background="true">$VAR[poster]</texture>
+				</control>
+				<control type="multiimage">
+					<visible>Skin.HasSetting(extraposters) + !String.IsEmpty(ListItem.Art(poster1)) + !ListItem.IsCollection</visible>
+					<animation effect="slide" start="0,0" end="-23,0" time="100" condition="Control.HasFocus(50160)">Conditional</animation>
+					<left>1348</left>
+					<top>-9</top>
+					<width>564</width>
+					<height>795</height>
+					<fadetime>200</fadetime>
+					<aspectratio aligny="top" align="left">stretch</aspectratio>
+					<imagepath colordiffuse="FFbababa" diffuse="tajo/mask_cover3.png" background="true">$INFO[Control.GetLabel(5905)]</imagepath>
+				</control>
+				<control type="image">
+					<visible>Control.IsVisible(3334) + Skin.HasSetting(playTrailer) + !Control.HasFocus(8551) + !String.IsEqual(Player.Filename,theme.mp3) + Player.HasVideo</visible>
+					<visible>Control.HasFocus(501)</visible>
+					<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
+					<animation effect="fade" start="0" end="100" time="100">Visible</animation>
+					<left>-170</left>
+					<top>-90</top>
+					<width>830</width>
+					<height>540</height>
+					<texture background="true">blackk.jpg</texture>
+				</control>
+				<control type="videowindow" id="3334">
+					<visible>Integer.IsGreater(Player.Time,0) + Skin.HasSetting(playTrailer) + !Control.HasFocus(8551) + !String.IsEqual(Player.Filename,theme.mp3) + Player.HasVideo</visible>
+					<left>-165</left>
+					<top>-85</top>
+					<width>970</width>
+					<height>550</height>
+				</control>
+			</control>
+			<control type="image">
+				<visible>Skin.HasSetting(playTrailer) + !String.IsEmpty(ListItem.Trailer)</visible>
+				<animation effect="fade" start="0" end="100" time="350" tween="sine">Visible</animation>
+				<left>-160</left>
+				<top>3</top>
+				<width>2180</width>
+				<height>1180</height>
+				<texture flipx="true" background="true">tajo/marco_new2.png</texture>
+			</control>
+			<control type="group">
+				<visible>!ListItem.IsParentFolder</visible>
+				<control type="image">
+					<left>-133</left>
+					<top>-68</top>
+					<width>1920</width>
+					<height>1143</height>
+					<texture flipx="true" background="true">tajo/marco_new2.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<animation effect="fade" start="100" end="0" time="1000" reversible="false" condition="Skin.HasSetting(playTrailer) + !String.IsEmpty(ListItem.Trailer) + !VideoPlayer.IsFullscreen + Player.Playing + Player.HasVideo + !String.IsEqual(Player.Filename,theme.mp3) + !Control.HasFocus(8551)">Conditional</animation>
+				<left>113</left>
+				<top>10</top>
+				<control type="image">
+					<visible>Control.HasFocus(8551)</visible>
+					<left>860</left>
+					<top>75</top>
+					<width>1250</width>
+					<height>1575</height>
+					<texture flipx="true" background="true">tajo/side_fade.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="group">
+					<visible>!ListItem.IsParentFolder</visible>
+					<visible>!Container.Content(seasons) + !Container.Content(episodes)</visible>
+					<animation effect="slide" start="0,0" end="-65,0" time="0" condition="ListItem.HasVideoVersions + !Control.HasFocus(8551)">Conditional</animation>
+					<left>-35</left>
+					<top>-10</top>
+					<control type="image">
+						<visible>[!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras)</visible>
+						<visible>!System.IdleTime(7) + !Control.HasFocus(8551)</visible>
+						<visible>!Control.HasFocus(50160) + !Control.HasFocus(5919)</visible>
+						<animation effect="fade" start="100" end="0" time="1000" pulse="true" condition="true">Conditional</animation>
+						<animation effect="fade" start="0" end="100" delay="600" time="200">Visible</animation>
+						<animation effect="rotate" center="auto" end="-90" time="0" condition="true">Conditional</animation>
+						<left>1850</left>
+						<top>100</top>
+						<width>32</width>
+						<height>32</height>
+						<aspectratio aligny="bottom" align="left">keep</aspectratio>
+						<texture colordiffuse="grey" background="true">arrow_up.png</texture>
+					</control>
+					<control type="grouplist">
+						<left>1464</left>
+						<top>97</top>
+						<width>400</width>
+						<align>right</align>
+						<orientation>horizontal</orientation>
+						<itemgap>0</itemgap>
+						<control type="label">
+							<visible>Control.HasFocus(8551)</visible>
+							<animation effect="fade" start="0" end="80" time="600">Visible</animation>
+							<align>left</align>
+							<width min="20" max="200">auto</width>
+							<height>40</height>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<font>fontDiscog</font>
+							<label>$INFO[Container(8551).CurrentItem]</label>
+						</control>
+						<control type="label">
+							<visible>Control.HasFocus(8551)</visible>
+							<animation effect="fade" start="0" end="80" time="600">Visible</animation>
+							<align>left</align>
+							<width min="20" max="200">auto</width>
+							<height>34</height>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<font>Font_bro</font>
+							<label>/$INFO[Container(8551).NumItems]</label>
+						</control>
+					</control>
+					<control type="image">
+						<animation effect="fade" start="0" end="100" delay="600" time="200">Visible</animation>
+						<visible>!Control.HasFocus(50160) + !Control.HasFocus(5919)</visible>
+						<visible>[[!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras)] | ListItem.HasVideoExtras</visible>
+						<left>1870</left>
+						<top>97</top>
+						<width>60</width>
+						<height>60</height>
+						<colordiffuse>bbffffff</colordiffuse>
+						<texture background="true">$VAR[mediaicons_path]extras.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<animation effect="fade" start="0" end="100" delay="600" time="200">Visible</animation>
+						<visible>!Control.HasFocus(50160) + !Control.HasFocus(5919)</visible>
+						<visible>[[!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras)] | ListItem.HasVideoExtras</visible>
+						<align>left</align>
+						<left>1874</left>
+						<top>123</top>
+						<width min="20" max="300">auto</width>
+						<height>34</height>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey2</include>
+						<textcolor>ffdadada</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<font>font_Extras</font>
+						<label>$LOCALIZE[31014]</label>
+					</control>
+					<control type="group">
+						<visible>!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)</visible>
+						<top>153</top>
+						<left>1370</left>
+						<include condition="Skin.HasSetting(SearchExtras)" content="Extras_view">
+							<param name="View_n" value="501"/>
+							<param name="HeightList" value="710"/>
+							<param name="Num_control" value="8551"/>
+							<param name="Num_movement" value="19"/>
+						</include>
+					</control>
+				</control>
+			</control>
+			<control type="image">
+				<animation effect="fade" start="0" end="100" time="100">Visible</animation>
+				<visible>!Control.HasFocus(50160) + !Control.HasFocus(5919) + !Control.HasFocus(8551)</visible>
+				<visible>ListItem.HasVideoVersions</visible>
+				<left>1955</left>
+				<top>100</top>
+				<width>50</width>
+				<height>47</height>
+				<colordiffuse>bbffffff</colordiffuse>
+				<texture background="true">$VAR[mediaicons_path]versions.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="group">
+				<left>215</left>
+				<control type="scrollbar" id="50160">
+					<showonepage>true</showonepage>
+					<include>ScrollBar_Vertical</include>
+					<left>1772</left>
+					<top>110</top>
+					<height>1030</height>
+					<onleft>501</onleft>
+					<onright condition="[!String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEqual(ListItem.DBTYPE,tvshow)] | !Skin.HasSetting(similars) | String.IsEmpty(Window(home).Property(SpGenre.0)) | String.IsEmpty(Window(home).Property(EncodedTitle)) | String.IsEmpty(Container(524).ListItemAbsolute(0).Label)">50160</onright>
+					<include condition="Skin.HasSetting(similars)">Activate_similar_right</include>
+					<visible allowhiddenfocus="true">!Control.HasFocus(501) + !Control.HasFocus(5919) + !Control.HasFocus(8551) + String.IsEmpty(Window(Home).Property(MediaMenu))</visible>
+				</control>
+				<control type="label">
+					<visible>Skin.HasSetting(similars) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)] + Control.HasFocus(50160) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),6) + !String.IsEmpty(ListItem.Genre)</visible>
+					<left>1</left>
+					<top>100</top>
+					<align>right</align>
+					<width>1750</width>
+					<height>40</height>
+					<font>font14_bold</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$LOCALIZE[32126]</label>
+				</control>
+				<control type="fixedlist" id="501">
+					<viewtype label="CenterList">list</viewtype>
+					<left>525</left>
+					<top>100></top>
+					<width>705</width>
+					<height>1050</height>
+					<movement>10</movement>
+					<focusposition>10</focusposition>
+					<onright condition="[Container.Content(movies) | Container.Content(tvshows)] + [!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras) + Player.Playing + !String.IsEqual(Player.Filename,theme.mp3)">Stop</onright>
+					<onright condition="[Container.Content(movies) | Container.Content(tvshows)] + [!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras) + Player.Playing + !String.IsEqual(Player.Filename,theme.mp3)">SetFocus(8551)</onright>
+					<onright condition="[Container.Content(movies) | Container.Content(tvshows)] + [!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras)">8551</onright>
+					<onright condition="!Container.Content(favourites) + !Container.Content(seasons) + !Container.Content(episodes) + !ListItem.IsParentFolder + [String.Contains(Container.SortMethod,$LOCALIZE[369]) | String.Contains(Container.SortMethod,$LOCALIZE[557])]">5919</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetProperty(Wait_1,True,home)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">ClearProperty(SpGenre.0,Home)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">ClearProperty(EncodedTitle,Home)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">RunScript(plugin.video.themoviedb.helper,split_value=$INFO[ListItem.Genre],property=SpGenre)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">RunPlugin("plugin://script.skinvariables/?info=get_encoded_string&amp;window_prop=EncodedTitle&amp;window_id=Home&amp;&amp;$INFO[ListItem.Title]")</onright>
+					<onright>50160</onright>
+					<onleft>SetProperty(MediaMenu,True,home)</onleft>
+					<onleft>SetFocus(9050)</onleft>
+					<pagecontrol>50160</pagecontrol>
+					<scrolltime tween="sine">500</scrolltime>
+					<orientation>vertical</orientation>
+					<preloaditems>2</preloaditems>
+					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)</visible>
+					<itemlayout width="705" height="50">
+						<control type="textbox">
+							<left>15</left>
+							<top>-3</top>
+							<width>625</width>
+							<height>50</height>
+							<align>left</align>
+							<font>font16</font>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>grey</textcolor>
+						</control>
+						<control type="image">
+							<left>655</left>
+							<width>45</width>
+							<height>45</height>
+							<texture colordiffuse="$INFO[Skin.String(mark_color)]">$INFO[Skin.String(Overlay.Path)]$VAR[overlayvar]</texture>
+							<visible>!Skin.HasSetting(noshow_watched) | !Skin.HasSetting(noshow_unwatched)</visible>
+						</control>
+						<control type="label">
+							<visible>!Skin.HasSetting(noshow_resumable) + ListItem.IsResumable + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,episode)]</visible>
+							<left>636</left>
+							<font>titlesmall3</font>
+							<textcolor>Skin.String(mark_color)</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<width>60</width>
+							<height>52</height>
+							<label>$INFO[ListItem.PercentPlayed]%</label>
+						</control>
+						<control type="label">
+							<visible>!Skin.HasSetting(noshow_episodes)</visible>
+							<visible>!String.IsEqual(ListItem.Overlay,overlaywatched.png)</visible>
+							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
+							<top>11</top>
+							<left>641</left>
+							<font>titlesmall3</font>
+							<textcolor>Skin.String(mark_color)</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<width>72</width>
+							<height>24</height>
+							<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="705" height="50">
+						<control type="button" id="3995">
+							<include>HiddenObject</include>
+							<onfocus condition="!String.IsEmpty(Window(Home).Property(FirstRow))">ClearProperty(FirstRow,home)</onfocus>
+							<onfocus condition="!String.IsEmpty(Window(Home).Property(extras_yes))">ClearProperty(extras_yes,home)</onfocus>
+						</control>
+						<control type="group">
+							<control type="image">
+								<width>700</width>
+								<height>50</height>
+								<texture border="4">listselect_fo.png</texture>
+								<colordiffuse>Skin.String(flat_back)</colordiffuse>
+								<animation effect="fade" start="100" end="40" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
+							</control>
+							<control type="label">
+								<scrollspeed>100</scrollspeed>
+								<scrollsuffix>  •  </scrollsuffix>
+								<left>15</left>
+								<top>-3</top>
+								<width>625</width>
+								<height>50</height>
+								<align>left</align>
+								<font>font16</font>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
+							</control>
+							<control type="image">
+								<left>655</left>
+								<width>45</width>
+								<height>45</height>
+								<texture colordiffuse="$INFO[Skin.String(mark_color)]">$INFO[Skin.String(Overlay.Path)]$VAR[overlayvar]</texture>
+								<visible>!Skin.HasSetting(noshow_watched) | !Skin.HasSetting(noshow_unwatched)</visible>
+							</control>
+							<control type="label">
+								<visible>!Skin.HasSetting(noshow_resumable) + ListItem.IsResumable + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,episode)]</visible>
+								<left>636</left>
+								<font>titlesmall3</font>
+								<textcolor>Skin.String(mark_color)</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<width>60</width>
+								<height>52</height>
+								<label>$INFO[ListItem.PercentPlayed]%</label>
+							</control>
+							<control type="label">
+								<visible>!Skin.HasSetting(noshow_episodes)</visible>
+								<visible>!String.IsEqual(ListItem.Overlay,overlaywatched.png)</visible>
+								<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
+								<top>11</top>
+								<left>641</left>
+								<font>titlesmall3</font>
+								<textcolor>Skin.String(mark_color)</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<width>72</width>
+								<height>24</height>
+								<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
+			</control>
+			<!-- Info Panel -->
+			<control type="group">
+				<visible>Control.IsVisible(501)</visible>
+				<visible>!ListItem.IsParentFolder</visible>
+				<left>112</left>
+				<top>145</top>
+				<control type="textbox">
+					<visible>!ListItem.IsCollection + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)</visible>
+					<left>35</left>
+					<top>452</top>
+					<width>540</width>
+					<height>440</height>
+					<font>font13_title</font>
+					<label>[B][COLOR $INFO[Skin.String(theme_text)]]$VAR[value_ground14b_label][/B][/COLOR][COLOR=FFFFFAF0]$VAR[value_ground14b_value,,  •  ][/COLOR][B][COLOR $INFO[Skin.String(theme_text)]][CAPITALIZE]$VAR[value_ground11_label,,: ][/COLOR][/B][/CAPITALIZE][COLOR=FFFFFAF0]$VAR[value_ground11_value,,  •  ][/COLOR][COLOR $INFO[Skin.String(theme_text)]][B]$VAR[value_ground12_label,,: ][/B][/COLOR][COLOR=FFFFFAF0]$VAR[value_ground12_value][/COLOR]$VAR[Original][CR][COLOR $INFO[Skin.String(theme_text)]]$VAR[value_plot,[B]$LOCALIZE[207]: [/COLOR][/B],[COLOR=FFFFFAF0]][/COLOR]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(tvshows)</visible>
+					<left>35</left>
+					<top>452</top>
+					<width>540</width>
+					<height>440</height>
+					<font>font13_title</font>
+					<label>[B][COLOR $INFO[Skin.String(theme_text)]][CAPITALIZE]$VAR[value_ground11_label]:[/COLOR][/B][/CAPITALIZE] [COLOR=FFFFFAF0]$VAR[value_ground11_value][/COLOR]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$VAR[value_ground12_label]:[/B][/COLOR] [COLOR=FFFFFAF0]$VAR[value_ground12_value][/COLOR]$VAR[Original][CR][B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[207]:[/B][/COLOR] $VAR[value_plot]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
+					<left>35</left>
+					<top>530</top>
+					<width>540</width>
+					<height>368</height>
+					<font>font13_title</font>
+					<label>[B][COLOR $INFO[Skin.String(theme_text)]][CAPITALIZE]$VAR[value_ground11_label,,:][/COLOR][/B][/CAPITALIZE] [COLOR=FFFFFAF0]$VAR[value_ground11_value][/COLOR][COLOR $INFO[Skin.String(theme_text)]][B]$VAR[value_ground12_label,[COLOR=FFFFFAF0]  •  [/COLOR],:][/B][/COLOR] [COLOR=FFFFFAF0]$VAR[value_ground12_value][/COLOR]$VAR[Original][CR][B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[207]:[/B][/COLOR] $VAR[value_plot]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="group">
+					<left>290</left>
+					<top>40</top>
+					<control type="image">
+						<animation effect="fade" start="100" end="0" time="1000" reversible="false" condition="Skin.HasSetting(playTrailer) + !String.IsEmpty(ListItem.Trailer) + !VideoPlayer.IsFullscreen + Player.Playing + Player.HasVideo + !String.IsEqual(Player.Filename,theme.mp3)">Conditional</animation>
+						<left>20</left>
+						<top>170</top>
+						<width>250</width>
+						<height>150</height>
+						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<top>170</top>
+						<width>250</width>
+						<height>150</height>
+						<texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="textbox">
+						<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
+						<visible>!ListItem.IsParentFolder</visible>
+						<visible>String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
+						<left>-250</left>
+						<top>140</top>
+						<width>520</width>
+						<height>190</height>
+						<aligny>center</aligny>
+						<align>right</align>
+						<shadowcolor>black</shadowcolor>
+						<font>titlemus</font>
+						<label>$INFO[ListItem.TvShowTitle]</label>
+					</control>
+				</control>
+				<control type="group">
+					<animation effect="zoom" start="92" end="92" time="0" condition="true">Conditional</animation>
+					<visible>!Skin.HasSetting(showCast) | Container.Content(episodes)</visible>
+					<visible>!ListItem.IsCollection</visible>
+					<left>1490</left>
+					<top>130</top>
+					<control type="textbox">
+						<top>710</top>
+						<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !String.IsEmpty(ListItem.AudioCodec)</visible>
+						<height>35</height>
+						<width>520</width>
+						<font>Font_plot</font>
+						<aligny>top</aligny>
+						<align>center</align>
+						<textcolor>Skin.String(theme_text)</textcolor>
+						<label>[B]$LOCALIZE[292]: $VAR[NumberTracks][/B]</label>
+					</control>
+					<control type="group">
+						<animation effect="slide" end="100,0" time="0" condition="String.IsEmpty(ListItem.Property(AudioChannels.2))">Conditional</animation>
+						<left>30</left>
+						<top>690</top>
+						<include>audioch2</include>
+					</control>
+					<control type="group">
+						<left>245</left>
+						<top>690</top>
+						<include>audioch4</include>
+					</control>
+					<control type="textbox">
+						<top>835</top>
+						<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
+						<height>35</height>
+						<width>520</width>
+						<font>Font_plot</font>
+						<aligny>top</aligny>
+						<align>center</align>
+						<textcolor>Skin.String(theme_text)</textcolor>
+						<label>[B]$LOCALIZE[287]: $VAR[NumberSubs][/B]</label>
+					</control>
+					<control type="group">
+						<animation effect="slide" end="75,0" time="0" condition="String.IsEmpty(ListItem.Property(SubtitleLanguage.2))">Conditional</animation>
+						<animation effect="slide" end="75,0" time="0" condition="String.IsEmpty(ListItem.Property(SubtitleLanguage.3))">Conditional</animation>
+						<left>30</left>
+						<top>813</top>
+						<include>subt2</include>
+					</control>
+					<control type="group">
+						<animation effect="slide" end="75,0" time="0" condition="String.IsEmpty(ListItem.Property(SubtitleLanguage.3))">Conditional</animation>
+						<left>180</left>
+						<top>813</top>
+						<include>subt4</include>
+					</control>
+					<control type="group">
+						<left>330</left>
+						<top>813</top>
+						<include>subt6</include>
+					</control>
+				</control>
+				<control type="group">
+					<visible>!ListItem.IsCollection</visible>
+					<visible>Skin.HasSetting(showCast) + !Container.Content(episodes)</visible>
+					<left>1120</left>
+					<top>540</top>
+					<control type="textbox">
+						<top>220</top>
+						<left>110</left>
+						<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !String.IsEmpty(ListItem.AudioCodec)</visible>
+						<height>35</height>
+						<width>520</width>
+						<font>Font_plot</font>
+						<aligny>top</aligny>
+						<align>center</align>
+						<textcolor>Skin.String(theme_text)</textcolor>
+						<label>[B]$LOCALIZE[292]: $VAR[NumberTracks][/B]</label>
+					</control>
+					<control type="label">
+						<top>255</top>
+						<left>260</left>
+						<font>Font_plot</font>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<align>right</align>
+						<aligny>center</aligny>
+						<width>60</width>
+						<height>60</height>
+						<label>$VAR[audiochannelstajo1]</label>
+					</control>
+					<control type="image">
+						<top>265</top>
+						<left>330</left>
+						<width>80</width>
+						<height>40</height>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<include condition="!Skin.HasSetting(Coloured.icons)">IconGrey</include>
+						<texture>$VAR[audioc_1]</texture>
+					</control>
+					<control type="label">
+						<top>255</top>
+						<left>420</left>
+						<font>Font_plot</font>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<scroll>false</scroll>
+						<align>left</align>
+						<aligny>center</aligny>
+						<width>60</width>
+						<height>60</height>
+						<label>[LOWERCASE]$INFO[ListItem.Property(AudioLanguage.1)][/LOWERCASE]</label>
+					</control>
+					<control type="label">
+						<top>295</top>
+						<left>260</left>
+						<font>Font_plot</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<width>60</width>
+						<height>60</height>
+						<label>$VAR[audiochannelstajo2]</label>
+					</control>
+					<control type="image">
+						<top>308</top>
+						<left>330</left>
+						<width>80</width>
+						<height>40</height>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<include condition="!Skin.HasSetting(Coloured.icons)">IconGrey</include>
+						<texture>$VAR[audioc_2]</texture>
+					</control>
+					<control type="label">
+						<top>295</top>
+						<left>420</left>
+						<font>Font_plot</font>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<scroll>false</scroll>
+						<align>left</align>
+						<aligny>center</aligny>
+						<width>60</width>
+						<height>60</height>
+						<label>[LOWERCASE]$INFO[ListItem.Property(AudioLanguage.2)][/LOWERCASE]</label>
+					</control>
+					<control type="label">
+						<top>335</top>
+						<left>260</left>
+						<font>Font_plot</font>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<align>right</align>
+						<aligny>center</aligny>
+						<width>60</width>
+						<height>60</height>
+						<label>$VAR[audiochannelstajo3]</label>
+					</control>
+					<control type="image">
+						<top>348</top>
+						<left>330</left>
+						<width>80</width>
+						<height>40</height>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<include condition="!Skin.HasSetting(Coloured.icons)">IconGrey</include>
+						<texture>$VAR[audioc_3]</texture>
+					</control>
+					<control type="label">
+						<top>335</top>
+						<left>420</left>
+						<font>Font_plot</font>
+						<scroll>false</scroll>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<align>left</align>
+						<aligny>center</aligny>
+						<width>60</width>
+						<height>60</height>
+						<label>[LOWERCASE]$INFO[ListItem.Property(AudioLanguage.3)][/LOWERCASE]</label>
+					</control>
+					<control type="label">
+						<top>375</top>
+						<left>260</left>
+						<font>Font_plot</font>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<align>right</align>
+						<aligny>center</aligny>
+						<width>60</width>
+						<height>60</height>
+						<label>$VAR[audiochannelstajo4]</label>
+					</control>
+					<control type="image">
+						<top>388</top>
+						<left>330</left>
+						<width>80</width>
+						<height>40</height>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<include condition="!Skin.HasSetting(Coloured.icons)">IconGrey</include>
+						<texture>$VAR[audioc_4]</texture>
+					</control>
+					<control type="label">
+						<top>375</top>
+						<left>420</left>
+						<font>Font_plot</font>
+						<scroll>false</scroll>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<align>left</align>
+						<aligny>center</aligny>
+						<width>60</width>
+						<height>60</height>
+						<label>[LOWERCASE]$INFO[ListItem.Property(AudioLanguage.4)][/LOWERCASE]</label>
+					</control>
+				</control>
+				<control type="group">
+					<top>38</top>
+					<control type="list" id="5017">
+						<visible>ListItem.IsCollection</visible>
+						<scrolltime>1500</scrolltime>
+						<autoscroll time="2000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<left>25</left>
+						<top>352</top>
+						<height>206</height>
+						<width>585</width>
+						<itemlayout height="34">
+							<control type="label">
+								<left>0</left>
+								<top>0</top>
+								<height>34</height>
+								<width>580</width>
+								<align>left</align>
+								<scroll>false</scroll>
+								<font>Font_plot</font>
+								<textcolor>FFFFFFFF</textcolor>
+								<selectedcolor>FFFFFFFF</selectedcolor>
+								<label>[B]• $INFO[ListItem.Label] $INFO[ListItem.Year,(,)][/B]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="34">
+							<control type="label">
+								<left>0</left>
+								<top>0</top>
+								<height>34</height>
+								<width>580</width>
+								<align>left</align>
+								<scroll>false</scroll>
+								<font>Font_plot</font>
+								<textcolor>FFFFFFFF</textcolor>
+								<selectedcolor>FFFFFFFF</selectedcolor>
+								<label>[B]• $INFO[ListItem.Label] $INFO[ListItem.Year,(,)][/B]</label>
+							</control>
+						</focusedlayout>
+						<content sortby="year" sortorder="ascending">$INFO[ListItem.FolderPath]</content>
+					</control>
+					<control type="group">
+						<left>25</left>
+						<top>-497</top>
+						<control type="textbox">
+							<visible>Container.Content(episodes)</visible>
+							<left>10</left>
+							<top>893</top>
+							<width>540</width>
+							<height>78</height>
+							<align>left</align>
+							<aligny>top</aligny>
+							<font>font13_title</font>
+							<label>[B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[20373]: [/COLOR][/B][COLOR=FFFFFAF0]$INFO[ListItem.Season,,  •  ][/COLOR][B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[20359]: [/COLOR][/B][COLOR=FFFFFAF0]$INFO[ListItem.Episode,,[CR]][/COLOR][B]$VAR[value_ground16_label]: [COLOR=white][/B]$VAR[ItemDuration,,  •  ][/COLOR][B]$LOCALIZE[19081]: [COLOR=white][/B]$INFO[ListItem.EndTime][/COLOR]</label>
+							<textcolor>Skin.String(theme_text)</textcolor>
+						</control>
+						<control type="textbox">
+							<visible>Container.Content(tvshows)</visible>
+							<left>10</left>
+							<top>810</top>
+							<width>540</width>
+							<height>78</height>
+							<align>left</align>
+							<aligny>top</aligny>
+							<font>font13_title</font>
+							<label>[B]$VAR[value_ground17_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground17_value][/COLOR] • [B]$VAR[value_ground14_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR][CR]$VAR[Seasons_Year_Label]</label>
+							<textcolor>Skin.String(theme_text)</textcolor>
+						</control>
+						<control type="textbox">
+							<visible>Container.Content(movies) + !ListItem.IsCollection</visible>
+							<left>10</left>
+							<top>810</top>
+							<width>540</width>
+							<height>78</height>
+							<align>left</align>
+							<aligny>top</aligny>
+							<font>font13_title</font>
+							<label>[B]$VAR[value_ground17_label,,: ][/B][COLOR=FFFFFAF0]$VAR[value_ground17_value,,  •  ][/COLOR][B]$LOCALIZE[180]: [/B][COLOR=FFFFFAF0]$VAR[ItemDuration]  •  [/COLOR][B]$LOCALIZE[19081]: [/B][COLOR=FFFFFAF0]$INFO[ListItem.EndTime][/COLOR]</label>
+							<textcolor>Skin.String(theme_text)</textcolor>
+						</control>
+						<control type="textbox">
+							<left>10</left>
+							<top>880</top>
+							<width>540</width>
+							<height>78</height>
+							<visible>Container.Content(seasons) + !String.StartsWith(ListItem.Label,*)</visible>
+							<align>left</align>
+							<aligny>top</aligny>
+							<font>font13_title</font>
+							<label>[B]$VAR[value_ground14_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground14_value]  •  [/COLOR][B]$LOCALIZE[345]: [/B][COLOR=FFFFFAF0]$INFO[ListItem.Year][/COLOR]</label>
+							<textcolor>Skin.String(theme_text)</textcolor>
+						</control>
+						<control type="textbox">
+							<left>10</left>
+							<top>880</top>
+							<width>540</width>
+							<height>78</height>
+							<visible>Container.Content(seasons) + String.StartsWith(ListItem.Label,*)</visible>
+							<align>left</align>
+							<aligny>top</aligny>
+							<font>font13_title</font>
+							<label>[B]$VAR[value_ground14_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR]$VAR[Seasons_Year_Label,  [B][COLOR=grey]•[/COLOR][/B]  ,]</label>
+							<textcolor>Skin.String(theme_text)</textcolor>
+						</control>
+						<control type="textbox">
+							<left>10</left>
+							<top>800</top>
+							<width>540</width>
+							<height>78</height>
+							<visible>ListItem.IsCollection</visible>
+							<align>left</align>
+							<font>font13_title</font>
+							<label>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[342]: [/COLOR][/B]$INFO[Container(5017).NumItems]</label>
+							<textcolor>FFFFFFFF</textcolor>
+						</control>
+					</control>
+					<control type="textbox">
+						<visible>ListItem.IsCollection</visible>
+						<left>25</left>
+						<top>585</top>
+						<width>565</width>
+						<height>324</height>
+						<font>font13_title</font>
+						<label>[B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(0).Label]$INFO[Container(5017).ListItemAbsolute(0).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(0).Plot][CR][CR][B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(1).Label]$INFO[Container(5017).ListItemAbsolute(1).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(1).Plot][CR][CR][B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(2).Label]$INFO[Container(5017).ListItemAbsolute(2).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(2).Plot][CR][CR][B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(3).Label]$INFO[Container(5017).ListItemAbsolute(3).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(3).Plot][CR][CR][B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(4).Label]$INFO[Container(5017).ListItemAbsolute(4).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(4).Plot][CR][CR][B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(5).Label]$INFO[Container(5017).ListItemAbsolute(5).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(5).Plot][CR][CR][B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(6).Label]$INFO[Container(5017).ListItemAbsolute(6).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(6).Plot][CR][CR][B][COLOR $INFO[Skin.String(theme_text)]]$INFO[Container(5017).ListItemAbsolute(7).Label]$INFO[Container(5017).ListItemAbsolute(7).Year, (,)][/B][/COLOR][CR]$INFO[Container(5017).ListItemAbsolute(7).Plot][CR][CR]</label>
+						<autoscroll delay="4000" time="2000" repeat="4000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					</control>
+					<control type="group">
+						<animation effect="zoom" start="92" end="92" time="0" condition="true">Conditional</animation>
+						<animation effect="slide" end="70,0" time="0" condition="Container.Content(tvshows) | Container.Content(seasons)">Conditional</animation>
+						<animation effect="slide" end="100,0" time="0" condition="[Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(OnlineRating)">Conditional</animation>
+						<left>17</left>
+						<top>946</top>
+						<include>IconsVideo</include>
+					</control>
+					<control type="image">
+						<animation effect="slide" end="150,0" time="0" condition="!Skin.HasSetting(showCast)">Conditional</animation>
+						<visible>System.IdleTime(1) + Container.Content(tvshows)</visible>
+						<left>1375</left>
+						<top>750</top>
+						<width>226</width>
+						<height>190</height>
+						<fadetime>200</fadetime>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<texture background="true">$INFO[Container(5927).ListItem.Label]</texture>
+					</control>
+					<control type="image">
+						<visible>System.IdleTime(1) + Container.Content(seasons)</visible>
+						<left>1515</left>
+						<top>745</top>
+						<width>226</width>
+						<height>190</height>
+						<fadetime>200</fadetime>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<texture background="true">$INFO[Container(5927).ListItem.Label]</texture>
+					</control>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(episodes)</visible>
+					<visible>!String.Contains(Container.FolderName,ListItem.TvShowTitle) + !String.Contains(Container.FolderName,ListItem.Season)</visible>
+					<autoscroll delay="1000" time="1200" repeat="2000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<font>titlemus2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>grey2</textcolor>
+					<left>30</left>
+					<top>340</top>
+					<width>530</width>
+					<height>85</height>
+					<label>$INFO[Container.FolderName]</label>
+				</control>
+				<control type="textbox">
+					<visible>[Container.Content(seasons) + !String.StartsWith(ListItem.Label,*)]</visible>
+					<visible>!String.Contains(ListItem.Label,$LOCALIZE[20373])</visible>
+					<autoscroll delay="1000" time="1200" repeat="2000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<font>titlemus</font>
+					<align>center</align>
+					<textcolor>white2</textcolor>
+					<left>35</left>
+					<top>348</top>
+					<width>500</width>
+					<height>50</height>
+					<label>$LOCALIZE[20373]  $INFO[ListItem.Season]</label>
+				</control>
+				<control type="image">
+					<visible>ListItem.IsCollection</visible>
+					<left>1475</left>
+					<top>780</top>
+					<width>300</width>
+					<height>180</height>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<texture background="true">$INFO[Container(5017).ListItem.Art(clearlogo)]</texture>
+				</control>
+				<control type="group">
+					<animation effect="zoom" start="92" end="92" time="0" condition="true">Conditional</animation>
+					<animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
+					<animation effect="slide" end="-150,0" time="0" condition="Container.Content(tvshows) + String.IsEmpty(Container(5927).ListItemAbsolute(0).Label)">Conditional</animation>
+					<left>755</left>
+					<top>803</top>
+					<include content="ViewCastMedium" condition="Skin.HasSetting(showCast)">
+						<param name="list_id">3724</param>
+					</include>
+				</control>
+			</control>
+		</control>
+		<control type="image">
+			<visible>Control.HasFocus(8551) + Player.HasVideo</visible>
+			<include>FullscreenDimensions</include>
+			<texture>black.png</texture>
+		</control>
+		<control type="videowindow" id="2547">
+			<visible>Control.HasFocus(8551)</visible>
+			<include>FullscreenDimensions</include>
+		</control>
+	</include>
+	<include name="ViewCenterListm">
+		<control type="group">
+			<visible>Control.IsVisible(501)</visible>
+			<left>-100</left>
+			<top>-87</top>
+			<!-- default group -->
+			<control type="group">
+				<left>110</left>
+				<top>93</top>
+				<control type="group">
+					<control type="image">
+						<left>-15</left>
+						<top>-8</top>
+						<width>700</width>
+						<height>400</height>
+						<visible>String.IsEmpty(ListItem.Art(fanart1)) + String.IsEmpty(ListItem.Art(artist.fanart1))</visible>
+						<aspectratio aligny="top">scale</aspectratio>
+						<texture diffuse="tajo/mask_cover3.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					<control type="multiimage">
+						<left>-15</left>
+						<top>-8</top>
+						<width>700</width>
+						<height>400</height>
+						<aspectratio aligny="top">scale</aspectratio>
+						<fadetime>500</fadetime>
+						<visible>!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(artist.fanart1))</visible>
+						<imagepath background="true">$INFO[Control.GetLabel(5864)]</imagepath>
+					</control>
+				</control>
+				<control type="image">
+					<visible>!String.StartsWith(ListItem.Label,*) + !ListItem.IsParentFolder</visible>
+					<visible>!Control.HasFocus(6966) | [Control.HasFocus(6966) + String.IsEmpty(Container(6966).ListItem.Art(thumb))]</visible>
+					<visible>!Control.HasFocus(6555) | [Control.HasFocus(6555) + String.IsEmpty(Container(6555).ListItem.Art(videothumb))]</visible>
+					<animation effect="slide" start="0,0" end="-23,0" time="100" condition="Control.HasFocus(50160)">Conditional</animation>
+					<left>1346</left>
+					<top>-9</top>
+					<width>566</width>
+					<height>566</height>
+					<fadetime>200</fadetime>
+					<aspectratio aligny="top" align="left">scale</aspectratio>
+					<texture colordiffuse="FFbababa" diffuse="tajo/mask_cover3.png" background="true">$VAR[poster]</texture>
+				</control>
+				<control type="image">
+					<visible>Control.HasFocus(6966) + !String.IsEmpty(Container(6966).ListItem.Art(thumb))</visible>
+					<animation effect="slide" start="0,0" end="-23,0" time="100" condition="Control.HasFocus(50160)">Conditional</animation>
+					<left>1346</left>
+					<top>-9</top>
+					<width>566</width>
+					<height>566</height>
+					<fadetime>200</fadetime>
+					<aspectratio aligny="top" align="left">scale</aspectratio>
+					<texture diffuse="tajo/mask_cover3.png" background="true">$INFO[Container(6966).ListItem.Art(thumb)]</texture>
+				</control>
+				<control type="image">
+					<visible>[Control.HasFocus(6555) | Control.HasFocus(5739)] + !String.IsEmpty(Container(6555).ListItem.Art(videothumb))</visible>
+					<animation effect="slide" start="0,0" end="-23,0" time="100" condition="Control.HasFocus(50160)">Conditional</animation>
+					<left>1346</left>
+					<top>-9</top>
+					<width>566</width>
+					<height>566</height>
+					<fadetime>200</fadetime>
+					<aspectratio aligny="top" align="left">scale</aspectratio>
+					<texture diffuse="tajo/mask_cover3.png" background="true">$INFO[Container(6555).ListItem.Art(videothumb)]</texture>
+				</control>
+				<control type="image">
+					<visible>!String.StartsWith(ListItem.Label,*) + !ListItem.IsParentFolder</visible>
+					<visible>[Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)] + !Container.Content(artists) + !Container.Content(albums)</visible>
+					<animation effect="slide" start="0,0" end="-23,0" time="100" condition="Control.HasFocus(50160)">Conditional</animation>
+					<top>554</top>
+					<left>1346.5</left>
+					<width>566</width>
+					<height>3</height>
+					<aspectratio align="center">stretch</aspectratio>
+					<texture diffuse="tajo/mask_cover3.png">tajo/$VAR[GlobalCaseVarTajo]</texture>
+				</control>
+			</control>
+			<control type="group">
+				<visible>!String.StartsWith(ListItem.Label,*) + !ListItem.IsParentFolder</visible>
+				<visible>!String.IsEmpty(ListItem.Art(fanart)) | !String.IsEmpty(ListItem.Art(artist.fanart))</visible>
+				<control type="image">
+					<left>-133</left>
+					<top>-68</top>
+					<width>1920</width>
+					<height>1143</height>
+					<texture flipx="true" background="true">tajo/marco_new2.png</texture>
+				</control>
+			</control>
+			<control type="grouplist">
+				<animation effect="zoom" end="65" time="0" condition="true">Conditional</animation>
+				<visible>!Container(501).OnNext + !Container(501).OnPrevious</visible>
+				<animation effect="fade" start="0" end="100" delay="300" time="350" reversible="false">Visible</animation>
+				<top>1060</top>
+				<left>100</left>
+				<width>1015</width>
+				<height>90</height>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<visible>[Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)] + !Container.Content(albums) + !Container.Content(artists)</visible>
+				<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
+				<control type="image">
+					<width>158</width>
+					<include>MediaFlagVars</include>
+					<texture fallback="resources/flag_default.png">$VAR[mediaicons_path]videoresolution/$VAR[videoresHDR,,.png]</texture>
+					<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+				</control>
+				<control type="image">
+					<width>158</width>
+					<include>MediaFlagVars</include>
+					<texture>$VAR[audioc_1]</texture>
+					<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
+				</control>
+				<control type="image">
+					<width>158</width>
+					<include>MediaFlagVars</include>
+					<texture>$VAR[mediaicons_path]audiochannels/$INFO[ListItem.AudioChannels,,.png]</texture>
+					<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
+				</control>
+				<control type="image">
+					<width>158</width>
+					<include>MediaFlagVars</include>
+					<texture fallback="resources/flag_default.png">$VAR[videocodec]</texture>
+				</control>
+				<control type="image">
+					<width>158</width>
+					<include>MediaFlagVars</include>
+					<texture fallback="resources/flag_default.png">$VAR[mediaicons_path]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+				</control>
+			</control>
+			<control type="fadelabel" id="6789">
+				<visible>Container.Content(artists)</visible>
+				<top>-1500</top>
+				<width>1</width>
+				<height>1</height>
+				<info>ListItem.Art(clearart)</info>
+				<info>ListItem.Art(cutout)</info>
+				<info>ListItem.Art(landscape)</info>
+				<info>ListItem.Art(banner)</info>
+				<randomize>false</randomize>
+				<pauseatend>3000</pauseatend>
+				<scroll>false</scroll>
+				<scrollout>false</scrollout>
+				<resetonlabelchange>true</resetonlabelchange>
+			</control>
+			<control type="image">
+				<visible>Control.HasFocus(8550)</visible>
+				<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+				<left>860</left>
+				<top>75</top>
+				<width>1250</width>
+				<height>1550</height>
+				<texture flipx="true" background="true">tajo/side_fade.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="group">
+				<visible>!Control.HasFocus(50160) + !Control.HasFocus(5919)</visible>
+				<visible>Container.Content(albums)</visible>
+				<left>1930</left>
+				<top>-205</top>
+				<control type="image">
+					<visible>!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic)</visible>
+					<visible>!System.IdleTime(7) + !Control.HasFocus(8550)</visible>
+					<animation effect="fade" start="100" end="0" time="1000" pulse="true" condition="true">Conditional</animation>
+					<animation effect="fade" end="0" time="500">Hidden</animation>
+					<animation effect="rotate" center="auto" end="-90" time="0" condition="true">Conditional</animation>
+					<left>-2</left>
+					<top>300</top>
+					<width>32</width>
+					<height>32</height>
+					<aspectratio aligny="bottom" align="left">keep</aspectratio>
+					<texture colordiffuse="grey" background="true">arrow_up.png</texture>
+				</control>
+				<control type="image">
+					<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+					<visible>!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic)</visible>
+					<left>18</left>
+					<top>297</top>
+					<width>60</width>
+					<height>60</height>
+					<colordiffuse>bbffffff</colordiffuse>
+					<texture background="true">$VAR[mediaicons_path]extras.png</texture>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="label">
+					<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+					<visible>!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic)</visible>
+					<align>left</align>
+					<left>22</left>
+					<top>323</top>
+					<width min="20" max="300">auto</width>
+					<height>34</height>
+					<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey2</include>
+					<textcolor>ffdadada</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font_Extras</font>
+					<label>$LOCALIZE[31014]</label>
+				</control>
+			</control>
+			<control type="grouplist">
+				<left>1545</left>
+				<top>90</top>
+				<width>400</width>
+				<align>right</align>
+				<orientation>horizontal</orientation>
+				<itemgap>0</itemgap>
+				<control type="label">
+					<visible>Control.HasFocus(8550)</visible>
+					<animation effect="fade" start="0" end="80" time="600">Visible</animation>
+					<align>left</align>
+					<width min="20" max="200">auto</width>
+					<height>40</height>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>fontDiscog</font>
+					<label>$INFO[Container(8550).CurrentItem]</label>
+				</control>
+				<control type="label">
+					<visible>Control.HasFocus(8550)</visible>
+					<animation effect="fade" start="0" end="80" time="600">Visible</animation>
+					<align>left</align>
+					<width min="20" max="200">auto</width>
+					<height>34</height>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>Font_bro</font>
+					<label>/$INFO[Container(8550).NumItems]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>!String.IsEmpty(Window(Home).Property(extras_music_yes)) | Control.HasFocus(8550)</visible>
+				<top>150</top>
+				<left>1435</left>
+				<include condition="Skin.HasSetting(SearchExtrasMusic)" content="Extras_view_m3">
+					<param name="View_n" value="501"/>
+					<param name="HeightList" value="487"/>
+					<param name="Num_control" value="8550"/>
+					<param name="Num_movement" value="12"/>
+				</include>
+			</control>
+			<control type="group">
+				<left>215</left>
+				<control type="scrollbar" id="50160">
+					<showonepage>true</showonepage>
+					<include>ScrollBar_Vertical</include>
+					<animation effect="fade" start="0" end="100" delay="200" time="200" tween="sine" easing="out">Visible</animation>
+					<left>1771</left>
+					<top>110</top>
+					<height>1040</height>
+					<onleft>501</onleft>
+					<onright condition="[!String.IsEqual(ListItem.DBTYPE,artist) + !String.IsEqual(ListItem.DBTYPE,album)] | !Skin.HasSetting(similars) | String.IsEmpty(Window(home).Property(SpGenrem.0)) | String.IsEmpty(Window(home).Property(EncodedTitlem))">50160</onright>
+					<include condition="Skin.HasSetting(similars)">Activate_similarm_right</include>
+					<visible allowhiddenfocus="true">!Control.HasFocus(501) + !Control.HasFocus(6966) + !Control.HasFocus(5769) + !Control.HasFocus(5739) + !Control.HasFocus(6555) + !Control.HasFocus(5919) + !Control.HasFocus(8550) + String.IsEmpty(Window(Home).Property(MediaMenu))</visible>
+				</control>
+				<control type="fixedlist" id="501">
+					<viewtype label="CenterList">list</viewtype>
+					<left>520</left>
+					<top>100></top>
+					<width>700</width>
+					<height>1050</height>
+					<movement>10</movement>
+					<focusposition>10</focusposition>
+					<preloaditems>2</preloaditems>
+					<onleft condition="Container.Content(artists) + Integer.IsGreater(Container(6966).NumItems,0)">6966</onleft>
+					<onleft condition="Container.Content(artists) + Integer.IsGreater(Container(6939).NumItems,0)">6939</onleft>
+					<onleft condition="Container.Content(artists) + !Integer.IsGreater(Container(6966).NumItems,0) + !Integer.IsGreater(Container(6939).NumItems,0)">SetProperty(MediaMenu,True,home)</onleft>
+					<onleft condition="Container.Content(artists) + !Integer.IsGreater(Container(6966).NumItems,0) + !Integer.IsGreater(Container(6939).NumItems,0)">SetFocus(9050)</onleft>
+					<onleft condition="Container.Content(albums) + Integer.IsGreater(Container(6555).NumItems,0)">6555</onleft>
+					<onleft condition="Container.Content(albums) + !Integer.IsGreater(Container(6555).NumItems,0)">SetProperty(MediaMenu,True,home)</onleft>
+					<onleft condition="Container.Content(albums) + !Integer.IsGreater(Container(6555).NumItems,0)">SetFocus(9050)</onleft>
+					<onleft condition="Container.Content(songs) + String.IsEmpty(ListItem.SongVideoURL)">SetProperty(MediaMenu,True,home)</onleft>
+					<onleft condition="Container.Content(songs) + String.IsEmpty(ListItem.SongVideoURL)">SetFocus(9050)</onleft>
+					<onleft condition="Container.Content(songs) + !String.IsEmpty(ListItem.SongVideoURL)">5769</onleft>
+					<onleft condition="[Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)] + !Container.Content(artists) + !Container.Content(albums)">SetProperty(MediaMenu,True,home)</onleft>
+					<onleft condition="[Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)] + !Container.Content(artists) + !Container.Content(albums)">SetFocus(9050)</onleft>
+					<onright condition="!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic)">SetFocus(8550)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album)]">SetProperty(Wait_1m,True,home)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album)]">ClearProperty(SpGenrem.0,Home)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album)]">ClearProperty(EncodedTitlem,Home)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album)]">RunScript(plugin.video.themoviedb.helper,split_value=$INFO[ListItem.Genre],separator=/,property=SpGenrem)</onright>
+					<onright condition="Skin.HasSetting(similars) + !String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album)]">RunPlugin("plugin://script.skinvariables/?info=get_encoded_string&amp;window_prop=EncodedTitlem&amp;window_id=Home&amp;&amp;$INFO[ListItem.Label]")</onright>
+					<onright condition="!ListItem.IsParentFolder + ![!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic)] + [String.Contains(Container.SortMethod,$LOCALIZE[369]) | String.Contains(Container.SortMethod,$LOCALIZE[557]) | String.Contains(Container.SortMethod,$LOCALIZE[558])]">5919</onright>
+					<onright condition="!ListItem.IsParentFolder + ![!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic)] + ![String.Contains(Container.SortMethod,$LOCALIZE[369]) | String.Contains(Container.SortMethod,$LOCALIZE[557]) | String.Contains(Container.SortMethod,$LOCALIZE[558])]">50160</onright>
+					<onright condition="!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic) + Skin.HasSetting(PlayPreviewM) + !String.IsEmpty(Window(home).Property(PlayingMusicPreviewAlbum)) + Player.HasAudio + Container.Content(albums)">Pause</onright>
+					<onright condition="!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic) + Skin.HasSetting(PlayPreviewM) + !String.IsEmpty(Window(home).Property(PlayingMusicPreviewAlbum)) + Player.HasAudio + Container.Content(albums)">Stop</onright>
+					<onright condition="!String.IsEmpty(Window(Home).Property(extras_music_yes)) + Skin.HasSetting(SearchExtrasMusic) + Skin.HasSetting(PlayPreviewM) + !String.IsEmpty(Window(home).Property(PlayingMusicPreviewAlbum)) + Player.HasAudio + Container.Content(albums)">ClearProperty(PlayingMusicPreviewAlbum,Home)</onright>
+					<pagecontrol>50160</pagecontrol>
+					<scrolltime tween="sine">500</scrolltime>
+					<orientation>vertical</orientation>
+					<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)] + !Container.Content(genres) + !Container.Content(years) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(tags)</visible>
+					<itemlayout width="700" height="50">
+						<control type="textbox">
+							<left>35</left>
+							<top>-4</top>
+							<width>650</width>
+							<height>50</height>
+							<align>left</align>
+							<font>font16</font>
+							<label>$VAR[MusicListLabel3Var]</label>
+							<textcolor>grey</textcolor>
+						</control>
+						<control type="label">
+							<visible>Container.Content(songs) + !String.IsEmpty(ListItem.SongVideoURL)</visible>
+							<animation effect="zoom" end="65" time="0" condition="true">Conditional</animation>
+							<animation effect="slide" end="-45,0" time="0" condition="true">Conditional</animation>
+							<left>7</left>
+							<top>8</top>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>IconMediumMD</font>
+							<textcolor>grey2</textcolor>
+							<width>65</width>
+							<height>49</height>
+							<label></label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="700" height="50">
+						<control type="button" id="5297">
+							<include>HiddenObject</include>
+							<onfocus condition="!String.IsEmpty(Window(Home).Property(MoveArtist))">ClearProperty(MoveArtist,Home)</onfocus>
+							<onfocus condition="!String.IsEmpty(Window(Home).Property(extras_music_yes))">ClearProperty(extras_music_yes,home)</onfocus>
+							<onfocus condition="!String.IsEmpty(Window(Home).Property(PlayOnce)) + !Integer.IsEqual(Window(Home).Property(PlayOnce),ListItem.DBID)">ClearProperty(PlayOnce,home)</onfocus>
+						</control>
+						<control type="button" id="2354">
+							<include>HiddenObject</include>
+							<onfocus condition="!String.IsEmpty(Window(Home).Property(FirstRow))">ClearProperty(FirstRow,home)</onfocus>
+						</control>
+						<control type="group">
+							<control type="image">
+								<left>25</left>
+								<width>674</width>
+								<height>49</height>
+								<texture border="4">listselect_fo.png</texture>
+								<colordiffuse>Skin.String(flat_back)</colordiffuse>
+								<animation effect="fade" start="100" end="40" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
+							</control>
+							<control type="label">
+								<scrollspeed>100</scrollspeed>
+								<scrollsuffix>  •  </scrollsuffix>
+								<left>35</left>
+								<top>-4</top>
+								<width>650</width>
+								<height>50</height>
+								<align>left</align>
+								<font>font16</font>
+								<label>[B]$VAR[MusicListLabel3Var][/B]</label>
+							</control>
+							<control type="label">
+								<visible>Container.Content(songs) + !String.IsEmpty(ListItem.SongVideoURL) + !Control.HasFocus(5769)</visible>
+								<animation effect="zoom" end="65" time="0" condition="true">Conditional</animation>
+								<animation effect="slide" end="-45,0" time="0" condition="true">Conditional</animation>
+								<left>7</left>
+								<top>8</top>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>IconMediumMD</font>
+								<width>65</width>
+								<height>49</height>
+								<label></label>
+							</control>
+							<control type="label">
+								<visible>Container.Content(songs) + !String.IsEmpty(ListItem.SongVideoURL) + Control.HasFocus(5769)</visible>
+								<animation effect="zoom" end="75" time="0" condition="true">Conditional</animation>
+								<animation effect="slide" end="-44,-1" time="0" condition="true">Conditional</animation>
+								<animation effect="fade" start="100" end="20" time="1000" pulse="true" condition="true">Conditional</animation>
+								<left>5</left>
+								<top>6</top>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>IconMediumMD</font>
+								<textcolor>Skin.String(theme_text)</textcolor>
+								<width>65</width>
+								<height>49</height>
+								<label></label>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="button" id="5739">
+					<visible>!String.IsEmpty(Container(6555).ListItem.SongVideoURL)</visible>
+					<top>100</top>
+					<left>100</left>
+					<width>500</width>
+					<font>font15d</font>
+					<align>center</align>
+					<texturefocus/>
+					<onup>6555</onup>
+					<onup>Control.Move(6555,-1)</onup>
+					<ondown>6555</ondown>
+					<ondown>Control.Move(6555,1)</ondown>
+					<onright>6555</onright>
+					<onleft>SetProperty(MediaMenu,True,home)</onleft>
+					<onleft>SetFocus(9050)</onleft>
+					<onclick condition="Player.Playing">Stop</onclick>
+					<onclick>PlayMedia($ESCINFO[Container(6555).ListItem.SongVideoURL])</onclick>
+				</control>
+				<control type="button" id="5769">
+					<visible>!String.IsEmpty(ListItem.SongVideoURL)</visible>
+					<top>100</top>
+					<left>100</left>
+					<width>500</width>
+					<font>font15d</font>
+					<align>center</align>
+					<texturefocus/>
+					<onup>501</onup>
+					<onup>Control.Move(501,-1)</onup>
+					<ondown>501</ondown>
+					<ondown>Control.Move(501,1)</ondown>
+					<onright>501</onright>
+					<onleft>SetProperty(MediaMenu,True,home)</onleft>
+					<onleft>SetFocus(9050)</onleft>
+					<onclick condition="Player.Playing">Stop</onclick>
+					<onclick>PlayMedia($ESCINFO[ListItem.SongVideoURL])</onclick>
+				</control>
+			</control>
+			<!-- Info Panel -->
+			<control type="group">
+				<visible>Control.IsVisible(501)</visible>
+				<visible>!ListItem.IsParentFolder</visible>
+				<left>112</left>
+				<top>145</top>
+				<control type="textbox">
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<visible>Container.Content(albums)</visible>
+					<left>25</left>
+					<top>40</top>
+					<width>510</width>
+					<height>250</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>titlemove</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[Listitem.Artist]</label>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(artists)</visible>
+					<top>530</top>
+					<left>1360</left>
+					<width>520</width>
+					<height>440</height>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<font>font13_title</font>
+					<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B][COLOR white],[/COLOR]]$INFO[ListItem.Property(Artist_Style),  [COLOR white]•[/COLOR]  [B]$LOCALIZE[176]: [/B][COLOR white],[CR][/COLOR]][COLOR white]$INFO[ListItem.Property(Artist_Description),[B][/COLOR]$LOCALIZE[21891]: [COLOR white][/B],][/COLOR]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(artists)</visible>
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<top>530</top>
+					<left>1360</left>
+					<width>520</width>
+					<height>440</height>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<font>font13_title</font>
+					<label>[COLOR white]$INFO[ListItem.Plot,[B][/COLOR]$LOCALIZE[21891]: [COLOR white][/B],][/COLOR]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<top>540</top>
+					<left>1360</left>
+					<width>520</width>
+					<height>440</height>
+					<font>font13_title</font>
+					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(albums)</visible>
+					<visible>!Container.Content(musicvideos) + !String.StartsWith(container.folderpath,library://video/musicvideos/) + !String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<top>610</top>
+					<left>1360</left>
+					<width>520</width>
+					<height>360</height>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<font>font13_title</font>
+					<label>$INFO[ListItem.Year,[B]$LOCALIZE[345]: [/B][COLOR white],[/COLOR]]$INFO[ListItem.Genre,  [COLOR white]•[/COLOR]  [B]$LOCALIZE[515]: [/B][COLOR white],[/COLOR]]$INFO[ListItem.Property(Album_Style),  [COLOR white]•[/COLOR]  [B]$LOCALIZE[176]: [/B][COLOR white],[CR][/COLOR]][COLOR white]$INFO[ListItem.Property(Album_Description),[B][/COLOR]$LOCALIZE[10523]: [COLOR white][/B],][/COLOR]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(albums)</visible>
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<top>540</top>
+					<left>1360</left>
+					<width>520</width>
+					<height>440</height>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<font>font13_title</font>
+					<label>[COLOR white]$INFO[ListItem.Property(Album_Description),[B][/COLOR]$LOCALIZE[10523]: [COLOR white][/B],][/COLOR]</label>
+					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(songs)</visible>
+					<visible>!String.StartsWith(ListItem.Path,http) + !String.Contains(ListItem.Filename,%20)</visible>
+					<autoscroll delay="5000" time="2000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<left>35</left>
+					<top>400</top>
+					<width>530</width>
+					<height>556</height>
+					<align>left</align>
+					<font>font13_title</font>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[LOWERCASE][CAPITALIZE]$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.BitRate,[B]$LOCALIZE[623]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.SampleRate,[B]$LOCALIZE[613]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.MusicChannels,[B]$LOCALIZE[10127]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.PlayCount,[B]$LOCALIZE[567]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.LastPlayed,[B]$LOCALIZE[568]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Composer),[B]$LOCALIZE[29903]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Conductor),[B]$LOCALIZE[29905]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Orchestra),[B]$LOCALIZE[38034]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Lyricist),[B]$LOCALIZE[38035]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Remixer),[B]$LOCALIZE[38036]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Arranger),[B]$LOCALIZE[38037]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Engineer),[B]$LOCALIZE[38038]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Producer),[B]$LOCALIZE[38039]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.DJMixer),[B]$LOCALIZE[38040]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Mixer),[B]$LOCALIZE[38041]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Path,[B]$LOCALIZE[573]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Filename,[B]$LOCALIZE[21800]: [COLOR grey][/B],[/COLOR][CR]][/CAPITALIZE][/LOWERCASE]</label>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(songs)</visible>
+					<visible>String.StartsWith(ListItem.Path,http) | String.Contains(ListItem.Filename,%20)</visible>
+					<autoscroll delay="5000" time="2000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<left>35</left>
+					<top>400</top>
+					<width>530</width>
+					<height>556</height>
+					<align>left</align>
+					<font>font13_title</font>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[LOWERCASE][CAPITALIZE]$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.BitRate,[B]$LOCALIZE[623]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.SampleRate,[B]$LOCALIZE[613]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.MusicChannels,[B]$LOCALIZE[10127]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.PlayCount,[B]$LOCALIZE[567]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.LastPlayed,[B]$LOCALIZE[568]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Composer),[B]$LOCALIZE[29903]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Conductor),[B]$LOCALIZE[29905]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Orchestra),[B]$LOCALIZE[38034]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Lyricist),[B]$LOCALIZE[38035]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Remixer),[B]$LOCALIZE[38036]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Arranger),[B]$LOCALIZE[38037]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Engineer),[B]$LOCALIZE[38038]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Producer),[B]$LOCALIZE[38039]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.DJMixer),[B]$LOCALIZE[38040]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Mixer),[B]$LOCALIZE[38041]: [COLOR grey][/B],[/COLOR][CR]][/CAPITALIZE][/LOWERCASE]</label>
+				</control>
+				<control type="image">
+					<visible>Container.Content(songs)</visible>
+					<left>420</left>
+					<top>952</top>
+					<width>90</width>
+					<height>80</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>250</fadetime>
+					<colordiffuse>white</colordiffuse>
+					<texture>$VAR[mediaicons_path]audiocodec/$INFO[ListItem.FileExtension,,.png]</texture>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(artists) + !String.StartsWith(ListItem.Label,*) + Control.HasFocus(6966)</visible>
+					<left>35</left>
+					<top>350</top>
+					<width>550</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<label>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[558]: [/COLOR][/B][COLOR=FFFFFAF0][B]$INFO[Container(6966).CurrentItem][/B] / [B]$INFO[Container(6966).NumItems][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(artists) + !String.StartsWith(ListItem.Label,*) + !Control.HasFocus(6966)</visible>
+					<visible>!Container.Content(musicvideos) + !String.StartsWith(container.folderpath,library://video/musicvideos/) + !String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<left>35</left>
+					<top>350</top>
+					<width>550</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<label>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[132]: [/COLOR][/B][COLOR=FFFFFAF0][B]$INFO[Container(6966).NumItems][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>!String.IsEmpty(ListItem.Appearances)</visible>
+					<visible>!Control.HasFocus(6939)</visible>
+					<top>350</top>
+					<left>35</left>
+					<height>50</height>
+					<width>500</width>
+					<font>font13</font>
+					<aligny>top</aligny>
+					<align>left</align>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[B]$LOCALIZE[20389]: [COLOR=FFFFFAF0]$INFO[ListItem.Appearances][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>Control.HasFocus(6939)</visible>
+					<top>350</top>
+					<left>35</left>
+					<height>50</height>
+					<width>500</width>
+					<font>font13</font>
+					<aligny>top</aligny>
+					<align>left</align>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[20391]: [/COLOR][/B][COLOR=FFFFFAF0][B]$INFO[Container(6939).CurrentItem][/B] / [B]$INFO[Container(6939).NumItems][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>System.IdleTime(3) + !Integer.IsEqual(Container(6725).NumItems,0)</visible>
+					<visible>Container.Content(artists) + !String.StartsWith(ListItem.Label,*) + !Control.HasFocus(6966)</visible>
+					<visible>String.IsEmpty(ListItem.Appearances)</visible>
+					<visible>!String.IsEmpty(ListItem.DBID)</visible>
+					<top>350</top>
+					<left>35</left>
+					<height>50</height>
+					<width>500</width>
+					<font>font13_title</font>
+					<aligny>top</aligny>
+					<align>right</align>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[B]$LOCALIZE[20389]: [/B][COLOR=FFFFFAF0][B]$INFO[Container(6725).NumItems][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(albums) + !String.StartsWith(ListItem.Label,*) + [Control.HasFocus(6555) | Control.HasFocus(5739)]</visible>
+					<visible>!Container.Content(musicvideos) + !String.StartsWith(container.folderpath,library://video/musicvideos/) + !String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<visible>!String.IsEmpty(ListItem.DiscNumber) | !Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+					<left>65</left>
+					<top>350</top>
+					<width>550</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<label>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[179]: [/COLOR][/B][COLOR=FFFFFAF0][B]$INFO[Container(6555).CurrentItem][/B] / [B]$INFO[Container(6555).NumItems][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(albums) + !String.StartsWith(ListItem.Label,*) + Control.HasFocus(6555)</visible>
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<left>65</left>
+					<top>350</top>
+					<width>550</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<label>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[20391]: [/COLOR][/B][COLOR=FFFFFAF0][B]$INFO[Container(6555).CurrentItem][/B] / [B]$INFO[Container(6555).NumItems][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(albums) + !String.StartsWith(ListItem.Label,*) + Control.HasFocus(6555)</visible>
+					<visible>![!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))]</visible>
+					<visible>String.IsEmpty(ListItem.DiscNumber)</visible>
+					<left>65</left>
+					<top>350</top>
+					<width>550</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<label>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[427]: [/COLOR][/B][COLOR=FFFFFAF0][B]$INFO[Container(6555).CurrentItem][/B] / [B]$INFO[Container(6555).NumItems][/B][/COLOR]</label>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(albums) + !String.StartsWith(ListItem.Label,*) + !Control.HasFocus(6555)</visible>
+					<visible>Integer.IsGreater(ListItem.TotalDiscs,1) + System.GetBool(musiclibrary.showdiscs) + String.IsEmpty(ListItem.DiscNumber)</visible>
+					<left>65</left>
+					<top>350</top>
+					<width>560</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[B]$LOCALIZE[14087]: [/B][COLOR=FFFFFFFF]$INFO[Container(6555).NumItems][/COLOR] $INFO[ListItem.Property(Album_Duration),  [COLOR white]•[/COLOR]   [B]$LOCALIZE[180]: [/B][COLOR=FFFFFFFF],[/COLOR]]</label>
+				</control>
+				<control type="textbox">
+					<visible>!Container.Content(musicvideos) + !String.StartsWith(container.folderpath,library://video/musicvideos/) + !String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<visible>Container.Content(albums) + !String.StartsWith(ListItem.Label,*) + !Control.HasFocus(6555) + !Control.HasFocus(5739)</visible>
+					<visible>!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs)</visible>
+					<left>65</left>
+					<top>350</top>
+					<width>560</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[B]$LOCALIZE[134]: [/B][COLOR=FFFFFFFF]$INFO[Container(6555).NumItems][/COLOR] $INFO[ListItem.Property(Album_Duration),  [COLOR white]•[/COLOR]   [B]$LOCALIZE[180]: [/B][COLOR=FFFFFFFF],[/COLOR]]</label>
+				</control>
+				<control type="textbox">
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<visible>Container.Content(albums) + !String.StartsWith(ListItem.Label,*) + !Control.HasFocus(6555)</visible>
+					<left>65</left>
+					<top>350</top>
+					<width>560</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<align>left</align>
+					<font>font13_title</font>
+					<textcolor>Skin.String(theme_text)</textcolor>
+					<label>[B]$LOCALIZE[20389]: [/B][COLOR=FFFFFFFF]$INFO[Container(6555).NumItems][/COLOR] $INFO[ListItem.Property(Album_Duration),  [COLOR white]•[/COLOR]   [B]$LOCALIZE[180]: [/B][COLOR=FFFFFFFF],[/COLOR]]</label>
+				</control>
+				<control type="multiimage">
+					<visible>Container.Content(artists) + !Integer.IsGreaterOrEqual(Container(6966).NumItems,10) + !Integer.IsGreaterOrEqual(Container(6939).NumItems,10)</visible>
+					<left>55</left>
+					<top>765</top>
+					<width>500</width>
+					<height>200</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<imagepath colordiffuse="bbffffff" background="true">$INFO[Control.GetLabel(6789)]</imagepath>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="group">
+					<visible>!Container.OnScrollNext + !Container.OnScrollPrevious</visible>
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos) | Container.Content(albums) | Container.Content(songs)</visible>
+					<animation effect="fade" start="0" end="100" delay="650" time="100" reversible="false">Visible</animation>
+					<left>300</left>
+					<top>955</top>
+					<control type="image">
+						<animation effect="slide" end="-2,20" condition="true">Conditional</animation>
+						<width>30</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$VAR[Colour_UserRating]">star.png</texture>
+						<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+					</control>
+					<control type="label">
+						<animation effect="slide" end="34,15" condition="true">Conditional</animation>
+						<width>40</width>
+						<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+						<align>left</align>
+						<aligny>bottom</aligny>
+						<font>font13_bold</font>
+						<label>[B]$INFO[ListItem.UserRating][/B]</label>
+						<include condition="!Skin.HasSetting(Coloured.icons)">TextGrey</include>
+						<shadowcolor>black</shadowcolor>
+					</control>
+				</control>
+				<control type="image" id="5651">
+					<visible>Container.Content(albums) + System.IdleTime(3)</visible>
+					<visible>!Container.OnScrollNext + !Container.OnScrollPrevious</visible>
+					<animation effect="fade" start="0" end="100" delay="650" time="100" reversible="false">Visible</animation>
+					<width>161</width>
+					<height>48</height>
+					<left>410</left>
+					<top>965</top>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>grey</colordiffuse>
+					<texture>$INFO[Container(6874).ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<visible>!Container.OnScrollNext + !Container.OnScrollPrevious</visible>
+					<visible>Container.Content(albums)</visible>
+					<animation effect="fade" start="0" end="100" delay="650" time="100" reversible="false">Visible</animation>
+					<top>965</top>
+					<left>420</left>
+					<width>130</width>
+					<height>45</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Property(Album_Label)][/B]</label>
+					<font>font10t</font>
+					<textcolor>grey</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<visible>!System.IdleTime(3) | String.IsEmpty(Container(6874).ListItemAbsolute(0).Icon)</visible>
+				</control>
+				<control type="panel" id="6966">
+					<visible>Container.Content(artists) + !String.StartsWith(ListItem.Label,*)</visible>
+					<visible>!Container.Content(musicvideos) + !String.StartsWith(container.folderpath,library://video/musicvideos/) + !String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<onfocus condition="!String.IsEmpty(Window(home).Property(PlayingMusicPreview)) + Player.Playing">Stop</onfocus>
+					<onfocus condition="!String.IsEmpty(Window(home).Property(PlayingMusicPreview)) + Player.Playing">ClearProperty(PlayingMusicPreview,Home)</onfocus>
+					<onleft>SetProperty(MediaMenu,True,home)</onleft>
+					<onleft>SetFocus(9050)</onleft>
+					<onright>501</onright>
+					<left>20</left>
+					<top>402</top>
+					<width>585</width>
+					<height>560</height>
+					<orientation>vertical</orientation>
+					<viewtype label="2">list</viewtype>
+					<scrolltime tween="sine">500</scrolltime>
+					<itemlayout height="40">
+						<control type="label">
+							<width>580</width>
+							<font>font13_title</font>
+							<scroll>false</scroll>
+							<textoffsetx>10</textoffsetx>
+							<align>left</align>
+							<top>-2</top>
+							<height>40</height>
+							<label>• [LOWERCASE][CAPITALIZE]$INFO[ListItem.Label] $INFO[ListItem.Year,(,)][/CAPITALIZE][/LOWERCASE]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="40">
+						<control type="image">
+							<width>585</width>
+							<height>40</height>
+							<texture diffuse="tajo/mask_cover3.png">listselect_fo.png</texture>
+							<colordiffuse>Skin.String(flat_back)</colordiffuse>
+						</control>
+						<control type="label">
+							<width>580</width>
+							<font>font13_title</font>
+							<scroll>true</scroll>
+							<textoffsetx>10</textoffsetx>
+							<align>left</align>
+							<top>-2</top>
+							<height>40</height>
+							<label>• [LOWERCASE][CAPITALIZE]$INFO[ListItem.Label] $INFO[ListItem.Year,(,)][/CAPITALIZE][/LOWERCASE]</label>
+						</control>
+					</focusedlayout>
+					<content target="music" sortby="year" sortorder="ascending">$INFO[Container(501).ListItem.FolderPath]</content>
+				</control>
+				<control type="list" id="6939">
+					<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+					<onleft>SetProperty(MediaMenu,True,home)</onleft>
+					<onleft>SetFocus(9050)</onleft>
+					<onright>501</onright>
+					<width>585</width>
+					<height>560</height>
+					<left>20</left>
+					<top>402</top>
+					<orientation>vertical</orientation>
+					<scrolltime tween="sine">500</scrolltime>
+					<itemlayout width="585" height="40">
+						<control type="label">
+							<scroll>false</scroll>
+							<left>10</left>
+							<width>555</width>
+							<height>30</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13_title</font>
+							<selectedcolor>Skin.String(theme_text)</selectedcolor>
+							<label>• $INFO[ListItem.Label] $INFO[ListItem.Duration,(,)] </label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="585" height="40">
+						<control type="image">
+							<visible>Control.HasFocus(6939)</visible>
+							<top>-3</top>
+							<width>575</width>
+							<height>40</height>
+							<texture diffuse="tajo/mask_cover3.png">listselect_fo.png</texture>
+							<colordiffuse>Skin.String(flat_back)</colordiffuse>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<width>555</width>
+							<height>30</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13_title</font>
+							<selectedcolor>Skin.String(theme_text)</selectedcolor>
+							<scrollspeed>150</scrollspeed>
+							<scrollsuffix/>
+							<label>• $INFO[ListItem.Label] $INFO[ListItem.Duration,(,)]</label>
+						</control>
+					</focusedlayout>
+					<content>videodb://musicvideos/artists/$INFO[Container(501).ListItem.DBID]/-1/?artistid=$INFO[Container(501).ListItem.DBID]</content>
+				</control>
+				<control type="list" id="6555">
+					<visible>Container.Content(albums) + !String.StartsWith(ListItem.Label,*)</visible>
+					<onfocus condition="!String.IsEmpty(Window(home).Property(PlayingMusicPreviewAlbum)) + Player.Playing">Stop</onfocus>
+					<onfocus condition="!String.IsEmpty(Window(home).Property(PlayingMusicPreviewAlbum)) + Player.Playing">ClearProperty(PlayingMusicPreviewAlbum,Home)</onfocus>
+					<onleft condition="String.IsEmpty(Container(6555).ListItem.SongVideoURL)">SetProperty(MediaMenu,True,home)</onleft>
+					<onleft condition="String.IsEmpty(Container(6555).ListItem.SongVideoURL)">SetFocus(9050)</onleft>
+					<onleft condition="!String.IsEmpty(Container(6555).ListItem.SongVideoURL)">SetFocus(5739)</onleft>
+					<onright>50</onright>
+					<left>5</left>
+					<top>402</top>
+					<width>615</width>
+					<height>555</height>
+					<orientation>vertical</orientation>
+					<viewtype label="2">list</viewtype>
+					<scrolltime tween="sine">500</scrolltime>
+					<itemlayout height="37">
+						<control type="label">
+							<visible>!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+							<width>580</width>
+							<font>font13_title</font>
+							<scroll>false</scroll>
+							<textoffsetx>15</textoffsetx>
+							<align>left</align>
+							<left>45</left>
+							<top>0</top>
+							<height>28</height>
+							<selectedcolor>Skin.String(theme_text)</selectedcolor>
+							<label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label] $INFO[ListItem.Duration,(,)]</label>
+						</control>
+						<control type="label">
+							<visible>!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+							<visible>!String.IsEmpty(ListItem.SongVideoURL)</visible>
+							<animation effect="zoom" end="60" time="0" condition="true">Conditional</animation>
+							<animation effect="slide" end="19,20" time="0" condition="true">Conditional</animation>
+							<left>4</left>
+							<top>-15</top>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>IconMediumMD</font>
+							<textcolor>grey</textcolor>
+							<width>65</width>
+							<height>65</height>
+							<label></label>
+						</control>
+						<control type="label">
+							<visible>![!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))]</visible>
+							<width>580</width>
+							<font>font13_title</font>
+							<scroll>false</scroll>
+							<textoffsetx>15</textoffsetx>
+							<align>left</align>
+							<left>47</left>
+							<top>0</top>
+							<height>28</height>
+							<selectedcolor>Skin.String(theme_text)</selectedcolor>
+							<label>$INFO[ListItem.Label] $INFO[ListItem.DiscTitle, • ]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="37">
+						<control type="image">
+							<visible>Control.HasFocus(6555)</visible>
+							<top>-2</top>
+							<left>50</left>
+							<width>610</width>
+							<height>37</height>
+							<texture diffuse="tajo/mask_cover3.png">listselect_fo.png</texture>
+							<colordiffuse>Skin.String(flat_back)</colordiffuse>
+						</control>
+						<control type="label">
+							<visible>!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+							<width>580</width>
+							<font>font13_title</font>
+							<scroll>true</scroll>
+							<scrollspeed>100</scrollspeed>
+							<scrollsuffix> • </scrollsuffix>
+							<textoffsetx>15</textoffsetx>
+							<align>left</align>
+							<left>45</left>
+							<top>0</top>
+							<height>28</height>
+							<selectedcolor>Skin.String(theme_text)</selectedcolor>
+							<label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label] $INFO[ListItem.Duration,(,)]</label>
+						</control>
+						<control type="label">
+							<visible>!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+							<visible>!String.IsEmpty(Container(6555).ListItem.SongVideoURL)</visible>
+							<visible>!Control.HasFocus(5739)</visible>
+							<visible>!Control.HasFocus(6555)</visible>
+							<animation effect="zoom" end="60" time="0" condition="true">Conditional</animation>
+							<animation effect="slide" end="19,20" time="0" condition="true">Conditional</animation>
+							<left>4</left>
+							<top>-15</top>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>grey</textcolor>
+							<font>IconMediumMD</font>
+							<width>65</width>
+							<height>65</height>
+							<label></label>
+						</control>
+						<control type="label">
+							<visible>!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+							<visible>!String.IsEmpty(Container(6555).ListItem.SongVideoURL)</visible>
+							<visible>!Control.HasFocus(5739)</visible>
+							<visible>Control.HasFocus(6555)</visible>
+							<animation effect="zoom" end="60" time="0" condition="true">Conditional</animation>
+							<animation effect="slide" end="19,20" time="0" condition="true">Conditional</animation>
+							<left>4</left>
+							<top>-15</top>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>IconMediumMD</font>
+							<width>65</width>
+							<height>65</height>
+							<label></label>
+						</control>
+						<control type="label">
+							<visible>!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+							<visible>!String.IsEmpty(Container(6555).ListItem.SongVideoURL)</visible>
+							<visible>Control.HasFocus(5739)</visible>
+							<animation effect="zoom" end="65" time="0" condition="true">Conditional</animation>
+							<animation effect="slide" end="15,16" time="0" condition="true">Conditional</animation>
+							<animation effect="fade" start="100" end="20" time="1000" pulse="true" condition="true">Conditional</animation>
+							<textcolor>Skin.String(theme_text)</textcolor>
+							<left>4</left>
+							<top>-15</top>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>IconMediumMD</font>
+							<width>65</width>
+							<height>65</height>
+							<label></label>
+						</control>
+						<control type="label">
+							<visible>![!Integer.IsGreater(ListItem.TotalDiscs,1) | !System.GetBool(musiclibrary.showdiscs) | String.IsEmpty(ListItem.Property(Album_Duration))]</visible>
+							<width>580</width>
+							<font>font13_title</font>
+							<scroll>false</scroll>
+							<textoffsetx>15</textoffsetx>
+							<align>left</align>
+							<left>47</left>
+							<top>0</top>
+							<height>28</height>
+							<selectedcolor>Skin.String(theme_text)</selectedcolor>
+							<label>$INFO[ListItem.Label] $INFO[ListItem.DiscTitle, • ]</label>
+						</control>
+					</focusedlayout>
+					<content target="music" sortby="year" sortorder="ascending">$INFO[Container(501).ListItem.FolderPath]</content>
+				</control>
+				<control type="group">
+					<left>10</left>
+					<top>35</top>
+					<control type="image">
+						<visible>Container.Content(artists)</visible>
+						<left>20</left>
+						<top>170</top>
+						<width>250</width>
+						<height>150</height>
+						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="image">
+						<visible>Container.Content(albums) | Container.Content(songs)</visible>
+						<left>20</left>
+						<top>170</top>
+						<width>250</width>
+						<height>150</height>
+						<texture background="true">$INFO[ListItem.Art(artist.clearlogo)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="group">
+						<top>-14</top>
+						<visible>[Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)] + !Container.Content(artists) + !Container.Content(albums)</visible>
+						<control type="textbox">
+							<autoscroll delay="5000" time="2000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+							<left>30</left>
+							<top>590</top>
+							<width>560</width>
+							<height>290</height>
+							<aligny>top</aligny>
+							<align>left</align>
+							<font>font28</font>
+							<textcolor>Skin.String(theme_text)</textcolor>
+							<label>[LOWERCASE][CAPITALIZE]$INFO[ListItem.Duration,[B]$LOCALIZE[180]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.BitRate,[B]$LOCALIZE[623]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.SampleRate,[B]$LOCALIZE[613]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.MusicChannels,[B]$LOCALIZE[10127]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.PlayCount,[B]$LOCALIZE[567]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.LastPlayed,[B]$LOCALIZE[568]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Composer),[B]$LOCALIZE[29903]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Conductor),[B]$LOCALIZE[29905]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Orchestra),[B]$LOCALIZE[38034]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Lyricist),[B]$LOCALIZE[38035]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Remixer),[B]$LOCALIZE[38036]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Arranger),[B]$LOCALIZE[38037]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Engineer),[B]$LOCALIZE[38038]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Producer),[B]$LOCALIZE[38039]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.DJMixer),[B]$LOCALIZE[38040]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Property(Role.Mixer),[B]$LOCALIZE[38041]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Path,[B]$LOCALIZE[573]: [COLOR grey][/B],[/COLOR][CR]]$INFO[ListItem.Filename,[B]$LOCALIZE[21800]: [COLOR grey][/B],[/COLOR][CR]][/CAPITALIZE][/LOWERCASE]</label>
+						</control>
+					</control>
+					<control type="textbox">
+						<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
+						<animation effect="slide" end="0,200" time="0" condition="!String.IsEmpty(ListItem.Art(fanart))">Conditional</animation>
+						<left>25</left>
+						<top>-5</top>
+						<width>535</width>
+						<height>190</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<font>titleshelf3</font>
+						<textcolor>white</textcolor>
+						<autoscroll delay="2000" time="2000" repeat="2000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<label>$INFO[Listitem.Artist]</label>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="textbox">
+						<visible>Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
+						<left>25</left>
+						<top>360</top>
+						<width>535</width>
+						<height>192</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<font>titleshelf</font>
+						<textcolor>grey2</textcolor>
+						<autoscroll delay="2000" time="2000" repeat="2000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<label>$INFO[Listitem.Album] $INFO[Listitem.Year, (,)]</label>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="textbox">
+						<visible>Container.Content(albums)</visible>
+						<visible>!Container.Content(musicvideos) + !String.StartsWith(container.folderpath,library://video/musicvideos/) + !String.StartsWith(container.folderpath,videodb://musicvideos)</visible>
+						<left>1350</left>
+						<top>475</top>
+						<width>525</width>
+						<height>94</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<shadowcolor>black</shadowcolor>
+						<font>titlemus</font>
+						<label>$INFO[ListItem.Artist]</label>
+					</control>
+					<control type="textbox">
+						<visible>Container.Content(songs)</visible>
+						<left>1350</left>
+						<top>585</top>
+						<width>525</width>
+						<height>140</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<shadowcolor>black</shadowcolor>
+						<font>titlemus</font>
+						<label>$INFO[ListItem.Album] $INFO[ListItem.Year,(,)]</label>
+					</control>
+					<control type="textbox">
+						<visible>Container.Content(songs)</visible>
+						<left>1350</left>
+						<top>750</top>
+						<width>525</width>
+						<height>140</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<font>titlemus</font>
+						<label>$INFO[ListItem.Artist]</label>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="image">
+			<visible>Control.IsVisible(501)</visible>
+			<visible>Control.HasFocus(8550) + Player.HasVideo</visible>
+			<include>FullscreenDimensions</include>
+			<texture>black.png</texture>
+		</control>
+		<control type="videowindow" id="2639">
+			<visible>Control.IsVisible(501)</visible>
+			<visible>Control.HasFocus(8550)</visible>
+			<include>FullscreenDimensions</include>
+		</control>
+	</include>
+</includes>

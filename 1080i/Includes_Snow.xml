@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="Snowing">
+		<control type="group">
+			<visible>!String.IsEmpty(skin.string(snow_type)) + !Player.HasVideo</visible>
+			<control type="group">
+				<visible>String.IsEqual(skin.string(snow_type),1) | String.IsEqual(skin.string(snow_type),4)</visible>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light1.png</texture>
+					<animation effect="slide" start="-200,-1080" end="0,1080" time="28000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light1.png</texture>
+					<animation effect="slide" start="150,-1080" end="-50,1080" time="40000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light1.png</texture>
+					<animation effect="slide" start="-150,-1080" end="50,1080" time="52000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light1.png</texture>
+					<animation effect="slide" start="200,-1080" end="0,1080" time="64000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light1.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="76000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light2.png</texture>
+					<animation effect="slide" start="100,-1080" end="-100,1080" time="32000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light2.png</texture>
+					<animation effect="slide" start="50,-1080" end="-150,1080" time="44000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light2.png</texture>
+					<animation effect="slide" start="-50,-1080" end="150,1080" time="56000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light2.png</texture>
+					<animation effect="slide" start="-125,-1080" end="75,1080" time="68000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light2.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="80000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light3.png</texture>
+					<animation effect="slide" start="-75,-1080" end="125,1080" time="36000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light3.png</texture>
+					<animation effect="slide" start="75,-1080" end="125,1080" time="48000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light3.png</texture>
+					<animation effect="slide" start="-175,-1080" end="25,1080" time="60000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light3.png</texture>
+					<animation effect="slide" start="175,-1080" end="-25,1080" time="72000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/light3.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="84000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+			</control>
+			<control type="group">
+				<visible>String.IsEqual(skin.string(snow_type),2) | String.IsEqual(skin.string(snow_type),4)</visible>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium1.png</texture>
+					<animation effect="slide" start="-200,-1080" end="0,1080" time="28000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium1.png</texture>
+					<animation effect="slide" start="150,-1080" end="-50,1080" time="40000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium1.png</texture>
+					<animation effect="slide" start="-150,-1080" end="50,1080" time="52000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium1.png</texture>
+					<animation effect="slide" start="200,-1080" end="0,1080" time="64000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium1.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="76000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium2.png</texture>
+					<animation effect="slide" start="100,-1080" end="-100,1080" time="32000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium2.png</texture>
+					<animation effect="slide" start="50,-1080" end="-150,1080" time="44000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium2.png</texture>
+					<animation effect="slide" start="-50,-1080" end="150,1080" time="56000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium2.png</texture>
+					<animation effect="slide" start="-125,-1080" end="75,1080" time="68000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium2.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="80000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium3.png</texture>
+					<animation effect="slide" start="-75,-1080" end="125,1080" time="36000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium3.png</texture>
+					<animation effect="slide" start="75,-1080" end="125,1080" time="48000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium3.png</texture>
+					<animation effect="slide" start="-175,-1080" end="25,1080" time="60000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium3.png</texture>
+					<animation effect="slide" start="175,-1080" end="-25,1080" time="72000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/medium3.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="84000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+			</control>
+			<control type="group">
+				<visible>String.IsEqual(skin.string(snow_type),3) | String.IsEqual(skin.string(snow_type),4)</visible>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy1.png</texture>
+					<animation effect="slide" start="-200,-1080" end="0,1080" time="28000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy1.png</texture>
+					<animation effect="slide" start="150,-1080" end="-50,1080" time="40000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy1.png</texture>
+					<animation effect="slide" start="-150,-1080" end="50,1080" time="52000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy1.png</texture>
+					<animation effect="slide" start="200,-1080" end="0,1080" time="64000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy1.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="76000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy2.png</texture>
+					<animation effect="slide" start="100,-1080" end="-100,1080" time="32000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy2.png</texture>
+					<animation effect="slide" start="50,-1080" end="-150,1080" time="44000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy2.png</texture>
+					<animation effect="slide" start="-50,-1080" end="150,1080" time="56000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy2.png</texture>
+					<animation effect="slide" start="-125,-1080" end="75,1080" time="68000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy2.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="80000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy3.png</texture>
+					<animation effect="slide" start="-75,-1080" end="125,1080" time="36000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy3.png</texture>
+					<animation effect="slide" start="75,-1080" end="125,1080" time="48000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy3.png</texture>
+					<animation effect="slide" start="-175,-1080" end="25,1080" time="60000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy3.png</texture>
+					<animation effect="slide" start="175,-1080" end="-25,1080" time="72000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<width>2320</width>
+					<height>1080</height>
+					<texture>snow/heavy3.png</texture>
+					<animation effect="slide" start="0,-1080" end="0,1080" time="84000" reversible="false" loop="true" condition="true">Conditional</animation>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>
