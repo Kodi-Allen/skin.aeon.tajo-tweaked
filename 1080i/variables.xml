@@ -299,6 +299,18 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="HomeBackgroundVar">
+		<!-- Custom category backgrounds (label-based, case-insensitive) -->
+		<value condition="String.Contains(Container(9000).ListItem.Label,filme) | String.Contains(Container(9000).ListItem.Label,movies)">special://skin/media/backgrounds/filme.png</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,serien) | String.Contains(Container(9000).ListItem.Label,tv shows)">special://skin/media/backgrounds/serien.jpg</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Label,TV) | String.Contains(Container(9000).ListItem.Label,live tv)">special://skin/media/backgrounds/tv.jpg</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,bilder) | String.Contains(Container(9000).ListItem.Label,pictures)">special://skin/media/backgrounds/bilder.jpg</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,spiele) | String.Contains(Container(9000).ListItem.Label,games)">special://skin/media/backgrounds/spiele.jpg</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,sport)">special://skin/media/backgrounds/sport.jpg</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,wetter) | String.Contains(Container(9000).ListItem.Label,weather)">special://skin/media/backgrounds/wetter.jpg</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,system)">special://skin/media/backgrounds/system.png</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,power)">special://skin/media/backgrounds/power.jpg</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,apps)">special://skin/media/backgrounds/apps.jpg</value>
+		<value condition="String.Contains(Container(9000).ListItem.Label,musik) | String.Contains(Container(9000).ListItem.Label,music)">special://skin/media/backgrounds/musik.jpg</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,1)">$INFO[Window(home).Property(EmbuaryBackgroundMovies)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,2)">$INFO[Window(home).Property(EmbuaryBackgroundTVShows)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,3)">$INFO[Window(home).Property(EmbuaryBackgroundVideos)]</value>
