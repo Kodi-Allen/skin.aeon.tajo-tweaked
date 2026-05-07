@@ -3,8 +3,8 @@
 	<!-- Main Menu Includes -->
 	<include name="MainMenuListContent">
 		<control type="wraplist" id="9000">
-			<left>-320</left>
-			<top>70</top>
+			<left>-290</left>
+			<top>62</top>
 			<right>-590</right>
 			<height>100</height>
 			<onleft>9000</onleft>
@@ -16,7 +16,7 @@
 			<ondown>9001</ondown>
 			<pagecontrol/>
 			<scrolltime tween="sine" easing="out">400</scrolltime>
-			<focusposition>2</focusposition>
+			<focusposition>1</focusposition>
 			<orientation>Horizontal</orientation>
 			<animation effect="slide" start="0" end="-350,0" time="320" tween="cubic" easing="inout" condition="true">Conditional</animation>
 			<itemlayout height="100" width="640">
@@ -39,7 +39,7 @@
 			<focusedlayout height="100" width="640">
 				<control type="label">
 					<scroll>false</scroll>
-					<animation effect="zoom" center="325,40" start="100" end="110" condition="true">Conditional</animation>
+					<animation effect="zoom" center="325,40" start="100" end="135" condition="true">Conditional</animation>
 					<left>50</left>
 					<width>625</width>
 					<height>90</height>
@@ -51,9 +51,9 @@
 					<visible>!Control.HasFocus(9000)</visible>
 				</control>
 				<control type="label">
-					<animation effect="zoom" center="325,40" start="100" end="110" time="300" delay="225" tween="quadratic" easing="out">Focus</animation>
+					<animation effect="zoom" center="325,40" start="100" end="135" time="300" delay="225" tween="quadratic" easing="out">Focus</animation>
 					<animation type="UnFocus" reversible="false">
-						<effect type="zoom" center="325,40" start="100" end="110" time="100" tween="quadratic" easing="in"/>
+						<effect type="zoom" center="325,40" start="100" end="135" time="100" tween="quadratic" easing="in"/>
 						<effect type="fade" start="100" end="0" time="100"/>
 					</animation>
 					<animation type="Visible">
@@ -153,44 +153,44 @@
 				<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
 				<animation effect="slide" start="1870,0" end="0,0" delay="200" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
 				<control type="fixedlist" id="9010">
-					<left>5</left>
-					<width>1910</width>
-					<top>8</top>
+					<left>780</left>
+					<width>1155</width>
+					<top>6</top>
 					<height>87</height>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<onback>9000</onback>
 					<pagecontrol/>
-					<scrolltime tween="quadratic" easing="out">500</scrolltime>
-					<focusposition>2</focusposition>
-					<movement>2</movement>
+					<scrolltime tween="quadratic" easing="out">300</scrolltime>
+					<focusposition>0</focusposition>
+					<movement>0</movement>
 					<orientation>Horizontal</orientation>
-					<itemlayout height="87" width="385">
+					<itemlayout height="87" width="285">
 						<control type="label">
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" tween="sine" easing="in" time="400"/>
 								<effect type="slide" start="0,-70" end="0,0" time="400" tween="circle" easing="out"/>
 							</animation>
 							<visible>Control.HasFocus(9010)</visible>
-							<width>385</width>
+							<width>275</width>
 							<height>41</height>
-							<font>font15t</font>
+							<font>font13_title</font>
 							<textcolor>grey2</textcolor>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="87" width="385">
+					<focusedlayout height="87" width="285">
 						<control type="label">
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" tween="sine" easing="in" time="400"/>
 								<effect type="slide" start="0,-70" end="0,0" time="400" tween="circle" easing="out"/>
 							</animation>
 							<visible>Control.HasFocus(9010)</visible>
-							<width>385</width>
+							<width>275</width>
 							<height>41</height>
 							<textcolor>white</textcolor>
-							<font>font15t</font>
+							<font>font13_title_sel</font>
 							<align>center</align>
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
@@ -199,19 +199,18 @@
 				</control>
 			</control>
 			<control type="image">
-				<visible>Control.HasFocus(9010)</visible>
-				<animation type="Visible">
-					<effect type="fade" start="0" end="100" tween="sine" easing="out" time="400"/>
-					<effect type="slide" start="0,-70" end="0,0" time="400" tween="sine" easing="out"/>
-				</animation>
-				<animation type="Hidden">
-					<effect type="fade" start="100" end="0" tween="sine" easing="in" time="400"/>
-				</animation>
-				<left>35</left>
-				<top>165</top>
-				<width>1838</width>
-				<height>1</height>
-				<texture background="true" colordiffuse="grey3">tajo/white.jpg</texture>
+				<left>-360</left>
+				<top>159</top>
+				<width>2800</width>
+				<height>60</height>
+				<texture diffuse="menubar.png">tajo/backani2.gif</texture>
+			</control>
+			<control type="image">
+				<left>-360</left>
+				<top>-5</top>
+				<width>2800</width>
+				<height>60</height>
+				<texture flipy="true" diffuse="menubar.png">tajo/backani2.gif</texture>
 			</control>
 			<!-- Main Menu (Includes_Home.xml) -->
 			<include>MainMenuListContent</include>

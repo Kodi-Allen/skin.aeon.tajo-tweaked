@@ -246,15 +246,15 @@
 		<!-- Normal Fonts -->
 		<font>
 			<name>font_MainMenu</name>
-			<filename>Titles.ttf</filename>
+			<filename>The Bold Font.ttf</filename>
 			<style>uppercase</style>
-			<size>70</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>font_MainMenu2</name>
-			<filename>Titles.ttf</filename>
+			<filename>The Bold Font.ttf</filename>
 			<style>uppercase</style>
-			<size>65</size>
+			<size>70</size>
 		</font>
 		<font>
 			<name>Font_bro</name>
@@ -275,14 +275,14 @@
 		</font>
 		<font>
 			<name>font13_title</name>
-			<filename>Text.ttf</filename>
+			<filename>Kiye Sans.ttf</filename>
 			<size>30</size>
 		</font>
 		<font>
 			<name>font13_title_sel</name>
-			<filename>Text.ttf</filename>
+			<filename>Kiye Sans.ttf</filename>
 			<style>bold</style>
-			<size>30</size>
+			<size>31</size>
 		</font>
 		<font>
 			<name>lyr0</name>
@@ -1233,15 +1233,15 @@
 		<!-- Normal Fonts -->
 		<font>
 			<name>font_MainMenu</name>
-			<filename>Montserrat.ttf</filename>
+			<filename>The Bold Font.ttf</filename>
 			<style>uppercase</style>
-			<size>70</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>font_MainMenu2</name>
-			<filename>Montserrat.ttf</filename>
+			<filename>The Bold Font.ttf</filename>
 			<style>uppercase</style>
-			<size>65</size>
+			<size>70</size>
 		</font>
 		<font>
 			<name>Font_bro</name>
@@ -1262,14 +1262,14 @@
 		</font>
 		<font>
 			<name>font13_title</name>
-			<filename>Quicksand.ttf</filename>
+			<filename>Kiye Sans.ttf</filename>
 			<size>30</size>
 		</font>
 		<font>
 			<name>font13_title_sel</name>
-			<filename>Quicksand.ttf</filename>
+			<filename>Kiye Sans.ttf</filename>
 			<style>bold</style>
-			<size>30</size>
+			<size>31</size>
 		</font>
 		<font>
 			<name>lyr0</name>
