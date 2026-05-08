@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="MoviesBgVar">
+		<value condition="!String.IsEmpty(Skin.String(Movies.Fallback))">$INFO[Skin.String(Movies.Fallback)]</value>
+		<value>special://skin/media/backgrounds/filme.png</value>
+	</variable>
 	<variable name="Para1_getDBIDcontent">
 		<value condition="!String.IsEmpty(ListItem.DBID) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)]">$INFO[ListItem.DBID]</value>
 		<value>9999999</value>
@@ -273,6 +277,9 @@
 		<value condition="String.Contains(Window(Home).Property(TMDBHelper.ListItem.Awards),1 Primetime) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)">1</value>
 	</variable>
 	<variable name="GlobalBackgroundVar">
+		<value condition="[Container.Content(movies) | Container.Content(sets)] + String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(set.fanart))">special://skin/media/backgrounds/filme.png</value>
+		<value condition="Window.IsActive(1133) | Window.IsActive(programs) | Window.IsActive(addonbrowser) | Window.IsActive(addoninformation) | Window.IsActive(addonsettings)">special://skin/media/backgrounds/apps.jpg</value>
+		<value condition="Window.IsActive(settings) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(skinsettings) | Window.IsActive(filemanager) | Window.IsActive(eventlog) | Window.IsActive(profiles)">special://skin/media/backgrounds/system.png</value>
 		<value condition="[Container.Content(movies) | Container.Content(sets)] + ListItem.IsParentFolder + !String.IsEmpty(Container.PluginName) + !String.IsEmpty(Window(Home).Property(AeonTajo.PluginFanart))">$INFO[Window(Home).Property(AeonTajo.PluginFanart)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(sets)] + ListItem.IsParentFolder">tajo/embuback.jpg</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + ListItem.IsParentFolder + !String.IsEmpty(Container.PluginName) + !String.IsEmpty(Window(Home).Property(AeonTajo.PluginFanart))">$INFO[Window(Home).Property(AeonTajo.PluginFanart)]</value>

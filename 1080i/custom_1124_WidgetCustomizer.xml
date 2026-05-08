@@ -26,7 +26,7 @@
 			<width>940</width>
 			<height>40</height>
 			<font>font15_title</font>
-			<label>$LOCALIZE[31041]</label>
+			<label>$ADDON[skin.aeon.tajo 31041]</label>
 			<align>center</align>
 			<textcolor>grey</textcolor>
 		</control>
@@ -97,173 +97,173 @@
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31157]</label>
+					<label>$ADDON[skin.aeon.tajo 31157]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,13)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31157])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31157])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,6)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31985]</label>
+					<label>$ADDON[skin.aeon.tajo 31985]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=trending_week&amp;type=movie)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31985])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31985])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31986]</label>
+					<label>$ADDON[skin.aeon.tajo 31986]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=upcoming&amp;type=movie)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31986])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31986])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31987]</label>
+					<label>$ADDON[skin.aeon.tajo 31987]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=now_playing&amp;type=movie)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31987])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31987])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31988]</label>
+					<label>$ADDON[skin.aeon.tajo 31988]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=top_rated&amp;type=movie)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31988])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31988])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31989]</label>
+					<label>$ADDON[skin.aeon.tajo 31989]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=popular&amp;type=movie)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31989])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31989])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[32097]</label>
+					<label>$ADDON[skin.aeon.tajo 32097]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=most_voted&amp;type=movie)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[32097])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 32097])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31029]</label>
+					<label>$ADDON[skin.aeon.tajo 31029]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,special://skin/extras/playlists/recentmovies.xsp)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31029])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31029])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31031]</label>
+					<label>$ADDON[skin.aeon.tajo 31031]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,2)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31031])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31031])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31032]</label>
+					<label>$ADDON[skin.aeon.tajo 31032]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,special://skin/extras/playlists/recommendedmovies.xsp)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31032])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31032])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31991]</label>
+					<label>$ADDON[skin.aeon.tajo 31991]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=trending_week&amp;type=tv)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31991])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31991])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31992]</label>
+					<label>$ADDON[skin.aeon.tajo 31992]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=top_rated&amp;type=tv)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31992])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31992])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31993]</label>
+					<label>$ADDON[skin.aeon.tajo 31993]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=popular&amp;type=tv)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31993])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31993])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[32099]</label>
+					<label>$ADDON[skin.aeon.tajo 32099]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,plugin://plugin.video.themoviedb.helper?info=most_voted&amp;type=tv)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[32099])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 32099])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 					<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[32100]</label>
+					<label>$ADDON[skin.aeon.tajo 32100]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,special://skin/extras/playlists/random_tvshows.xsp)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[32100])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 32100])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31030]</label>
+					<label>$ADDON[skin.aeon.tajo 31030]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,special://skin/extras/playlists/recentepisodes.xsp)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31030])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31030])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31033]</label>
+					<label>$ADDON[skin.aeon.tajo 31033]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,5)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31033])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31033])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31034]</label>
+					<label>$ADDON[skin.aeon.tajo 31034]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,6)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31034])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31034])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31035]</label>
+					<label>$ADDON[skin.aeon.tajo 31035]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,7)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31035])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31035])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,2)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31036]</label>
+					<label>$ADDON[skin.aeon.tajo 31036]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,8)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31036])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31036])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,2)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31037]</label>
+					<label>$ADDON[skin.aeon.tajo 31037]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,9)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31037])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31037])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,2)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31038]</label>
+					<label>$ADDON[skin.aeon.tajo 31038]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,10)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[31038])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 31038])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,2)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[32101]</label>
+					<label>$ADDON[skin.aeon.tajo 32101]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,special://skin/extras/playlists/random_artists.xsp)</onclick>
-					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$LOCALIZE[32101])</onclick>
+					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,$ADDON[skin.aeon.tajo 32101])</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetType,1)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>
 				</item>
@@ -276,7 +276,7 @@
 					<visible>!String.IsEmpty(Weather.Plugin)</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31502]</label>
+					<label>$ADDON[skin.aeon.tajo 31502]</label>
 					<onclick>Skin.SetString(ItemToEdit.Widget,12)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.WidgetLabel,Live TV)</onclick>
 					<onclick>Dialog.Close(1124)</onclick>

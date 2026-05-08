@@ -50,7 +50,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font52_bold</font>
-				<label>$LOCALIZE[32080]</label>
+				<label>$ADDON[skin.aeon.tajo 32080]</label>
 				<visible>Integer.IsEqual(Container(11).NumItems,0)</visible>
 			</control>
 			<control type="panel" id="11">
@@ -184,7 +184,7 @@
 				<control type="button" id="4">
 					<visible>Control.IsEnabled(4)</visible>
 					<description>Set episode thumbnail button</description>
-					<label>20406</label>
+					<label>$LOCALIZE[20406]</label>
 					<width>300</width>
 					<height>70</height>
 				</control>

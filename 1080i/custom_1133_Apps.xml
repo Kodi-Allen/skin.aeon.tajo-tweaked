@@ -250,7 +250,7 @@
 				</control>
 				<control type="button" id="3877">
 					<enable>!Skin.HasSetting(Kiosk.Enabled)</enable>
-					<label>              $LOCALIZE[32058]</label>
+					<label>              $ADDON[skin.aeon.tajo 32058]</label>
 					<width>810</width>
 					<height>120</height>
 					<font>font30</font>
@@ -265,7 +265,7 @@
 				</control>
 				<control type="button" id="3878">
 					<enable>!Skin.HasSetting(Kiosk.Enabled)</enable>
-					<label>              $LOCALIZE[32059]</label>
+					<label>              $ADDON[skin.aeon.tajo 32059]</label>
 					<width>810</width>
 					<height>120</height>
 					<font>font30</font>
@@ -280,7 +280,7 @@
 				</control>
 				<control type="button" id="3879">
 					<enable>!Skin.HasSetting(Kiosk.Enabled)</enable>
-					<label>              $LOCALIZE[32057]</label>
+					<label>              $ADDON[skin.aeon.tajo 32057]</label>
 					<width>810</width>
 					<height>120</height>
 					<font>font30</font>

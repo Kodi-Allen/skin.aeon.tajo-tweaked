@@ -21,7 +21,7 @@
 			<width>1462</width>
 			<height>40</height>
 			<font>font15_title</font>
-			<label>21421</label>
+			<label>$LOCALIZE[21421]</label>
 			<align>center</align>
 			<textcolor>grey</textcolor>
 		</control>
@@ -31,7 +31,7 @@
 			<top>88</top>
 			<width>1138</width>
 			<height>60</height>
-			<label>21422</label>
+			<label>$LOCALIZE[21422]</label>
 			<font>font14</font>
 			<textoffsetx>15</textoffsetx>
 			<disabledcolor>Skin.String(theme_text)</disabledcolor>
@@ -89,14 +89,14 @@
 				<onleft>9000</onleft>
 				<onright>20</onright>
 				<ondown>15</ondown>
-				<hinttext>$LOCALIZE[31176]</hinttext>
+				<hinttext>$ADDON[skin.aeon.tajo 31176]</hinttext>
 			</control>
 			<control type="button" id="20">
 				<description>Browse Button</description>
 				<left>859</left>
 				<top>208</top>
 				<width>310</width>
-				<label>1024</label>
+				<label>$LOCALIZE[1024]</label>
 				<onup>16</onup>
 				<onleft>17</onleft>
 				<onright>9000</onright>

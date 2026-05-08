@@ -558,7 +558,7 @@
 					<aligny>center</aligny>
 					<font>Font_plot</font>
 					<textcolor>Skin.String(theme_text)</textcolor>
-					<label>[B]$LOCALIZE[31401][/B]</label>
+					<label>[B]$ADDON[skin.aeon.tajo 31401][/B]</label>
 				</control>
 				<control type="textbox" id="2588">
 					<visible>!ListItem.IsParentFolder</visible>
@@ -2160,7 +2160,7 @@
 					<ondown condition="!String.IsEmpty(Container(586).ListItemNoWrap(34).Label)">Action(Down)</ondown>
 					<oninfo>SetFocus(586)</oninfo>
 					<oninfo>Action(Info)</oninfo>
-					<onclick>SetProperty(Context.1.Label,$LOCALIZE[457] / $LOCALIZE[33063])</onclick>
+					<onclick>SetProperty(Context.1.Label,$LOCALIZE[457] / $ADDON[skin.aeon.tajo 33063])</onclick>
 					<onclick>SetProperty(Context.1.BuiltIn,SetProperty(HideWall,True,home)||ClearProperty(AnimWall2,home)||SetProperty(MediaMenu,True,home)||SetFocus(9050))</onclick>
 					<onclick>SetProperty(Context.2.Label,$LOCALIZE[208])</onclick>
 					<onclick>SetProperty(Context.2.BuiltIn,SetFocus(586)||Action(Play))</onclick>
@@ -2208,7 +2208,7 @@
 			<aligny>center</aligny>
 			<font>Font_plot</font>
 			<textcolor>Skin.String(theme_text)</textcolor>
-			<label>[B]$LOCALIZE[31401][/B]</label>
+			<label>[B]$ADDON[skin.aeon.tajo 31401][/B]</label>
 		</control>
 	</include>
 </includes>

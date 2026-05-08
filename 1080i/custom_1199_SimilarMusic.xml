@@ -41,7 +41,7 @@
 				<top>1</top>
 				<left>1</left>
 				<font>font30t</font>
-				<label>[B]$LOCALIZE[32070][/B]</label>
+				<label>[B]$ADDON[skin.aeon.tajo 32070][/B]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="image">

@@ -42,7 +42,7 @@
 			<height min="60" max="1080">auto</height>
 			<include condition="Window.IsActive(programs) + !String.IsEmpty(Window(Home).Property(Progams.Games))">AdvancedLauncherTrailerButton</include>
 			<control type="button" id="998">
-				<label>$LOCALIZE[32071]</label>
+				<label>$ADDON[skin.aeon.tajo 32071]</label>
 				<width>450</width>
 				<height>60</height>
 				<font>font14</font>

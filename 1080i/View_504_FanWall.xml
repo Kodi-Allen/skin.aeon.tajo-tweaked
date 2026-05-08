@@ -593,7 +593,7 @@
 									<textcolor>ffdadada</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<font>font_Extras</font>
-									<label>$LOCALIZE[31014]</label>
+									<label>$ADDON[skin.aeon.tajo 31014]</label>
 								</control>
 								<control type="image">
 									<animation effect="fade" start="0" end="100" time="100">Visible</animation>
@@ -2388,7 +2388,7 @@
 						<textcolor>ffdadada</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<font>font_Extras</font>
-						<label>$LOCALIZE[31014]</label>
+						<label>$ADDON[skin.aeon.tajo 31014]</label>
 					</control>
 				</control>
 				<control type="group">

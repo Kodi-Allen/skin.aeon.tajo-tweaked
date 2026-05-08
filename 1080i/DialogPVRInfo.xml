@@ -30,7 +30,7 @@
 				<width>1062</width>
 				<height>40</height>
 				<font>font14_title</font>
-				<label>19047</label>
+				<label>$LOCALIZE[19047]</label>
 				<align>center</align>
 				<textcolor>grey</textcolor>
 			</control>
@@ -173,12 +173,12 @@
 							<description>Play Archive</description>
 							<width>310</width>
 							<height>60</height>
-							<label>19190</label>
+							<label>$LOCALIZE[19190]</label>
 						</control>
 						<control type="button" id="8">
 							<description>Play recording</description>
 							<width>310</width>
-							<label>19687</label>
+							<label>$LOCALIZE[19687]</label>
 						</control>
 						<control type="button" id="6">
 							<description>Record</description>
@@ -188,7 +188,7 @@
 						<control type="button" id="9">
 							<description>Timer</description>
 							<width>310</width>
-							<label>19061</label>
+							<label>$LOCALIZE[19061]</label>
 							<height>60</height>
 						</control>
 						<control type="button" id="11">
@@ -200,7 +200,7 @@
 						<control type="button" id="4">
 							<description>Find similar</description>
 							<width>auto</width>
-							<label>19003</label>
+							<label>$LOCALIZE[19003]</label>
 						</control>
 						<control type="button" id="7">
 							<description>OK</description>

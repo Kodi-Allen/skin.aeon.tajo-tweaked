@@ -273,7 +273,7 @@
 				<top>1020</top>
 				<width>825</width>
 				<height>45</height>
-				<label>$LOCALIZE[31205] - $INFO[Control.GetLabel(200)]</label>
+				<label>$ADDON[skin.aeon.tajo 31205] - $INFO[Control.GetLabel(200)]</label>
 				<font>font12_title</font>
 				<align>right</align>
 				<textcolor>grey2</textcolor>
@@ -2274,8 +2274,8 @@
 	<include name="Activate_similar">
 		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetFocus(50)</ondown>
 		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetProperty(Title_mov,$ESCINFO[ListItem.Title],home)</ondown>
-		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Label_Similar,$LOCALIZE[31111],home)</ondown>
-		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Label_Similar,$LOCALIZE[31115],home)</ondown>
+		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Label_Similar,$ADDON[skin.aeon.tajo 31111],home)</ondown>
+		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Label_Similar,$ADDON[skin.aeon.tajo 31115],home)</ondown>
 		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Info_Similar,$INFO[Container(6225).ListItem.Year,[B]$LOCALIZE[345]: [COLOR white][/B], • [/COLOR]]$INFO[Container(6225).ListItem.Duration(hh:mm),[B]$LOCALIZE[180]: [COLOR white][/B], • [/COLOR]],home)</ondown>
 		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Info_Similar, ,home)</ondown>
 		<ondown condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetProperty(Actor1,$INFO[Container(524).ListItemAbsolute(0).Label],home)</ondown>
@@ -2297,8 +2297,8 @@
 	<include name="Activate_similar_right">
 		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetFocus(50)</onright>
 		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetProperty(Title_mov,$ESCINFO[ListItem.Title],home)</onright>
-		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Label_Similar,$LOCALIZE[31111],home)</onright>
-		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Label_Similar,$LOCALIZE[31115],home)</onright>
+		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Label_Similar,$ADDON[skin.aeon.tajo 31111],home)</onright>
+		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Label_Similar,$ADDON[skin.aeon.tajo 31115],home)</onright>
 		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Info_Similar,$INFO[Container(6225).ListItem.Year,[B]$LOCALIZE[345]: [COLOR white][/B], • [/COLOR]]$INFO[Container(6225).ListItem.Duration(hh:mm),[B]$LOCALIZE[180]: [COLOR white][/B], • [/COLOR]],home)</onright>
 		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Info_Similar, ,home)</onright>
 		<onright condition="Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(forsimilar),2) + !String.IsEmpty(Window(home).Property(SpGenre.0)) + !String.IsEmpty(Window(home).Property(EncodedTitle)) + !String.IsEmpty(Container(524).ListItemAbsolute(0).Label) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetProperty(Actor1,$INFO[Container(524).ListItemAbsolute(0).Label],home)</onright>
@@ -2319,8 +2319,8 @@
 	</include>
 	<include name="Activate_similarm">
 		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album)]">SetFocus(50)</ondown>
-		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Label_Similarm,$LOCALIZE[31104],home)</ondown>
-		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Label_Similarm,$LOCALIZE[32069],home)</ondown>
+		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Label_Similarm,$ADDON[skin.aeon.tajo 31104],home)</ondown>
+		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Label_Similarm,$ADDON[skin.aeon.tajo 32069],home)</ondown>
 		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Info_Similarm,Artist,home)</ondown>
 		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Info_Similarm,Album,home)</ondown>
 		<ondown condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Type_Similarm,musicdb://artists/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22genre%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$VAR[Music_gen]%22%5D%7D%2C%7B%22field%22%3A%22artist%22%2C%22operator%22%3A%22isnot%22%2C%22value%22%3A%5B%22$INFO[Window(Home).Property(EncodedTitlem)]%22%5D%7D%5D%7D%2C%22type%22%3A%22artists%22%7D,home)</ondown>
@@ -2329,8 +2329,8 @@
 	</include>
 	<include name="Activate_similarm_right">
 		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album)]">SetFocus(50)</onright>
-		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Label_Similarm,$LOCALIZE[31104],home)</onright>
-		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Label_Similarm,$LOCALIZE[32069],home)</onright>
+		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Label_Similarm,$ADDON[skin.aeon.tajo 31104],home)</onright>
+		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Label_Similarm,$ADDON[skin.aeon.tajo 32069],home)</onright>
 		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Info_Similarm,Artist,home)</onright>
 		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Info_Similarm,Album,home)</onright>
 		<onright condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Type_Similarm,musicdb://artists/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22genre%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$VAR[Music_gen]%22%5D%7D%2C%7B%22field%22%3A%22artist%22%2C%22operator%22%3A%22isnot%22%2C%22value%22%3A%5B%22$INFO[Window(Home).Property(EncodedTitlem)]%22%5D%7D%5D%7D%2C%22type%22%3A%22artists%22%7D,home)</onright>
@@ -2470,7 +2470,7 @@
 						<top>238</top>
 						<left>17</left>
 						<font>fontmusic2</font>
-						<label>[B]$LOCALIZE[32064][/B]</label>
+						<label>[B]$ADDON[skin.aeon.tajo 32064][/B]</label>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="textbox" id="$PARAM[title1_actor]">
@@ -3474,7 +3474,7 @@
 		<onback>50</onback>
 		<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1129)" reversible="true">conditional</animation>
 		<control type="button" id="200">
-			<label>31006</label>
+			<label>$ADDON[skin.aeon.tajo 31006]</label>
 			<textwidth>500</textwidth>
 			<font>font13_title</font>
 			<include>ButtonCommonValues</include>
@@ -3485,7 +3485,7 @@
 			<description>View As button</description>
 			<textwidth>500</textwidth>
 			<include>ButtonCommonValues</include>
-			<label>$INFO[Container.Viewmode,$LOCALIZE[31100] ]</label>
+			<label>$INFO[Container.Viewmode,$ADDON[skin.aeon.tajo 31100] ]</label>
 			<onfocus condition="[!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras) + Player.HasVideo + !VideoPlayer.IsFullscreen + !String.IsEqual(Player.Filename,theme.mp3)">Fullscreen</onfocus>
 			<onfocus condition="[!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras) + Player.HasVideo + !VideoPlayer.IsFullscreen + !String.IsEqual(Player.Filename,theme.mp3)">ActivateWindow(videoosd)</onfocus>
 			<onfocus condition="[!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)] + Skin.HasSetting(SearchExtras) + Player.HasVideo + !VideoPlayer.IsFullscreen + !String.IsEqual(Player.Filename,theme.mp3)">ClearProperty(MediaMenu,Home)</onfocus>
@@ -3506,7 +3506,7 @@
 		<control type="togglebutton" id="4">
 			<description>Sort asc</description>
 			<include>ButtonCommonValues</include>
-			<label>31051</label>
+			<label>$ADDON[skin.aeon.tajo 31051]</label>
 			<altlabel>31050</altlabel>
 			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 		</control>
@@ -5139,7 +5139,7 @@
 					<height>52</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>31006</label>
+					<label>$ADDON[skin.aeon.tajo 31006]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="button" id="28">
@@ -5168,7 +5168,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>ButtonCommonValues</include>
-					<label>31051</label>
+					<label>$ADDON[skin.aeon.tajo 31051]</label>
 					<altlabel>31050</altlabel>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 				</control>
@@ -5180,19 +5180,19 @@
 				<control type="radiobutton" id="5">
 					<description>Group items by folder structure</description>
 					<include>ButtonCommonValues</include>
-					<label>19270</label>
+					<label>$LOCALIZE[19270]</label>
 					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Show deleted recordings</description>
 					<include>ButtonCommonValues</include>
-					<label>19184</label>
+					<label>$LOCALIZE[19184]</label>
 					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide disabled timers</description>
 					<include>ButtonCommonValues</include>
-					<label>19077</label>
+					<label>$LOCALIZE[19077]</label>
 					<visible>Window.IsActive(MyPVRTimers.xml)</visible>
 				</control>
 				<control type="button" id="2001">
@@ -5205,13 +5205,13 @@
 					<textwidth>352</textwidth>
 					<font>font13_title</font>
 					<include>ButtonCommonValues</include>
-					<label>31039</label>
+					<label>$ADDON[skin.aeon.tajo 31039]</label>
 					<enable>no</enable>
 					<disabledcolor>Skin.String(theme_text)</disabledcolor>
 				</control>
 				<control type="button" id="100">
 					<description>Channels</description>
-					<label>19019</label>
+					<label>$LOCALIZE[19019]</label>
 					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
@@ -5220,7 +5220,7 @@
 				</control>
 				<control type="button" id="101">
 					<description>Guide</description>
-					<label>22020</label>
+					<label>$LOCALIZE[22020]</label>
 					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
@@ -5229,7 +5229,7 @@
 				</control>
 				<control type="button" id="102">
 					<description>Recordings</description>
-					<label>19163</label>
+					<label>$LOCALIZE[19163]</label>
 					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
@@ -5238,7 +5238,7 @@
 				</control>
 				<control type="button" id="103">
 					<description>Timers</description>
-					<label>19040</label>
+					<label>$LOCALIZE[19040]</label>
 					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
@@ -5247,7 +5247,7 @@
 				</control>
 				<control type="button" id="105">
 					<description>Timer-rules</description>
-					<label>19138</label>
+					<label>$LOCALIZE[19138]</label>
 					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
@@ -5266,7 +5266,7 @@
 					<description>Go to playercontrols</description>
 					<textwidth>400</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31177]</label>
+					<label>$ADDON[skin.aeon.tajo 31177]</label>
 					<onclick condition="Player.HasAudio">ActivateWindow(playercontrols)</onclick>
 					<onclick condition="Player.HasVideo">Fullscreen</onclick>
 					<onclick condition="Player.HasVideo">ActivateWindow(videoosd)</onclick>
@@ -5278,7 +5278,7 @@
 					<textwidth>352</textwidth>
 					<font>font13_title</font>
 					<include>ButtonCommonValues</include>
-					<label>31026</label>
+					<label>$ADDON[skin.aeon.tajo 31026]</label>
 					<enable>no</enable>
 					<disabledcolor>Skin.String(theme_text)</disabledcolor>
 				</control>
@@ -5310,12 +5310,12 @@
 			<height>52</height>
 			<textoffsetx>15</textoffsetx>
 			<font>font13_title</font>
-			<label>31006</label>
+			<label>$ADDON[skin.aeon.tajo 31006]</label>
 			<textcolor>Skin.String(theme_text)</textcolor>
 		</control>
 		<control type="button" id="2001">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31102]</label>
+			<label>$ADDON[skin.aeon.tajo 31102]</label>
 			<onclick>ActivateWindow(1128)</onclick>
 		</control>
 		<control type="button" id="203">
@@ -5323,14 +5323,14 @@
 			<textwidth>352</textwidth>
 			<font>font13_title</font>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31142]</label>
+			<label>$ADDON[skin.aeon.tajo 31142]</label>
 			<enable>no</enable>
 			<disabledcolor>Skin.String(theme_text)</disabledcolor>
 			<visible>Window.IsActive(SettingsCategory.xml)</visible>
 		</control>
 		<control type="button" id="20">
 			<description>Change settings level</description>
-			<label>19019</label>
+			<label>$LOCALIZE[19019]</label>
 			<textwidth>352</textwidth>
 			<include>ButtonCommonValues</include>
 			<onclick>SettingsLevelChange</onclick>
@@ -5341,7 +5341,7 @@
 			<textwidth>352</textwidth>
 			<font>font13_title</font>
 			<include>ButtonCommonValues</include>
-			<label>31039</label>
+			<label>$ADDON[skin.aeon.tajo 31039]</label>
 			<enable>no</enable>
 			<disabledcolor>Skin.String(theme_text)</disabledcolor>
 			<visible>Player.HasMedia</visible>
@@ -5350,7 +5350,7 @@
 			<description>Go to playercontrols</description>
 			<textwidth>400</textwidth>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31177]</label>
+			<label>$ADDON[skin.aeon.tajo 31177]</label>
 			<onclick condition="Player.HasAudio">ClearProperty(MediaMenu,Home)</onclick>
 			<onclick condition="Player.HasAudio">SetFocus(50)</onclick>
 			<onclick condition="Player.HasAudio">ActivateWindow(playercontrols)</onclick>
@@ -5392,7 +5392,7 @@
 			<align>right</align>
 			<font>font14</font>
 			<shadowcolor>shadow</shadowcolor>
-			<label>$LOCALIZE[32049] </label>
+			<label>$ADDON[skin.aeon.tajo 32049] </label>
 		</control>
 		<control type="label">
 			<visible>Control.HasFocus(9022)</visible>

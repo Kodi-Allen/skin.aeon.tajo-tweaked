@@ -21,7 +21,7 @@
 			<width>1462</width>
 			<height>40</height>
 			<font>font15_title</font>
-			<label>19181</label>
+			<label>$LOCALIZE[19181]</label>
 			<align>center</align>
 			<textcolor>grey</textcolor>
 		</control>
@@ -39,7 +39,7 @@
 			<control type="radiobutton" id="90228">
 				<description>Blurred image</description>
 				<width>1138</width>
-				<label>$LOCALIZE[32032]</label>
+				<label>$ADDON[skin.aeon.tajo 32032]</label>
 				<onclick>Skin.ToggleSetting(BlurredAlbum)</onclick>
 				<selected>Skin.HasSetting(BlurredAlbum)</selected>
 			</control>
@@ -47,14 +47,14 @@
 				<description>Customize Background</description>
 				<visible>!Skin.HasSetting(BlurredAlbum)</visible>
 				<width>1138</width>
-				<label>$LOCALIZE[32027]</label>
+				<label>$ADDON[skin.aeon.tajo 32027]</label>
 				<onclick>Skin.ToggleSetting(Cust_Backg)</onclick>
 				<selected>Skin.HasSetting(Cust_Backg)</selected>
 			</control>
 			<control type="button" id="297">
 				<visible>!Skin.HasSetting(BlurredAlbum)</visible>
 				<width>1138</width>
-				<label>-- $LOCALIZE[32028]</label>
+				<label>-- $ADDON[skin.aeon.tajo 32028]</label>
 				<visible>Skin.HasSetting(Cust_Backg)</visible>
 				<label2>[COLOR $INFO[Skin.String(theme_text)]]$INFO[Skin.String(Custom_BG)][/COLOR]</label2>
 				<onclick>Skin.SetImage(Custom_BG,special://skin/backgrounds/)</onclick>
@@ -63,7 +63,7 @@
 			<control type="button" id="90239">
 				<visible>!Skin.HasSetting(BlurredAlbum)</visible>
 				<width>1138</width>
-				<label>-- $LOCALIZE[32033]</label>
+				<label>-- $ADDON[skin.aeon.tajo 32033]</label>
 				<visible>Skin.HasSetting(Cust_Backg)</visible>
 				<label2>[COLOR $INFO[Skin.String(theme_text)]]$INFO[Skin.String(Custom_BG_Path)][/COLOR]</label2>
 				<onclick>Skin.SetPath(Custom_BG_Path)</onclick>
@@ -72,7 +72,7 @@
 			<control type="radiobutton" id="90805">
 				<description>Classic lyrics</description>
 				<width>1138</width>
-				<label>$LOCALIZE[31998]</label>
+				<label>$ADDON[skin.aeon.tajo 31998]</label>
 				<onclick>Skin.ToggleSetting(ClassicLyrics)</onclick>
 				<selected>Skin.HasSetting(ClassicLyrics)</selected>
 				<visible>!Skin.HasSetting(noLyrics)</visible>
@@ -80,14 +80,14 @@
 			<control type="radiobutton" id="90223">
 				<description>Hide/Show time</description>
 				<width>1138</width>
-				<label>$LOCALIZE[31223]</label>
+				<label>$ADDON[skin.aeon.tajo 31223]</label>
 				<onclick>Skin.ToggleSetting(noTime)</onclick>
 				<selected>!Skin.HasSetting(noTime)</selected>
 			</control>
 			<control type="radiobutton" id="90229">
 				<description>Show only background</description>
 				<width>1138</width>
-				<label>$LOCALIZE[32015]</label>
+				<label>$ADDON[skin.aeon.tajo 32015]</label>
 				<onclick>Skin.ToggleSetting(onlyBackground)</onclick>
 				<selected>Skin.HasSetting(onlyBackground)</selected>
 			</control>
@@ -95,7 +95,7 @@
 				<description>Simple/Extended view</description>
 				<visible>!Skin.HasSetting(onlyBackground)</visible>
 				<width>1138</width>
-				<label>$LOCALIZE[31997]</label>
+				<label>$ADDON[skin.aeon.tajo 31997]</label>
 				<onclick>Skin.ToggleSetting(SimpleView)</onclick>
 				<selected>Skin.HasSetting(SimpleView)</selected>
 			</control>
@@ -103,7 +103,7 @@
 				<description>Hide/Show rating</description>
 				<visible>!Skin.HasSetting(onlyBackground)</visible>
 				<width>1138</width>
-				<label>$LOCALIZE[31220]</label>
+				<label>$ADDON[skin.aeon.tajo 31220]</label>
 				<onclick>Skin.ToggleSetting(noRating)</onclick>
 				<selected>!Skin.HasSetting(noRating)</selected>
 			</control>
@@ -111,7 +111,7 @@
 				<description>Hide/Show clearart</description>
 				<visible>!Skin.HasSetting(onlyBackground)</visible>
 				<width>1138</width>
-				<label>$LOCALIZE[31221]</label>
+				<label>$ADDON[skin.aeon.tajo 31221]</label>
 				<onclick>Skin.ToggleSetting(noClearart)</onclick>
 				<selected>!Skin.HasSetting(noClearart)</selected>
 			</control>
@@ -119,7 +119,7 @@
 				<visible>!Skin.HasSetting(onlyBackground)</visible>
 				<description>Flat/3D</description>
 				<width>1138</width>
-				<label>$LOCALIZE[31995]</label>
+				<label>$ADDON[skin.aeon.tajo 31995]</label>
 				<onclick>Skin.ToggleSetting(3D)</onclick>
 				<selected>Skin.HasSetting(3D)</selected>
 			</control>
@@ -127,7 +127,7 @@
 				<description>Hide/Show CD</description>
 				<visible>!Skin.HasSetting(onlyBackground)</visible>
 				<width>1138</width>
-				<label>$LOCALIZE[31222]</label>
+				<label>$ADDON[skin.aeon.tajo 31222]</label>
 				<onclick>Skin.ToggleSetting(noCD)</onclick>
 				<selected>!Skin.HasSetting(noCD)</selected>
 				<visible>Skin.HasSetting(3D)</visible>

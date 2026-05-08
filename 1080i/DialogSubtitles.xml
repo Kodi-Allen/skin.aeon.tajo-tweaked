@@ -46,7 +46,7 @@
 					<align>right</align>
 					<font>font13_title</font>
 					<textcolor>grey2</textcolor>
-					<label>$INFO[Container(120).NumItems,$LOCALIZE[31025] ]$INFO[Container(120).CurrentPage,[COLOR grey3] | ,]$INFO[Container(120).NumPages,/,[/COLOR]]</label>
+					<label>$INFO[Container(120).NumItems,$ADDON[skin.aeon.tajo 31025] ]$INFO[Container(120).CurrentPage,[COLOR grey3] | ,]$INFO[Container(120).NumPages,/,[/COLOR]]</label>
 				</control>
 				<control type="label">
 					<description>Video label</description>
@@ -76,7 +76,7 @@
 						<control type="label">
 							<width min="10" max="393">auto</width>
 							<height>48</height>
-							<label>$LOCALIZE[31413]</label>
+							<label>$ADDON[skin.aeon.tajo 31413]</label>
 							<font>font15</font>
 							<textcolor>grey2</textcolor>
 						</control>

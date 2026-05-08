@@ -19,7 +19,7 @@
 			</control>
 			<control type="label" id="411">
 				<description>header label</description>
-				<label>1023</label>
+				<label>$LOCALIZE[1023]</label>
 				<left>30</left>
 				<top>32</top>
 				<width>1506</width>
