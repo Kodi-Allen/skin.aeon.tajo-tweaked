@@ -40,7 +40,7 @@
 			<height>60</height>
 			<textoffsetx>15</textoffsetx>
 			<font>font14</font>
-			<label>1021</label>
+			<label>$LOCALIZE[1021]</label>
 			<textcolor>grey3</textcolor>
 		</control>
 		<control type="group">
@@ -111,21 +111,21 @@
 					<enable>!Skin.HasSetting(Kiosk.Enabled)</enable>
 					<description>Browse Button</description>
 					<width>310</width>
-					<label>1024</label>
+					<label>$LOCALIZE[1024]</label>
 					<font>font14</font>
 				</control>
 				<control type="button" id="13">
 					<enable>!Skin.HasSetting(Kiosk.Enabled)</enable>
 					<description>Add Path Button</description>
 					<width>310</width>
-					<label>15019</label>
+					<label>$LOCALIZE[15019]</label>
 					<font>font14</font>
 				</control>
 				<control type="button" id="14">
 					<enable>!Skin.HasSetting(Kiosk.Enabled)</enable>
 					<description>Remove Path Button</description>
 					<width>310</width>
-					<label>1210</label>
+					<label>$LOCALIZE[1210]</label>
 					<font>font14</font>
 				</control>
 			</control>
@@ -163,7 +163,7 @@
 				<height>60</height>
 				<textoffsetx>15</textoffsetx>
 				<font>font14</font>
-				<label>1022</label>
+				<label>$LOCALIZE[1022]</label>
 				<textcolor>grey3</textcolor>
 			</control>
 			<control type="edit" id="12">

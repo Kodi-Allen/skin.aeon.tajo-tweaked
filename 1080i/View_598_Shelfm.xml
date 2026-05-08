@@ -128,7 +128,7 @@
 									<textcolor>ffdadada</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<font>font_Extras</font>
-									<label>$LOCALIZE[31014]</label>
+									<label>$ADDON[skin.aeon.tajo 31014]</label>
 								</control>
 							</control>
 							<control type="grouplist">

@@ -336,7 +336,7 @@
 							<scroll>true</scroll>
 							<scrollspeed>50</scrollspeed>
 							<scrollsuffix> • </scrollsuffix>
-							<label>$LOCALIZE[33054]: [COLOR=grey]$INFO[ListItem.Property(TotalSeasons)]       [/COLOR]  $VAR[value_ground14_label]: [COLOR=grey]$VAR[value_ground14_value][/COLOR]</label>
+							<label>$ADDON[skin.aeon.tajo 33054]: [COLOR=grey]$INFO[ListItem.Property(TotalSeasons)]       [/COLOR]  $VAR[value_ground14_label]: [COLOR=grey]$VAR[value_ground14_value][/COLOR]</label>
 						</control>
 						<control type="label">
 							<visible>String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEmpty(ListItem.Property(TotalSeasons)) + [Window.IsActive(1195) | Window.IsActive(home)]</visible>
@@ -349,7 +349,7 @@
 							<scroll>true</scroll>
 							<scrollspeed>50</scrollspeed>
 							<scrollsuffix> • </scrollsuffix>
-							<label>$LOCALIZE[33054]: [COLOR=grey]$INFO[ListItem.Property(TotalSeasons)]       [/COLOR]  $VAR[value_ground14_label]: [COLOR=grey]$INFO[ListItem.Property(TotalEpisodes)][/COLOR]</label>
+							<label>$ADDON[skin.aeon.tajo 33054]: [COLOR=grey]$INFO[ListItem.Property(TotalSeasons)]       [/COLOR]  $VAR[value_ground14_label]: [COLOR=grey]$INFO[ListItem.Property(TotalEpisodes)][/COLOR]</label>
 						</control>
 						<control type="label">
 							<visible>!String.Contains(ListItem.Title,Skin.String(TitleSeason))</visible>
@@ -417,7 +417,7 @@
 						<textcolor>ffdadada</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<font>font_Extras</font>
-						<label>$LOCALIZE[31014]</label>
+						<label>$ADDON[skin.aeon.tajo 31014]</label>
 					</control>
 					<control type="image">
 						<animation effect="fade" start="0" end="100" time="100">Visible</animation>
@@ -611,7 +611,7 @@
 								<height>30</height>
 								<align>center</align>
 								<scroll>true</scroll>
-								<label>[LOWERCASE]$LOCALIZE[31146][/LOWERCASE]</label>
+								<label>[LOWERCASE]$ADDON[skin.aeon.tajo 31146][/LOWERCASE]</label>
 								<font>font12</font>
 								<textcolor>grey</textcolor>
 							</control>
@@ -805,17 +805,17 @@
 								<visible>!Container(19001).IsUpdating</visible>
 							</item>
 							<item>
-								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31984]: [/B][/COLOR]$INFO[Container(19001).ListItem.Property(Awards)][CR]</label>
+								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31984]: [/B][/COLOR]$INFO[Container(19001).ListItem.Property(Awards)][CR]</label>
 								<visible>!String.IsEmpty(Container(19001).ListItem.Property(Awards)) + !String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEqual(ListItem.DBTYPE,set)</visible>
 								<visible>!Container(19001).IsUpdating</visible>
 							</item>
 							<item>
-								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31982]: [/B][/COLOR]$INFO[Container(19001).ListItem.Property(Budget)][CR]</label>
+								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31982]: [/B][/COLOR]$INFO[Container(19001).ListItem.Property(Budget)][CR]</label>
 								<visible>!String.IsEmpty(Container(19001).ListItem.Property(Budget)) + !String.IsEqual(Container(19001).ListItem.Property(Budget),$0) + !String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEqual(ListItem.DBTYPE,set)</visible>
 								<visible>!Container(19001).IsUpdating</visible>
 							</item>
 							<item>
-								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31983]: [/B][/COLOR]$INFO[Container(19001).ListItem.Property(Revenue)][CR]</label>
+								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31983]: [/B][/COLOR]$INFO[Container(19001).ListItem.Property(Revenue)][CR]</label>
 								<visible>!String.IsEmpty(Container(19001).ListItem.Property(Revenue)) + !String.IsEqual(Container(19001).ListItem.Property(Revenue),$0) + !String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEqual(ListItem.DBTYPE,set)</visible>
 								<visible>!Container(19001).IsUpdating</visible>
 							</item>
@@ -833,7 +833,7 @@
 								<visible>!Container(19001).IsUpdating</visible>
 							</item>
 							<item>
-								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31981]: [/B][/COLOR]$INFO[ListItem.Premiered][CR]</label>
+								<label>[B][COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31981]: [/B][/COLOR]$INFO[ListItem.Premiered][CR]</label>
 								<visible>!String.IsEmpty(ListItem.Premiered) + !String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEqual(ListItem.DBTYPE,set)</visible>
 							</item>
 							<item>
@@ -1029,8 +1029,8 @@
 						<onclick>SetProperty(Wait_2,True,home)</onclick>
 						<onclick>AlarmClock(Clean_20,ClearProperty(Wait_2,home),00:02,silent)</onclick>
 						<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Title_mov,$ESCINFO[ListItem.Title],home)</onclick>
-						<onclick condition="String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Label_Similar,$LOCALIZE[31111],home)</onclick>
-						<onclick condition="String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Label_Similar,$LOCALIZE[31115],home)</onclick>
+						<onclick condition="String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Label_Similar,$ADDON[skin.aeon.tajo 31111],home)</onclick>
+						<onclick condition="String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Label_Similar,$ADDON[skin.aeon.tajo 31115],home)</onclick>
 						<onclick condition="String.IsEqual(ListItem.DBTYPE,movie)">SetProperty(Info_Similar,$INFO[Container(6225).ListItem.Year,[B]$LOCALIZE[345]: [COLOR white][/B], • [/COLOR]]$INFO[Container(6225).ListItem.Duration(hh:mm),[B]$LOCALIZE[180]: [COLOR white][/B], • [/COLOR]],home)</onclick>
 						<onclick condition="String.IsEqual(ListItem.DBTYPE,tvshow)">SetProperty(Info_Similar, ,home)</onclick>
 						<onclick condition="System.HasAddon(script.embuary.info) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">SetProperty(Actor1,$INFO[Container(90050).ListItemAbsolute(0).Label],home)</onclick>
@@ -1512,7 +1512,7 @@
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font_Extras</font>
-				<label>$LOCALIZE[31014]</label>
+				<label>$ADDON[skin.aeon.tajo 31014]</label>
 			</control>
 			<control type="fixedlist" id="8545">
 				<visible allowhiddenfocus="true">Control.HasFocus(8545)</visible>

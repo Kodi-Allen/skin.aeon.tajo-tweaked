@@ -196,7 +196,7 @@
 							<aligny>center</aligny>
 							<font>font13_bold</font>
 							<textcolor>Skin.String(theme_text)</textcolor>
-							<label>$LOCALIZE[33054]:[COLOR=FFFFFAF0] $INFO[ListItem.Property(TotalSeasons),,  • ][/COLOR]$VAR[value_ground14_label]: [COLOR=FFFFFAF0]$VAR[value_ground14_value,,  • ]$VAR[value_ground12_value][/COLOR]</label>
+							<label>$ADDON[skin.aeon.tajo 33054]:[COLOR=FFFFFAF0] $INFO[ListItem.Property(TotalSeasons),,  • ][/COLOR]$VAR[value_ground14_label]: [COLOR=FFFFFAF0]$VAR[value_ground14_value,,  • ]$VAR[value_ground12_value][/COLOR]</label>
 						</control>
 						<control type="textbox">
 							<visible>!ListItem.IsCollection</visible>
@@ -447,7 +447,7 @@
 							<aligny>center</aligny>
 							<font>font13_bold</font>
 							<textcolor>Skin.String(theme_text)</textcolor>
-							<label>$LOCALIZE[33054]:[COLOR=FFFFFAF0] $INFO[ListItem.Property(TotalSeasons),,  • ][/COLOR]$VAR[value_ground14_label]: [COLOR=FFFFFAF0]$VAR[value_ground14_value,,  • ]$VAR[value_ground12_value][/COLOR]</label>
+							<label>$ADDON[skin.aeon.tajo 33054]:[COLOR=FFFFFAF0] $INFO[ListItem.Property(TotalSeasons),,  • ][/COLOR]$VAR[value_ground14_label]: [COLOR=FFFFFAF0]$VAR[value_ground14_value,,  • ]$VAR[value_ground12_value][/COLOR]</label>
 						</control>
 						<control type="textbox">
 							<visible>!ListItem.IsCollection</visible>
@@ -551,7 +551,7 @@
 							<textcolor>ffdadada</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<font>font_Extras</font>
-							<label>$LOCALIZE[31014]</label>
+							<label>$ADDON[skin.aeon.tajo 31014]</label>
 						</control>
 						<control type="image">
 							<animation effect="fade" start="0" end="100" time="100">Visible</animation>

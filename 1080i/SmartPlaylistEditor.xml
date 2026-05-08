@@ -23,7 +23,7 @@
 				<width>1462</width>
 				<height>40</height>
 				<font>font15_title</font>
-				<label>21432</label>
+				<label>$LOCALIZE[21432]</label>
 				<align>center</align>
 				<textcolor>grey</textcolor>
 			</control>
@@ -116,19 +116,19 @@
 					<control type="button" id="13">
 						<description>Add Rule Button</description>
 						<width>310</width>
-						<label>15019</label>
+						<label>$LOCALIZE[15019]</label>
 						<font>font15</font>
 					</control>
 					<control type="button" id="14">
 						<description>Remove Rule Button</description>
 						<width>310</width>
-						<label>1210</label>
+						<label>$LOCALIZE[1210]</label>
 						<font>font15</font>
 					</control>
 					<control type="button" id="15">
 						<description>Edit Rule Button</description>
 						<width>310</width>
-						<label>21435</label>
+						<label>$LOCALIZE[21435]</label>
 						<font>font15</font>
 					</control>
 				</control>
@@ -137,7 +137,7 @@
 					<top>448</top>
 					<width>1138</width>
 					<height>60</height>
-					<label>21424</label>
+					<label>$LOCALIZE[21424]</label>
 					<onright>9001</onright>
 					<onleft>9001</onleft>
 					<onup>10</onup>
@@ -148,7 +148,7 @@
 					<top>508</top>
 					<width>1138</width>
 					<height>60</height>
-					<label>21427</label>
+					<label>$LOCALIZE[21427]</label>
 					<onright>9001</onright>
 					<onleft>9001</onleft>
 					<onup>16</onup>
@@ -159,7 +159,7 @@
 					<top>568</top>
 					<width>827</width>
 					<height>60</height>
-					<label>21429</label>
+					<label>$LOCALIZE[21429]</label>
 					<onright>19</onright>
 					<onleft>19</onleft>
 					<onup>17</onup>
@@ -181,7 +181,7 @@
 					<top>628</top>
 					<width>827</width>
 					<height>60</height>
-					<label>21458</label>
+					<label>$LOCALIZE[21458]</label>
 					<onright>24</onright>
 					<onleft>24</onleft>
 					<onup>18</onup>
@@ -193,7 +193,7 @@
 					<width>310</width>
 					<height>60</height>
 					<align>center</align>
-					<label>21459</label>
+					<label>$LOCALIZE[21459]</label>
 					<onright>9001</onright>
 					<onleft>23</onleft>
 					<onup>19</onup>

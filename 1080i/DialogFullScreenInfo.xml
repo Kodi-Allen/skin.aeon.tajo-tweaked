@@ -23,7 +23,7 @@
 				<onup>6251</onup>
 				<ondown>6250</ondown>
 				<width>320</width>
-				<label>13396</label>
+				<label>$LOCALIZE[13396]</label>
 				<onclick>ActivateWindow(osdaudiosettings)</onclick>
 			</control>
 			<control type="button" id="6250">
@@ -33,7 +33,7 @@
 				<onup>6249</onup>
 				<ondown>6251</ondown>
 				<width>320</width>
-				<label>24133</label>
+				<label>$LOCALIZE[24133]</label>
 				<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
 			</control>
 			<control type="button" id="6251">
@@ -57,7 +57,7 @@
 			<align>left</align>
 			<font>font14</font>
 			<textcolor>Skin.String(theme_text)</textcolor>
-			<label>[B]$LOCALIZE[31310]: $INFO[Container(6247).NumItems,(,)][/B]</label>
+			<label>[B]$ADDON[skin.aeon.tajo 31310]: $INFO[Container(6247).NumItems,(,)][/B]</label>
 		</control>
 		<control type="panel" id="6247">
 			<visible>System.HasAddon(script.skinvariables) + !String.IsEqual(System.AddonVersion(script.skinvariables),0.2.5)</visible>
@@ -232,7 +232,7 @@
 					<align>left</align>
 					<font>font14</font>
 					<textcolor>Skin.String(theme_text)</textcolor>
-					<label>[B]$LOCALIZE[31040]:[/B]</label>
+					<label>[B]$ADDON[skin.aeon.tajo 31040]:[/B]</label>
 				</control>
 				<control type="group">
 					<top>535</top>

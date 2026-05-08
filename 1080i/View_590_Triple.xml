@@ -301,7 +301,7 @@
 								<textcolor>ffdadada</textcolor>
 								<shadowcolor>black</shadowcolor>
 								<font>font_Extras</font>
-								<label>$LOCALIZE[31014]</label>
+								<label>$ADDON[skin.aeon.tajo 31014]</label>
 							</control>
 							<control type="image">
 								<animation effect="fade" start="0" end="100" time="100">Visible</animation>
@@ -1655,7 +1655,7 @@
 						<align>right</align>
 						<aligny>top</aligny>
 						<font>font28b</font>
-						<label>[B]$VAR[value_ground17_label]:[/B] [COLOR=FFFFFAF0]$VAR[value_ground17_value][/COLOR]  [COLOR=FFFFFAF0]•[/COLOR]  [B]$VAR[value_ground14_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR][CR]$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[31981]:[/B] [COLOR=FFFFFAF0],][/COLOR]</label>
+						<label>[B]$VAR[value_ground17_label]:[/B] [COLOR=FFFFFAF0]$VAR[value_ground17_value][/COLOR]  [COLOR=FFFFFAF0]•[/COLOR]  [B]$VAR[value_ground14_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR][CR]$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$ADDON[skin.aeon.tajo 31981]:[/B] [COLOR=FFFFFAF0],][/COLOR]</label>
 						<textcolor>Skin.String(theme_text)</textcolor>
 					</control>
 					<control type="textbox">
@@ -1667,7 +1667,7 @@
 						<align>right</align>
 						<aligny>top</aligny>
 						<font>font28b</font>
-						<label>[B]$VAR[value_ground17_label]:[/B] [COLOR=FFFFFAF0]$VAR[value_ground17_value][/COLOR]  [COLOR=FFFFFAF0]•[/COLOR]  [B]$VAR[value_ground14_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR][CR]$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[31981]:[/B] [COLOR=FFFFFAF0],][/COLOR]</label>
+						<label>[B]$VAR[value_ground17_label]:[/B] [COLOR=FFFFFAF0]$VAR[value_ground17_value][/COLOR]  [COLOR=FFFFFAF0]•[/COLOR]  [B]$VAR[value_ground14_label]: [/B][COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR][CR]$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$ADDON[skin.aeon.tajo 31981]:[/B] [COLOR=FFFFFAF0],][/COLOR]</label>
 						<textcolor>Skin.String(theme_text)</textcolor>
 					</control>
 					<include>IconsTriple</include>
@@ -1702,7 +1702,7 @@
 					<textcolor>ffdadada</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font_Extras</font>
-					<label>$LOCALIZE[31014]</label>
+					<label>$ADDON[skin.aeon.tajo 31014]</label>
 				</control>
 			</control>
 			<control type="group">

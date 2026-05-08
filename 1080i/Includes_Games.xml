@@ -126,23 +126,23 @@
 				</control>
 				<control type="button" id="19">
 					<width>280</width>
-					<label>13007</label>
+					<label>$LOCALIZE[13007]</label>
 				</control>
 				<control type="button" id="20">
 					<width>280</width>
-					<label>21452</label>
+					<label>$LOCALIZE[21452]</label>
 				</control>
 				<control type="button" id="22">
 					<width>280</width>
-					<label>35021</label>
+					<label>$LOCALIZE[35021]</label>
 				</control>
 				<control type="button" id="17">
 					<width>280</width>
-					<label>10043</label>
+					<label>$LOCALIZE[10043]</label>
 				</control>
 				<control type="button" id="21">
 					<width>280</width>
-					<label>35019</label>
+					<label>$LOCALIZE[35019]</label>
 				</control>
 			</control>
 			<control type="textbox" id="32">
@@ -266,7 +266,7 @@
 					</control>
 					<control type="button" id="19">
 						<width>280</width>
-						<label>13007</label>
+						<label>$LOCALIZE[13007]</label>
 					</control>
 				</control>
 			</control>
@@ -289,7 +289,7 @@
 				<shadowcolor>black</shadowcolor>
 				<textcolor>grey</textcolor>
 				<font>font15_title</font>
-				<label>35172</label>
+				<label>$LOCALIZE[35172]</label>
 			</control>
 			<control type="group">
 				<description>Content area</description>
@@ -726,7 +726,7 @@
 					<itemgap>1</itemgap>
 					<control type="button" id="10825">
 						<width>300</width>
-						<label>35261</label>
+						<label>$LOCALIZE[35261]</label>
 						<texturefocus colordiffuse="$INFO[Skin.String(flat_back)]" border="5">listselect_fo.png</texturefocus>
 					</control>
 					<control type="button" id="10826">
@@ -750,7 +750,7 @@
 							<height>20</height>
 							<font>font16</font>
 							<shadowcolor>black</shadowcolor>
-							<label>35255</label>
+							<label>$LOCALIZE[35255]</label>
 							<align>center</align>
 						</control>
 						<control type="label" id="10823">

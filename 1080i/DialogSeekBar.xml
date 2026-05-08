@@ -236,7 +236,7 @@
 			<top>930</top>
 			<width>1800</width>
 			<visible>!String.IsEmpty(Player.SeekStepSize)</visible>
-			<label>$LOCALIZE[31046][COLOR $INFO[Skin.String(theme_text)]] $INFO[Player.SeekStepSize][/COLOR]</label>
+			<label>$ADDON[skin.aeon.tajo 31046][COLOR $INFO[Skin.String(theme_text)]] $INFO[Player.SeekStepSize][/COLOR]</label>
 			<height>90</height>
 			<font>font_MainMenu</font>
 			<shadowcolor>44000000</shadowcolor>
