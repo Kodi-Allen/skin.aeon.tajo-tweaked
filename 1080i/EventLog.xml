@@ -174,7 +174,7 @@
 					<textwidth>352</textwidth>
 					<font>font13_title</font>
 					<include>ButtonCommonValues</include>
-					<label>31026</label>
+					<label>$ADDON[skin.aeon.tajo 31026]</label>
 					<enable>no</enable>
 				</control>
 				<control type="button" id="21">
@@ -190,7 +190,7 @@
 					<textwidth>352</textwidth>
 					<font>font13_title</font>
 					<include>ButtonCommonValues</include>
-					<label>31039</label>
+					<label>$ADDON[skin.aeon.tajo 31039]</label>
 					<enable>no</enable>
 				</control>
 				<control type="button" id="20">
@@ -208,7 +208,7 @@
 					<description>Go to playercontrols</description>
 					<textwidth>400</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31177]</label>
+					<label>$ADDON[skin.aeon.tajo 31177]</label>
 					<onclick condition="Player.HasAudio">ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="Player.HasAudio">SetFocus(50)</onclick>
 					<onclick condition="Player.HasAudio">ActivateWindow(playercontrols)</onclick>

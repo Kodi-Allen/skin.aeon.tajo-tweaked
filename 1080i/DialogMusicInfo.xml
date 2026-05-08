@@ -419,7 +419,7 @@
 							<onclick condition="!Player.HasVideo + !String.IsEmpty(Window(home).Property(ChooseStart))">RunScript(script.embuary.helper,action=calc,do='"$INFO[Container(6728).CurrentItem] - 1"',prop=MyResult)</onclick>
 							<onclick condition="!Player.HasVideo + !String.IsEmpty(Window(home).Property(ChooseStart))">ClearProperty(ChooseStart,Home)</onclick>
 							<onclick condition="!Player.HasVideo + !String.IsEmpty(Window(home).Property(ChooseStart))">SetFocus(4329)</onclick>
-							<onclick condition="String.IsEmpty(Window(Home).Property(FirstTime)) + !Player.HasVideo + !String.IsEmpty(Window(home).Property(ChooseStart))">Notification($LOCALIZE[32089],$LOCALIZE[32090],3000)</onclick>
+							<onclick condition="String.IsEmpty(Window(Home).Property(FirstTime)) + !Player.HasVideo + !String.IsEmpty(Window(home).Property(ChooseStart))">Notification($ADDON[skin.aeon.tajo 32089],$ADDON[skin.aeon.tajo 32090],3000)</onclick>
 							<onclick condition="String.IsEmpty(Window(Home).Property(FirstTime)) + !Player.HasVideo + !String.IsEmpty(Window(home).Property(ChooseStart))">SetProperty(FirstTime,True,home)</onclick>
 							<itemlayout width="675" height="43">
 								<control type="label">
@@ -654,7 +654,7 @@
 							<onclick condition="!Player.HasVideo + !String.IsEmpty(Window(home).Property(2ChooseStart))">RunScript(script.embuary.helper,action=calc,do='"$INFO[Container(6828).CurrentItem] - 1"',prop=2MyResult)</onclick>
 							<onclick condition="!Player.HasVideo + !String.IsEmpty(Window(home).Property(2ChooseStart))">ClearProperty(2ChooseStart,Home)</onclick>
 							<onclick condition="!Player.HasVideo + !String.IsEmpty(Window(home).Property(2ChooseStart))">SetFocus(4339)</onclick>
-							<onclick condition="String.IsEmpty(Window(Home).Property(FirstTimeAlbum)) + !Player.HasVideo + !String.IsEmpty(Window(home).Property(2ChooseStart))">Notification($LOCALIZE[32089],$LOCALIZE[32090],3000)</onclick>
+							<onclick condition="String.IsEmpty(Window(Home).Property(FirstTimeAlbum)) + !Player.HasVideo + !String.IsEmpty(Window(home).Property(2ChooseStart))">Notification($ADDON[skin.aeon.tajo 32089],$ADDON[skin.aeon.tajo 32090],3000)</onclick>
 							<onclick condition="String.IsEmpty(Window(Home).Property(FirstTimeAlbum)) + !Player.HasVideo + !String.IsEmpty(Window(home).Property(2ChooseStart))">SetProperty(FirstTimeAlbum,True,home)</onclick>
 							<itemlayout width="675" height="43">
 								<control type="label">
@@ -871,7 +871,7 @@
 						<textcolor>ffdadada</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<font>font_Extras</font>
-						<label>$LOCALIZE[31014]</label>
+						<label>$ADDON[skin.aeon.tajo 31014]</label>
 					</control>
 				</control>
 				<control type="textbox">
@@ -1276,7 +1276,7 @@
 					<onclick>SetProperty(NextClip,True,home)</onclick>
 					<onclick condition="Integer.IsEqual(Container(6728).NumItems,1)">SetFocus(6728,0,absolute)</onclick>
 					<onclick condition="Integer.IsEqual(Container(6728).NumItems,1)">SetFocus(4329)</onclick>
-					<onclick condition="Integer.IsGreater(Container(6728).NumItems,1)">Notification($LOCALIZE[32081],$LOCALIZE[32082],3000,$INFO[ListItem.Icon])</onclick>
+					<onclick condition="Integer.IsGreater(Container(6728).NumItems,1)">Notification($ADDON[skin.aeon.tajo 32081],$ADDON[skin.aeon.tajo 32082],3000,$INFO[ListItem.Icon])</onclick>
 					<onclick condition="Integer.IsGreater(Container(6728).NumItems,1)">SetProperty(ChooseStart,True,home)</onclick>
 					<onclick condition="Integer.IsGreater(Container(6728).NumItems,1)">SetFocus(6728)</onclick>
 				</control>
@@ -1321,7 +1321,7 @@
 					<onclick>SetProperty(NextClip,True,home)</onclick>
 					<onclick condition="Integer.IsEqual(Container(6828).NumItems,1)">SetFocus(6828,0,absolute)</onclick>
 					<onclick condition="Integer.IsEqual(Container(6828).NumItems,1)">SetFocus(4339)</onclick>
-					<onclick condition="Integer.IsGreater(Container(6828).NumItems,1)">Notification($LOCALIZE[32081],$LOCALIZE[32082],3000,$INFO[ListItem.Icon])</onclick>
+					<onclick condition="Integer.IsGreater(Container(6828).NumItems,1)">Notification($ADDON[skin.aeon.tajo 32081],$ADDON[skin.aeon.tajo 32082],3000,$INFO[ListItem.Icon])</onclick>
 					<onclick condition="Integer.IsGreater(Container(6828).NumItems,1)">SetProperty(2ChooseStart,True,home)</onclick>
 					<onclick condition="Integer.IsGreater(Container(6828).NumItems,1)">SetFocus(6828)</onclick>
 				</control>
@@ -1338,8 +1338,8 @@
 					<label></label>
 					<onclick>SetProperty(Wait_2m,True,home)</onclick>
 					<onclick>AlarmClock(Clean_20m,ClearProperty(Wait_2m,home),00:02,silent)</onclick>
-					<onclick condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Label_Similarm,$LOCALIZE[31104],home)</onclick>
-					<onclick condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Label_Similarm,$LOCALIZE[32069],home)</onclick>
+					<onclick condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Label_Similarm,$ADDON[skin.aeon.tajo 31104],home)</onclick>
+					<onclick condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Label_Similarm,$ADDON[skin.aeon.tajo 32069],home)</onclick>
 					<onclick condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Info_Similarm,Artist,home)</onclick>
 					<onclick condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(Info_Similarm,Album,home)</onclick>
 					<onclick condition="!String.IsEmpty(Window(home).Property(SpGenrem.0)) + !String.IsEmpty(Window(home).Property(EncodedTitlem)) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(Type_Similarm,musicdb://artists/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22genre%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$VAR[Music_gen]%22%5D%7D%2C%7B%22field%22%3A%22artist%22%2C%22operator%22%3A%22isnot%22%2C%22value%22%3A%5B%22$INFO[Window(Home).Property(EncodedTitlem)]%22%5D%7D%5D%7D%2C%22type%22%3A%22artists%22%7D,home)</onclick>
@@ -1515,7 +1515,7 @@
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font_Extras</font>
-				<label>$LOCALIZE[31014]</label>
+				<label>$ADDON[skin.aeon.tajo 31014]</label>
 			</control>
 			<control type="fixedlist" id="8345">
 				<visible allowhiddenfocus="true">Control.HasFocus(8345)</visible>

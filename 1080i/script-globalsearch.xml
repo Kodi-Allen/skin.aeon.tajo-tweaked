@@ -1022,7 +1022,7 @@
 					<textwidth>352</textwidth>
 					<font>font13_title</font>
 					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31039]</label>
+					<label>$ADDON[skin.aeon.tajo 31039]</label>
 					<enable>no</enable>
 					<disabledcolor>Skin.String(theme_text)</disabledcolor>
 				</control>
@@ -1044,7 +1044,7 @@
 				<control type="button" id="612">
 					<description>Go to playlist</description>
 					<include>ButtonCommonValues</include>
-					<label>13350</label>
+					<label>$LOCALIZE[13350]</label>
 					<onclick>ActivateWindow(videoplaylist)</onclick>
 					<visible>!String.IsEqual(Playlist.Length(video),0)</visible>
 				</control>
@@ -1052,7 +1052,7 @@
 					<description>Go to playercontrols</description>
 					<textwidth>400</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31177]</label>
+					<label>$ADDON[skin.aeon.tajo 31177]</label>
 					<onclick condition="Player.HasAudio">ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="Player.HasAudio">SetFocus(50)</onclick>
 					<onclick condition="Player.HasAudio">ActivateWindow(playercontrols)</onclick>

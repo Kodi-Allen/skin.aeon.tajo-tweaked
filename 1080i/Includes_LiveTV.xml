@@ -281,7 +281,7 @@
 						<font>font24_bold</font>
 						<align>left</align>
 						<textcolor>Skin.String(theme_text)</textcolor>
-						<label>$INFO[PVR.TimeshiftCur, [B][LOWERCASE][CAPITALIZE]$LOCALIZE[31163][/CAPITALIZE][/LOWERCASE]:[/B] [COLOR grey], [/COLOR]][B] $INFO[PVR.TimeshiftOffset, [COLOR grey](-,)[/COLOR]]$INFO[VideoPlayer.NextTitle,  [B]Next:[/B] [COLOR grey],[/COLOR]]$INFO[VideoPlayer.NextStartTime, [COLOR grey](,]$INFO[VideoPlayer.NextEndTime, - ,)[/COLOR]]</label>
+						<label>$INFO[PVR.TimeshiftCur, [B][LOWERCASE][CAPITALIZE]$ADDON[skin.aeon.tajo 31163][/CAPITALIZE][/LOWERCASE]:[/B] [COLOR grey], [/COLOR]][B] $INFO[PVR.TimeshiftOffset, [COLOR grey](-,)[/COLOR]]$INFO[VideoPlayer.NextTitle,  [B]Next:[/B] [COLOR grey],[/COLOR]]$INFO[VideoPlayer.NextStartTime, [COLOR grey](,]$INFO[VideoPlayer.NextEndTime, - ,)[/COLOR]]</label>
 						<visible>!Player.ChannelPreviewActive + Pvr.IsTimeShift</visible>
 					</control>
 				</control>
@@ -370,7 +370,7 @@
 					<height>38</height>
 					<font>font24_bold</font>
 					<textcolor>Skin.String(theme_text)</textcolor>
-					<label>$LOCALIZE[31163]</label>
+					<label>$ADDON[skin.aeon.tajo 31163]</label>
 				</control>
 			</control>
 			<!-- Tuner info -->
@@ -386,7 +386,7 @@
 					<font>font24_bold</font>
 					<textcolor>grey2</textcolor>
 					<align>right</align>
-					<label>$LOCALIZE[31132]</label>
+					<label>$ADDON[skin.aeon.tajo 31132]</label>
 				</control>
 				<control type="label" id="1">
 					<left>295</left>
@@ -891,7 +891,7 @@
 					<font>font24_bold</font>
 					<align>left</align>
 					<textcolor>Skin.String(theme_text)</textcolor>
-					<label>$INFO[PVR.TimeshiftCur, [B][LOWERCASE][CAPITALIZE]$LOCALIZE[31163][/CAPITALIZE][/LOWERCASE]:[/B] [COLOR grey], [/COLOR]][B] $INFO[PVR.TimeshiftOffset, [COLOR grey](-,)[/COLOR]]$INFO[VideoPlayer.NextTitle,  [B]Next:[/B] [COLOR grey],[/COLOR]]$INFO[VideoPlayer.NextStartTime, [COLOR grey](,]$INFO[VideoPlayer.NextEndTime, - ,)[/COLOR]]</label>
+					<label>$INFO[PVR.TimeshiftCur, [B][LOWERCASE][CAPITALIZE]$ADDON[skin.aeon.tajo 31163][/CAPITALIZE][/LOWERCASE]:[/B] [COLOR grey], [/COLOR]][B] $INFO[PVR.TimeshiftOffset, [COLOR grey](-,)[/COLOR]]$INFO[VideoPlayer.NextTitle,  [B]Next:[/B] [COLOR grey],[/COLOR]]$INFO[VideoPlayer.NextStartTime, [COLOR grey](,]$INFO[VideoPlayer.NextEndTime, - ,)[/COLOR]]</label>
 					<visible>!Player.ChannelPreviewActive + Pvr.IsTimeShift</visible>
 				</control>
 			</control>

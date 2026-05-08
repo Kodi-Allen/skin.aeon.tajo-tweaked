@@ -49,7 +49,7 @@
 					<orientation>horizontal</orientation>
 					<control type="button" id="309">
 						<description>Layout</description>
-						<label>1006</label>
+						<label>$LOCALIZE[1006]</label>
 						<onup condition="!Control.IsVisible(5000)">300</onup>
 						<onup condition="Control.IsVisible(5000)">5000</onup>
 						<ondown>304</ondown>
@@ -240,7 +240,7 @@
 					<top>160</top>
 					<control type="togglebutton" id="303">
 						<description>Caps</description>
-						<label>20179</label>
+						<label>$LOCALIZE[20179]</label>
 						<altlabel>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[20179][/COLOR]</altlabel>
 						<onup>307</onup>
 						<ondown>302</ondown>
@@ -469,7 +469,7 @@
 						<width>240</width>
 						<height>80</height>
 						<texturefocus colordiffuse="$INFO[Skin.String(flat_back)]" border="4">listselect_fo.png</texturefocus>
-						<label>20181</label>
+						<label>$LOCALIZE[20181]</label>
 						<onup>170</onup>
 						<ondown condition="!Control.IsVisible(5000)">110</ondown>
 						<ondown condition="Control.IsVisible(5000)">5000</ondown>

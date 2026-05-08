@@ -28,7 +28,7 @@
 			<include content="HomeWidgetItem">
 				<param name="visible" value="String.IsEmpty(Window(Home).Property(HomeWidget))"/>
 				<param name="animationStart" value="180"/>
-				<param name="wTitle" value="$LOCALIZE[31328]"/>
+				<param name="wTitle" value="$ADDON[skin.aeon.tajo 31328]"/>
 				<param name="listId" value="8005"/>
 				<param name="conditionTMDB" value="true"/>
 				<param name="onUp1" value="8001"/>
@@ -43,7 +43,7 @@
 			<include content="HomeWidgetItem">
 				<param name="visible" value="String.IsEqual(Window(Home).Property(HomeWidget),1)"/>
 				<param name="animationStart" value="-180"/>
-				<param name="wTitle" value="$LOCALIZE[31031]"/>
+				<param name="wTitle" value="$ADDON[skin.aeon.tajo 31031]"/>
 				<param name="listId" value="8001"/>
 				<param name="conditionTMDB" value="System.HasAddon(plugin.video.themoviedb.helper)"/>
 				<param name="onUp1" value="8002"/>
@@ -58,7 +58,7 @@
 			<include content="HomeWidgetItem" condition="System.HasAddon(plugin.video.themoviedb.helper)">
 				<param name="visible" value="String.IsEqual(Window(Home).Property(HomeWidget),2)"/>
 				<param name="animationStart" value="180"/>
-				<param name="wTitle" value="$LOCALIZE[31987]"/>
+				<param name="wTitle" value="$ADDON[skin.aeon.tajo 31987]"/>
 				<param name="listId" value="8002"/>
 				<param name="conditionTMDB" value="true"/>
 				<param name="onUp1" value="8003"/>
@@ -73,7 +73,7 @@
 			<include content="HomeWidgetItem" condition="System.HasAddon(plugin.video.themoviedb.helper)">
 				<param name="visible" value="String.IsEqual(Window(Home).Property(HomeWidget),3)"/>
 				<param name="animationStart" value="-180"/>
-				<param name="wTitle" value="$LOCALIZE[31989]"/>
+				<param name="wTitle" value="$ADDON[skin.aeon.tajo 31989]"/>
 				<param name="listId" value="8003"/>
 				<param name="conditionTMDB" value="true"/>
 				<param name="onUp1" value="8004"/>
@@ -88,7 +88,7 @@
 			<include content="HomeWidgetItem" condition="System.HasAddon(plugin.video.themoviedb.helper)">
 				<param name="visible" value="String.IsEqual(Window(Home).Property(HomeWidget),4)"/>
 				<param name="animationStart" value="180"/>
-				<param name="wTitle" value="$LOCALIZE[31988]"/>
+				<param name="wTitle" value="$ADDON[skin.aeon.tajo 31988]"/>
 				<param name="listId" value="8004"/>
 				<param name="conditionTMDB" value="true"/>
 				<param name="onUp1" value="8006"/>
@@ -103,7 +103,7 @@
 			<include content="HomeWidgetItem" condition="System.HasAddon(plugin.video.themoviedb.helper)">
 				<param name="visible" value="String.IsEqual(Window(Home).Property(HomeWidget),5)"/>
 				<param name="animationStart" value="-180"/>
-				<param name="wTitle" value="$LOCALIZE[31985]"/>
+				<param name="wTitle" value="$ADDON[skin.aeon.tajo 31985]"/>
 				<param name="listId" value="8006"/>
 				<param name="conditionTMDB" value="true"/>
 				<param name="onUp1" value="8007"/>
@@ -118,7 +118,7 @@
 			<include content="HomeWidgetItem" condition="System.HasAddon(plugin.video.themoviedb.helper)">
 				<param name="visible" value="String.IsEqual(Window(Home).Property(HomeWidget),6)"/>
 				<param name="animationStart" value="180"/>
-				<param name="wTitle" value="$LOCALIZE[31986]"/>
+				<param name="wTitle" value="$ADDON[skin.aeon.tajo 31986]"/>
 				<param name="listId" value="8007"/>
 				<param name="conditionTMDB" value="true"/>
 				<param name="onUp1" value=""/>
@@ -331,7 +331,7 @@
 					<align>right</align>
 					<textcolor>white2</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>$INFO[ListItem.Director,$LOCALIZE[31000] ]</label>
+					<label>$INFO[ListItem.Director,$ADDON[skin.aeon.tajo 31000] ]</label>
 					<visible>!String.IsEmpty(ListItem.Director)</visible>
 				</control>
 				<control type="label">
@@ -531,7 +531,7 @@
 						<font>font14</font>
 						<textcolor>white2</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Container(8000).ListItem.Director,$LOCALIZE[31000] ]</label>
+						<label>$INFO[Container(8000).ListItem.Director,$ADDON[skin.aeon.tajo 31000] ]</label>
 						<visible>!String.IsEmpty(Container(8000).ListItem.Director)</visible>
 					</control>
 					<control type="label">
@@ -1337,7 +1337,7 @@
 				</focusedlayout>
 				<content>
 					<item>
-						<label>$LOCALIZE[31909]</label>
+						<label>$ADDON[skin.aeon.tajo 31909]</label>
 						<icon/>
 						<onclick>noop</onclick>
 						<visible>!Weather.IsFetched</visible>

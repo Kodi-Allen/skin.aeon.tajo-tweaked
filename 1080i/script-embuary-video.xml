@@ -287,17 +287,17 @@
 							</item>
 							<item>
 								<label>$INFO[Container(10051).ListItem.Property(Awards)]</label>
-								<label2>$LOCALIZE[31984]:</label2>
+								<label2>$ADDON[skin.aeon.tajo 31984]:</label2>
 								<visible>!String.IsEmpty(Container(10051).ListItem.Property(Awards))</visible>
 							</item>
 							<item>
 								<label>$INFO[Container(10051).ListItem.Property(Budget),$]</label>
-								<label2>$LOCALIZE[31982]:</label2>
+								<label2>$ADDON[skin.aeon.tajo 31982]:</label2>
 								<visible>!String.IsEmpty(Container(10051).ListItem.Property(Budget))</visible>
 							</item>
 							<item>
 								<label>$INFO[Container(10051).ListItem.Property(Revenue),$]</label>
-								<label2>$LOCALIZE[31983]:</label2>
+								<label2>$ADDON[skin.aeon.tajo 31983]:</label2>
 								<visible>!String.IsEmpty(Container(10051).ListItem.Property(Revenue))</visible>
 							</item>
 						</content>

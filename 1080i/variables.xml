@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="MoviesBgVar">
+		<value condition="!String.IsEmpty(Skin.String(Movies.Fallback))">$INFO[Skin.String(Movies.Fallback)]</value>
+		<value>special://skin/media/backgrounds/filme.png</value>
+	</variable>
 	<variable name="Para1_getDBIDcontent">
 		<value condition="!String.IsEmpty(ListItem.DBID) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)]">$INFO[ListItem.DBID]</value>
 		<value>9999999</value>
@@ -52,11 +56,11 @@
 		<value>$INFO[Skin.String(Def_back)]</value>
 	</variable>
 	<variable name="SnowStorm">
-		<value condition="String.IsEmpty(skin.string(snow_type))">$LOCALIZE[32104]</value>
-		<value condition="String.IsEqual(skin.string(snow_type),1)">$LOCALIZE[32105]</value>
-		<value condition="String.IsEqual(skin.string(snow_type),2)">$LOCALIZE[32106]</value>
-		<value condition="String.IsEqual(skin.string(snow_type),3)">$LOCALIZE[32107]</value>
-		<value condition="String.IsEqual(skin.string(snow_type),4)">$LOCALIZE[32108]</value>
+		<value condition="String.IsEmpty(skin.string(snow_type))">$ADDON[skin.aeon.tajo 32104]</value>
+		<value condition="String.IsEqual(skin.string(snow_type),1)">$ADDON[skin.aeon.tajo 32105]</value>
+		<value condition="String.IsEqual(skin.string(snow_type),2)">$ADDON[skin.aeon.tajo 32106]</value>
+		<value condition="String.IsEqual(skin.string(snow_type),3)">$ADDON[skin.aeon.tajo 32107]</value>
+		<value condition="String.IsEqual(skin.string(snow_type),4)">$ADDON[skin.aeon.tajo 32108]</value>
 	</variable>
 	<variable name="BannerThumb">
 		<value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
@@ -143,9 +147,9 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="SelectLabel">
-		<value condition="Control.IsVisible(50)">[COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(50).NumItems][/COLOR] $LOCALIZE[31036] - [COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages][/COLOR]</value>
-		<value condition="Control.IsVisible(3)">[COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31036] - [COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
-		<value>[COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31036] - [COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
+		<value condition="Control.IsVisible(50)">[COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(50).NumItems][/COLOR] $ADDON[skin.aeon.tajo 31036] - [COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages][/COLOR]</value>
+		<value condition="Control.IsVisible(3)">[COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(3).NumItems][/COLOR] $ADDON[skin.aeon.tajo 31036] - [COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
+		<value>[COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(6).NumItems][/COLOR] $ADDON[skin.aeon.tajo 31036] - [COLOR $INFO[Skin.String(theme_text)]] $INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
 	</variable>
 	<variable name="VideoListThumbVar">
 		<value condition="!String.IsEmpty(Listitem.Art(landscape))">$INFO[Listitem.Art(landscape)]</value>
@@ -154,64 +158,64 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="Label_MultiWall">
-		<value condition="!Skin.HasSetting(MultiWall_simple)">$LOCALIZE[31997]</value>
-		<value>$LOCALIZE[31996]</value>
+		<value condition="!Skin.HasSetting(MultiWall_simple)">$ADDON[skin.aeon.tajo 31997]</value>
+		<value>$ADDON[skin.aeon.tajo 31996]</value>
 	</variable>
 	<variable name="Label_Shelf">
-		<value condition="!Skin.HasSetting(Sh3D)">$LOCALIZE[32044]$LOCALIZE[31995]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[31997]</value>
+		<value condition="!Skin.HasSetting(Sh3D)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31995]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31997]</value>
 	</variable>
 	<variable name="Label_FanWall">
-		<value condition="!Skin.HasSetting(LogoFan)">$LOCALIZE[32127]</value>
-		<value>$LOCALIZE[32128]</value>
+		<value condition="!Skin.HasSetting(LogoFan)">$ADDON[skin.aeon.tajo 32127]</value>
+		<value>$ADDON[skin.aeon.tajo 32128]</value>
 	</variable>
 	<variable name="Label_FanWallm">
-		<value condition="!Skin.HasSetting(LogoFanm)">$LOCALIZE[32127]</value>
-		<value>$LOCALIZE[32128]</value>
+		<value condition="!Skin.HasSetting(LogoFanm)">$ADDON[skin.aeon.tajo 32127]</value>
+		<value>$ADDON[skin.aeon.tajo 32128]</value>
 	</variable>
 	<variable name="Label_Narrow">
-		<value condition="!Skin.HasSetting(NarrowList)">$LOCALIZE[32044]$LOCALIZE[32076]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[32077]</value>
+		<value condition="!Skin.HasSetting(NarrowList)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32076]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32077]</value>
 	</variable>
 	<variable name="Label_NarrowM">
-		<value condition="!Skin.HasSetting(NarrowListM)">$LOCALIZE[32044]$LOCALIZE[32076]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[32077]</value>
+		<value condition="!Skin.HasSetting(NarrowListM)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32076]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32077]</value>
 	</variable>
 	<variable name="Label_ShelfM">
-		<value condition="!Skin.HasSetting(ShM3D)">$LOCALIZE[32044]$LOCALIZE[31995]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[31997]</value>
+		<value condition="!Skin.HasSetting(ShM3D)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31995]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31997]</value>
 	</variable>
 	<variable name="Label_Triple">
-		<value condition="!Skin.HasSetting(BannerTriple)">$LOCALIZE[32044]$LOCALIZE[32062]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[32063]</value>
+		<value condition="!Skin.HasSetting(BannerTriple)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32062]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32063]</value>
 	</variable>
 	<variable name="Label_Triple_Movie">
-		<value condition="!Skin.HasSetting(BannerTripleMovie)">$LOCALIZE[32044]$LOCALIZE[32062]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[32063]</value>
+		<value condition="!Skin.HasSetting(BannerTripleMovie)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32062]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32063]</value>
 	</variable>
 	<variable name="Label_Triplem">
-		<value condition="!Skin.HasSetting(BannerTriplem)">$LOCALIZE[32044]$LOCALIZE[32062]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[32063]</value>
+		<value condition="!Skin.HasSetting(BannerTriplem)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32062]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32063]</value>
 	</variable>
 	<variable name="Label_Sh2_actors">
-		<value condition="!Skin.HasSetting(Sh2)">$LOCALIZE[32044]$LOCALIZE[32008]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[32009]</value>
+		<value condition="!Skin.HasSetting(Sh2)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32008]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 32009]</value>
 	</variable>
 	<variable name="Label_Mag">
-		<value condition="!Skin.HasSetting(Mag3D)">$LOCALIZE[32044]$LOCALIZE[31995]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[31997]</value>
+		<value condition="!Skin.HasSetting(Mag3D)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31995]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31997]</value>
 	</variable>
 	<variable name="Label_Rl3D">
-		<value condition="!Skin.HasSetting(Rl3D)">$LOCALIZE[32044]$LOCALIZE[31995]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[31997]</value>
+		<value condition="!Skin.HasSetting(Rl3D)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31995]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31997]</value>
 	</variable>
 	<variable name="Label_List">
-		<value condition="!Skin.HasSetting(Li3D)">$LOCALIZE[32044]$LOCALIZE[31995]</value>
-		<value>$LOCALIZE[32044]$LOCALIZE[31997]</value>
+		<value condition="!Skin.HasSetting(Li3D)">$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31995]</value>
+		<value>$ADDON[skin.aeon.tajo 32044]$ADDON[skin.aeon.tajo 31997]</value>
 	</variable>
 	<variable name="Label_Fanarts">
-		<value condition="!Skin.HasSetting(NavFanartView)">$LOCALIZE[32060]</value>
-		<value>$LOCALIZE[32061]</value>
+		<value condition="!Skin.HasSetting(NavFanartView)">$ADDON[skin.aeon.tajo 32060]</value>
+		<value>$ADDON[skin.aeon.tajo 32061]</value>
 	</variable>
 	<variable name="BarColor">
 		<value condition="!String.IsEmpty(Skin.String(flat_back))">$INFO[Skin.String(flat_back)]</value>
@@ -273,6 +277,9 @@
 		<value condition="String.Contains(Window(Home).Property(TMDBHelper.ListItem.Awards),1 Primetime) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)">1</value>
 	</variable>
 	<variable name="GlobalBackgroundVar">
+		<value condition="[Container.Content(movies) | Container.Content(sets)] + String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(set.fanart))">special://skin/media/backgrounds/filme.png</value>
+		<value condition="Window.IsActive(1133) | Window.IsActive(programs) | Window.IsActive(addonbrowser) | Window.IsActive(addoninformation) | Window.IsActive(addonsettings)">special://skin/media/backgrounds/apps.jpg</value>
+		<value condition="Window.IsActive(settings) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(skinsettings) | Window.IsActive(filemanager) | Window.IsActive(eventlog) | Window.IsActive(profiles)">special://skin/media/backgrounds/system.png</value>
 		<value condition="[Container.Content(movies) | Container.Content(sets)] + ListItem.IsParentFolder">tajo/embuback.jpg</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + ListItem.IsParentFolder">tajo/embuback0.jpg</value>
 		<value condition="Window.IsActive(music) + [ListItem.IsParentFolder | String.StartsWith(ListItem.Label,*) | Container.Content(genres) | Container.Content(years) | Container.Content(directors) | Container.Content(studios) | Container.Content(tags)]">tajo/embuback3.jpg</value>
@@ -415,35 +422,35 @@
 		<value condition="String.IsEqual(skin.string(Wiki_lang),de)">+Filmografie</value>
 	</variable>
 	<variable name="VideoInfoButtonLabelVar">
-		<value condition="[Control.HasFocus(300) + String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20339]:)] | [Control.HasFocus(300) + String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20417]:)] | [Control.HasFocus(9003) + String.IsEqual(ListItem.DBTYPE,song)]">$LOCALIZE[31978]</value>
-		<value condition="Control.HasFocus(300) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20339]:) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20417]:) + Container(300).HasPrevious">$LOCALIZE[31979]</value>
-		<value condition="Control.HasFocus(300) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20339]:) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20417]:) + Container(300).HasNext">$LOCALIZE[31980]</value>
+		<value condition="[Control.HasFocus(300) + String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20339]:)] | [Control.HasFocus(300) + String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20417]:)] | [Control.HasFocus(9003) + String.IsEqual(ListItem.DBTYPE,song)]">$ADDON[skin.aeon.tajo 31978]</value>
+		<value condition="Control.HasFocus(300) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20339]:) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20417]:) + Container(300).HasPrevious">$ADDON[skin.aeon.tajo 31979]</value>
+		<value condition="Control.HasFocus(300) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20339]:) + !String.IsEqual(Container(300).ListItem.Label2,$LOCALIZE[20417]:) + Container(300).HasNext">$ADDON[skin.aeon.tajo 31980]</value>
 		<value condition="Control.HasFocus(8) + String.IsEqual(ListItem.DBTYPE,season)">$LOCALIZE[20360] </value>
-		<value condition="Control.HasFocus(8) + [String.IsEqual(ListItem.DBTYPE,tvshow)] | Control.HasFocus(808)">$LOCALIZE[33054] / $LOCALIZE[20360]</value>
+		<value condition="Control.HasFocus(8) + [String.IsEqual(ListItem.DBTYPE,tvshow)] | Control.HasFocus(808)">$ADDON[skin.aeon.tajo 33054] / $LOCALIZE[20360]</value>
 		<value condition="Control.HasFocus(8) + [String.IsEqual(ListItem.DBTYPE,set) | Control.HasFocus(808)]">$LOCALIZE[19326]</value>
-		<value condition="Control.HasFocus(895)">$LOCALIZE[31149]</value>
-		<value condition="Control.HasFocus(6071)">$LOCALIZE[32067]</value>
-		<value condition="Control.HasFocus(985)">$LOCALIZE[32071]</value>
+		<value condition="Control.HasFocus(895)">$ADDON[skin.aeon.tajo 31149]</value>
+		<value condition="Control.HasFocus(6071)">$ADDON[skin.aeon.tajo 32067]</value>
+		<value condition="Control.HasFocus(985)">$ADDON[skin.aeon.tajo 32071]</value>
 		<value condition="Control.HasFocus(8)">$LOCALIZE[208]</value>
-		<value condition="Control.HasFocus(283)">$LOCALIZE[32050]</value>
+		<value condition="Control.HasFocus(283)">$ADDON[skin.aeon.tajo 32050]</value>
 		<value condition="Control.HasFocus(6651)">$LOCALIZE[20360]</value>
 		<value condition="Control.HasFocus(910)">$LOCALIZE[206]</value>
 		<value condition="Control.HasFocus(11) | Control.HasFocus(968) | Control.HasFocus(969)">$LOCALIZE[20410]</value>
-		<value condition="Control.HasFocus(911)">$LOCALIZE[31972]</value>
-		<value condition="Control.HasFocus(7) + !String.IsEmpty(ListItem.UserRating)">$LOCALIZE[31147]</value>
+		<value condition="Control.HasFocus(911)">$ADDON[skin.aeon.tajo 31972]</value>
+		<value condition="Control.HasFocus(7) + !String.IsEmpty(ListItem.UserRating)">$ADDON[skin.aeon.tajo 31147]</value>
 		<value condition="Control.HasFocus(7)">$LOCALIZE[38023]</value>
 		<value condition="Control.HasFocus(10)">$LOCALIZE[13511]</value>
 		<value condition="Control.HasFocus(14)">$LOCALIZE[40000]</value>
-		<value condition="Control.HasFocus(13)">$LOCALIZE[32124]</value>
+		<value condition="Control.HasFocus(13)">$ADDON[skin.aeon.tajo 32124]</value>
 		<value condition="Control.HasFocus(15)">$LOCALIZE[40211] (Kodi)</value>
 		<value condition="Control.HasFocus(6)">$LOCALIZE[184]</value>
-		<value condition="Control.HasFocus(208)">$LOCALIZE[31092]</value>
+		<value condition="Control.HasFocus(208)">$ADDON[skin.aeon.tajo 31092]</value>
 		<value condition="Control.HasFocus(974)">$LOCALIZE[5]</value>
-		<value condition="Control.HasFocus(223)">$LOCALIZE[32023]</value>
-		<value condition="Control.HasFocus(656)">$LOCALIZE[32083]</value>
-		<value condition="[Control.HasFocus(9003) + !String.IsEqual(ListItem.DBTYPE,song)] | [Container(9001).HasNext + !Container(9001).HasPrevious] + Window.IsActive(musicinformation)">$LOCALIZE[31973]</value>
-		<value condition="Control.HasFocus(90003) | [Container(90001).HasNext + !Container(90001).HasPrevious] + !Window.IsActive(musicinformation)">$LOCALIZE[31973]</value>
-		<value condition="[Container(9001).HasNext + !Container(9001).HasPrevious] + !String.IsEqual(ListItem.DBTYPE,song)">$LOCALIZE[31973]</value>
+		<value condition="Control.HasFocus(223)">$ADDON[skin.aeon.tajo 32023]</value>
+		<value condition="Control.HasFocus(656)">$ADDON[skin.aeon.tajo 32083]</value>
+		<value condition="[Control.HasFocus(9003) + !String.IsEqual(ListItem.DBTYPE,song)] | [Container(9001).HasNext + !Container(9001).HasPrevious] + Window.IsActive(musicinformation)">$ADDON[skin.aeon.tajo 31973]</value>
+		<value condition="Control.HasFocus(90003) | [Container(90001).HasNext + !Container(90001).HasPrevious] + !Window.IsActive(musicinformation)">$ADDON[skin.aeon.tajo 31973]</value>
+		<value condition="[Container(9001).HasNext + !Container(9001).HasPrevious] + !String.IsEqual(ListItem.DBTYPE,song)">$ADDON[skin.aeon.tajo 31973]</value>
 	</variable>
 	<variable name="OSD_Info_Label">
 		<value condition="Control.HasFocus(700)">$LOCALIZE[298]</value>
@@ -452,20 +459,20 @@
 		<value condition="Control.HasFocus(602) + String.IsEqual(Control.GetLabel(602),)">$LOCALIZE[36045]</value>
 		<value condition="Control.HasFocus(602) + !String.IsEqual(Control.GetLabel(602),)">$LOCALIZE[22078]</value>
 		<value condition="Control.HasFocus(603) | Control.HasFocus(805)">$LOCALIZE[36044]</value>
-		<value condition="Control.HasFocus(601) | Control.HasFocus(804)">$LOCALIZE[32110]</value>
-		<value condition="Control.HasFocus(604) | Control.HasFocus(806)">$LOCALIZE[32111]</value>
+		<value condition="Control.HasFocus(601) | Control.HasFocus(804)">$ADDON[skin.aeon.tajo 32110]</value>
+		<value condition="Control.HasFocus(604) | Control.HasFocus(806)">$ADDON[skin.aeon.tajo 32111]</value>
 		<value condition="Control.HasFocus(709)">$LOCALIZE[36560]</value>
 		<value condition="Control.HasFocus(626)">$LOCALIZE[10008]</value>
-		<value condition="Control.HasFocus(633)">$LOCALIZE[32112]</value>
-		<value condition="Control.HasFocus(634)">$LOCALIZE[32113]</value>
-		<value condition="Control.HasFocus(600)">$LOCALIZE[32114]</value>
-		<value condition="Control.HasFocus(605)">$LOCALIZE[32115]</value>
+		<value condition="Control.HasFocus(633)">$ADDON[skin.aeon.tajo 32112]</value>
+		<value condition="Control.HasFocus(634)">$ADDON[skin.aeon.tajo 32113]</value>
+		<value condition="Control.HasFocus(600)">$ADDON[skin.aeon.tajo 32114]</value>
+		<value condition="Control.HasFocus(605)">$ADDON[skin.aeon.tajo 32115]</value>
 		<value condition="Control.HasFocus(703) | Control.HasFocus(892)">$LOCALIZE[24133]</value>
 		<value condition="Control.HasFocus(706) | Control.HasFocus(891)">$LOCALIZE[14116]</value>
 		<value condition="Control.HasFocus(704)">$LOCALIZE[25003]</value>
 		<value condition="Control.HasFocus(705) | Control.HasFocus(809)">$LOCALIZE[36501]</value>
-		<value condition="Control.HasFocus(802)">$LOCALIZE[32117]</value>
-		<value condition="Control.HasFocus(803)">$LOCALIZE[32116]</value>
+		<value condition="Control.HasFocus(802)">$ADDON[skin.aeon.tajo 32117]</value>
+		<value condition="Control.HasFocus(803)">$ADDON[skin.aeon.tajo 32116]</value>
 		<value condition="Control.HasFocus(812) + String.IsEqual(Control.GetLabel(812),)">$LOCALIZE[36045]</value>
 		<value condition="Control.HasFocus(812) + !String.IsEqual(Control.GetLabel(812),)">$LOCALIZE[22078]</value>
 		<value condition="Control.HasFocus(10) + String.IsEqual(Control.GetLabel(10),)">$LOCALIZE[264]</value>
@@ -479,42 +486,42 @@
 		<value condition="Control.HasFocus(500)">$LOCALIZE[250]</value>
 		<value condition="Control.HasFocus(856)">$LOCALIZE[210]</value>
 		<value condition="Control.HasFocus(857)">$LOCALIZE[209]</value>
-		<value condition="Control.HasFocus(747)">$LOCALIZE[32119]</value>
-		<value condition="Control.HasFocus(748)">$LOCALIZE[32118]</value>
+		<value condition="Control.HasFocus(747)">$ADDON[skin.aeon.tajo 32119]</value>
+		<value condition="Control.HasFocus(748)">$ADDON[skin.aeon.tajo 32118]</value>
 		<value condition="Control.HasFocus(858) + Playlist.IsRandom">$LOCALIZE[590]: $LOCALIZE[16041]</value>
 		<value condition="Control.HasFocus(858)">$LOCALIZE[590]: $LOCALIZE[16039]</value>
 		<value condition="Control.HasFocus(707)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>
-		<value condition="Control.HasFocus(859)">$LOCALIZE[31026]</value>
-		<value condition="Control.HasFocus(860)">$LOCALIZE[32120]</value>
+		<value condition="Control.HasFocus(859)">$ADDON[skin.aeon.tajo 31026]</value>
+		<value condition="Control.HasFocus(860)">$ADDON[skin.aeon.tajo 32120]</value>
 		<value condition="Control.HasFocus(606)">$LOCALIZE[244]</value>
 	</variable>
 	<variable name="MusicInfoButtonLabelVar">
 		<value condition="Control.HasFocus(608)">$LOCALIZE[13511]</value>
-		<value condition="Control.HasFocus(609) + !String.IsEmpty(ListItem.UserRating)">$LOCALIZE[31147]</value>
+		<value condition="Control.HasFocus(609) + !String.IsEmpty(ListItem.UserRating)">$ADDON[skin.aeon.tajo 31147]</value>
 		<value condition="Control.HasFocus(609)">$LOCALIZE[38023]</value>
 		<value condition="Control.HasFocus(610)">$LOCALIZE[184]</value>
-		<value condition="Control.HasFocus(611)">$LOCALIZE[31092]</value>
-		<value condition="Control.HasFocus(6271)">$LOCALIZE[32067]</value>
-		<value condition="Control.HasFocus(939)">$LOCALIZE[32071]</value>
-		<value condition="Control.HasFocus(931)">$LOCALIZE[32074]</value>
+		<value condition="Control.HasFocus(611)">$ADDON[skin.aeon.tajo 31092]</value>
+		<value condition="Control.HasFocus(6271)">$ADDON[skin.aeon.tajo 32067]</value>
+		<value condition="Control.HasFocus(939)">$ADDON[skin.aeon.tajo 32071]</value>
+		<value condition="Control.HasFocus(931)">$ADDON[skin.aeon.tajo 32074]</value>
 		<value condition="Control.HasFocus(612)">$LOCALIZE[208] [LOWERCASE]$LOCALIZE[558][/LOWERCASE]</value>
-		<value condition="Control.HasFocus(619)">$LOCALIZE[32029]</value>
-		<value condition="Control.HasFocus(639) | Control.HasFocus(659)">$LOCALIZE[32079]</value>
+		<value condition="Control.HasFocus(619)">$ADDON[skin.aeon.tajo 32029]</value>
+		<value condition="Control.HasFocus(639) | Control.HasFocus(659)">$ADDON[skin.aeon.tajo 32079]</value>
 		<value condition="Control.HasFocus(613)">$LOCALIZE[20398]</value>
-		<value condition="Control.HasFocus(649)">$LOCALIZE[32029]</value>
-		<value condition="Control.HasFocus(621)">$LOCALIZE[32030]</value>
-		<value condition="Control.HasFocus(631)">$LOCALIZE[32031]</value>
+		<value condition="Control.HasFocus(649)">$ADDON[skin.aeon.tajo 32029]</value>
+		<value condition="Control.HasFocus(621)">$ADDON[skin.aeon.tajo 32030]</value>
+		<value condition="Control.HasFocus(631)">$ADDON[skin.aeon.tajo 32031]</value>
 		<value condition="Control.HasFocus(651) | Control.HasFocus(751)">$LOCALIZE[20401]</value>
-		<value condition="Control.HasFocus(638)">$LOCALIZE[32023]</value>
-		<value condition="Control.HasFocus(657)">$LOCALIZE[32083]</value>
+		<value condition="Control.HasFocus(638)">$ADDON[skin.aeon.tajo 32023]</value>
+		<value condition="Control.HasFocus(657)">$ADDON[skin.aeon.tajo 32083]</value>
 	</variable>
 	<variable name="DialogInfoDetailsLabelVar">
 		<value condition="[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)] + ControlGroup(9001).HasFocus(50)">$LOCALIZE[182]$INFO[Container(50).NumItems, [COLOR grey](,)[/COLOR]]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,artist) + ControlGroup(9001).HasFocus(9050)">$LOCALIZE[21888]$INFO[Container(9050).NumItems, (,)]$INFO[Container.ListItem.Album, - ]</value>
 		<value condition="[Window.IsActive(1195) | Window.IsActive(home) | Window.IsActive(videos)] + [ControlGroup(90001).HasFocus(90050) | ControlGroup(90001).HasFocus(50)] + String.IsEqual(ListItem.DBTYPE,set)">$LOCALIZE[342]$INFO[Container(50).NumItems, [COLOR grey](,)[/COLOR]]</value>
 		<value condition="[Window.IsActive(1195) | Window.IsActive(home) | Window.IsActive(videos)] + ControlGroup(90001).HasFocus(90050)">$LOCALIZE[206]$INFO[Container(90050).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90050).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="ControlGroup(90001).HasFocus(90051)">$LOCALIZE[32098]$INFO[Container(90051).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90051).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="ControlGroup(90001).HasFocus(90053)">$LOCALIZE[31972]$INFO[Container(90053).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90053).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="ControlGroup(90001).HasFocus(90051)">$ADDON[skin.aeon.tajo 32098]$INFO[Container(90051).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90051).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="ControlGroup(90001).HasFocus(90053)">$ADDON[skin.aeon.tajo 31972]$INFO[Container(90053).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90053).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="ControlGroup(90001).HasFocus(90055)">$LOCALIZE[20021]$INFO[Container(90055).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90055).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="ControlGroup(90001).HasFocus(90054)">$LOCALIZE[20445]$INFO[Container(90054).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90054).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="ControlGroup(90001).HasFocus(90058)">$LOCALIZE[20360]$INFO[Container(90058).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90058).NumItems, [COLOR grey]/,)[/COLOR]]</value>
@@ -522,10 +529,10 @@
 		<value condition="[Window.IsActive(1195) | Window.IsActive(home) | Window.IsActive(videos)] + ControlGroup(90001).HasFocus(50)">$LOCALIZE[206]$INFO[Container(50).NumItems, [COLOR grey](,)[/COLOR]]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,set) + ControlGroup(90001).HasFocus(950)">$LOCALIZE[342]$INFO[Container(950).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(950).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="!String.IsEqual(ListItem.DBTYPE,set) + [Window.IsActive(home) | Window.IsActive(videos)] + ControlGroup(90001).HasFocus(90050) | !String.IsEqual(ListItem.DBTYPE,set) + ControlGroup(90001).HasFocus(50)">$LOCALIZE[206]$INFO[Container(50).NumItems, [COLOR grey](,)[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + ControlGroup(90001).HasFocus(90011)">$LOCALIZE[31111]$INFO[Container(90011).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90011).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + ControlGroup(90001).HasFocus(90012)">$LOCALIZE[31112]$INFO[ListItem.Director, ]$INFO[Container(90012).NumItems, [COLOR grey](,)[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + ControlGroup(90001).HasFocus(90014)">$LOCALIZE[31115]$INFO[Container(90014).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90014).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + ControlGroup(90001).HasFocus(90016)">$LOCALIZE[33054]$INFO[Container(90016).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90016).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + ControlGroup(90001).HasFocus(90011)">$ADDON[skin.aeon.tajo 31111]$INFO[Container(90011).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90011).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + ControlGroup(90001).HasFocus(90012)">$ADDON[skin.aeon.tajo 31112]$INFO[ListItem.Director, ]$INFO[Container(90012).NumItems, [COLOR grey](,)[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + ControlGroup(90001).HasFocus(90014)">$ADDON[skin.aeon.tajo 31115]$INFO[Container(90014).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90014).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + ControlGroup(90001).HasFocus(90016)">$ADDON[skin.aeon.tajo 33054]$INFO[Container(90016).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(90016).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,movie) + ControlGroup(90001).HasFocus(90017)">$INFO[ListItem.Set]$INFO[Container(90017).NumItems, [COLOR grey](,)[/COLOR]]</value>
 	</variable>
 	<variable name="WidgetFanartVar">
@@ -540,24 +547,24 @@
 		<value condition="!String.IsEmpty(Container(8008).ListItem.Art(fanart)) + Control.HasFocus(8008)">$INFO[Container(8008).ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="AddonStatusDescriptionVar">
-		<value condition="Control.HasFocus(100) | Control.HasFocus(101)">[COLOR grey2]$LOCALIZE[31427][/COLOR]</value>
-		<value condition="Control.HasFocus(102) | Control.HasFocus(103)">[COLOR grey2]$LOCALIZE[31429][/COLOR]</value>
-		<value condition="Control.HasFocus(104) | Control.HasFocus(105)">[COLOR grey2]$LOCALIZE[31428][/COLOR]</value>
-		<value condition="Control.HasFocus(106) | Control.HasFocus(107)">[COLOR grey2]$LOCALIZE[31430][/COLOR]</value>
-		<value condition="Control.HasFocus(108) | Control.HasFocus(109)">[COLOR grey2]$LOCALIZE[31431][/COLOR]</value>
-		<value condition="Control.HasFocus(110) | Control.HasFocus(111)">[COLOR grey2]$LOCALIZE[31434][/COLOR]</value>
-		<value condition="Control.HasFocus(200) | Control.HasFocus(201)">[COLOR grey2]$LOCALIZE[31432][/COLOR]</value>
-		<value condition="Control.HasFocus(202) | Control.HasFocus(203)">[COLOR grey2]$LOCALIZE[31474][/COLOR]</value>
-		<value condition="Control.HasFocus(204) | Control.HasFocus(205)">[COLOR grey2]$LOCALIZE[31478][/COLOR]</value>
-		<value condition="Control.HasFocus(206) | Control.HasFocus(207)">[COLOR grey2]$LOCALIZE[31473][/COLOR]</value>
-		<value condition="Control.HasFocus(317) | Control.HasFocus(318)">[COLOR grey2]$LOCALIZE[32016][/COLOR]</value>
-		<value condition="Control.HasFocus(208) | Control.HasFocus(209)">[COLOR grey2]$LOCALIZE[31481][/COLOR]</value>
-		<value condition="Control.HasFocus(210) | Control.HasFocus(211)">[COLOR grey2]$LOCALIZE[31110][/COLOR]</value>
-		<value condition="Control.HasFocus(214) | Control.HasFocus(215)">[COLOR grey2]$LOCALIZE[31477][/COLOR]</value>
-		<value condition="Control.HasFocus(216) | Control.HasFocus(217)">[COLOR grey2]$LOCALIZE[31200][/COLOR]</value>
-		<value condition="Control.HasFocus(300) | Control.HasFocus(301)">[COLOR grey2]$LOCALIZE[31476][/COLOR]</value>
-		<value condition="Control.HasFocus(302) | Control.HasFocus(303)">[COLOR grey2]$LOCALIZE[31479][/COLOR]</value>
-		<value condition="Control.HasFocus(389) | Control.HasFocus(390)">[COLOR grey2]$LOCALIZE[32019][/COLOR]</value>
+		<value condition="Control.HasFocus(100) | Control.HasFocus(101)">[COLOR grey2]$ADDON[skin.aeon.tajo 31427][/COLOR]</value>
+		<value condition="Control.HasFocus(102) | Control.HasFocus(103)">[COLOR grey2]$ADDON[skin.aeon.tajo 31429][/COLOR]</value>
+		<value condition="Control.HasFocus(104) | Control.HasFocus(105)">[COLOR grey2]$ADDON[skin.aeon.tajo 31428][/COLOR]</value>
+		<value condition="Control.HasFocus(106) | Control.HasFocus(107)">[COLOR grey2]$ADDON[skin.aeon.tajo 31430][/COLOR]</value>
+		<value condition="Control.HasFocus(108) | Control.HasFocus(109)">[COLOR grey2]$ADDON[skin.aeon.tajo 31431][/COLOR]</value>
+		<value condition="Control.HasFocus(110) | Control.HasFocus(111)">[COLOR grey2]$ADDON[skin.aeon.tajo 31434][/COLOR]</value>
+		<value condition="Control.HasFocus(200) | Control.HasFocus(201)">[COLOR grey2]$ADDON[skin.aeon.tajo 31432][/COLOR]</value>
+		<value condition="Control.HasFocus(202) | Control.HasFocus(203)">[COLOR grey2]$ADDON[skin.aeon.tajo 31474][/COLOR]</value>
+		<value condition="Control.HasFocus(204) | Control.HasFocus(205)">[COLOR grey2]$ADDON[skin.aeon.tajo 31478][/COLOR]</value>
+		<value condition="Control.HasFocus(206) | Control.HasFocus(207)">[COLOR grey2]$ADDON[skin.aeon.tajo 31473][/COLOR]</value>
+		<value condition="Control.HasFocus(317) | Control.HasFocus(318)">[COLOR grey2]$ADDON[skin.aeon.tajo 32016][/COLOR]</value>
+		<value condition="Control.HasFocus(208) | Control.HasFocus(209)">[COLOR grey2]$ADDON[skin.aeon.tajo 31481][/COLOR]</value>
+		<value condition="Control.HasFocus(210) | Control.HasFocus(211)">[COLOR grey2]$ADDON[skin.aeon.tajo 31110][/COLOR]</value>
+		<value condition="Control.HasFocus(214) | Control.HasFocus(215)">[COLOR grey2]$ADDON[skin.aeon.tajo 31477][/COLOR]</value>
+		<value condition="Control.HasFocus(216) | Control.HasFocus(217)">[COLOR grey2]$ADDON[skin.aeon.tajo 31200][/COLOR]</value>
+		<value condition="Control.HasFocus(300) | Control.HasFocus(301)">[COLOR grey2]$ADDON[skin.aeon.tajo 31476][/COLOR]</value>
+		<value condition="Control.HasFocus(302) | Control.HasFocus(303)">[COLOR grey2]$ADDON[skin.aeon.tajo 31479][/COLOR]</value>
+		<value condition="Control.HasFocus(389) | Control.HasFocus(390)">[COLOR grey2]$ADDON[skin.aeon.tajo 32019][/COLOR]</value>
 		<value/>
 	</variable>
 	<variable name="FallbackBackgroundOnClickVar">
@@ -591,7 +598,7 @@
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),5)">$INFO[Weather.Location,[COLOR white],:[/COLOR] ]$INFO[Weather.Conditions]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),6)">$INFO[Window(Home).Property(RandomAddon.Count),[COLOR white]$LOCALIZE[20161] $LOCALIZE[24001]: [/COLOR],[COLOR white]     [/COLOR]]$INFO[Window(home).Property(favourite.count), [COLOR white]$LOCALIZE[1036]:[/COLOR] ]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),7)">$INFO[Window(Home).Property(MusicVideos.Count),[COLOR white]$LOCALIZE[20389]:[/COLOR] ]$INFO[Window(Home).Property(MusicVideos.Watched),[COLOR white]     $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(MusicVideos.UnWatched),[COLOR white]     $LOCALIZE[16101]:[/COLOR] ]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),8)">$INFO[System.memory(used.percent),[COLOR white]$LOCALIZE[31309][/COLOR] ]$INFO[System.CPUUsage,[COLOR white]     $LOCALIZE[13271][/COLOR] ]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),8)">$INFO[System.memory(used.percent),[COLOR white]$ADDON[skin.aeon.tajo 31309][/COLOR] ]$INFO[System.CPUUsage,[COLOR white]     $LOCALIZE[13271][/COLOR] ]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),9)">$INFO[Window(Home).Property(PlaylistCount),[COLOR white]$LOCALIZE[20342]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistWatched),[COLOR white]     $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistUnWatched),[COLOR white]     $LOCALIZE[16101]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistInProgress),[COLOR white]     $LOCALIZE[575]:[/COLOR] ]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),10)">$INFO[Window(Home).Property(PlaylistTVShowCount),[COLOR white]$LOCALIZE[20343]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistEpisodes),[COLOR white]     $LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistEpisodesUnWatched),[COLOR white]     $LOCALIZE[16101]:[/COLOR] ]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),11)">$INFO[Window(Home).Property(PlaylistCount),[COLOR white]$LOCALIZE[20389]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistWatched),[COLOR white]     $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistUnWatched),[COLOR white]     $LOCALIZE[16101]:[/COLOR] ]$INFO[Window(Home).Property(PlaylistInProgress),[COLOR white]     $LOCALIZE[575]:[/COLOR] ]</value>
@@ -612,22 +619,22 @@
 		<value condition="Control.HasFocus(900) + String.IsEqual(Container(10051).ListItem.Property(call),tv)">$LOCALIZE[1024]</value>
 		<value condition="Control.HasFocus(900)">$LOCALIZE[208]</value>
 		<value condition="Control.HasFocus(901)">$LOCALIZE[206]</value>
-		<value condition="Control.HasFocus(902)">$LOCALIZE[31972]</value>
+		<value condition="Control.HasFocus(902)">$ADDON[skin.aeon.tajo 31972]</value>
 		<value condition="Control.HasFocus(903)">$LOCALIZE[5]</value>
-		<value condition="Control.HasFocus(90002) | Container(90000).HasNext + !Container(90000).HasPrevious">$LOCALIZE[31973]</value>
+		<value condition="Control.HasFocus(90002) | Container(90000).HasNext + !Container(90000).HasPrevious">$ADDON[skin.aeon.tajo 31973]</value>
 	</variable>
 	<variable name="Empty_Plot">
-		<value condition="String.IsEmpty(Container(10051).ListItem.Property(Biography))">[CR][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[21887]:[/COLOR] $LOCALIZE[33077]</value>
+		<value condition="String.IsEmpty(Container(10051).ListItem.Property(Biography))">[CR][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[21887]:[/COLOR] $ADDON[skin.aeon.tajo 33077]</value>
 		<value>$INFO[Container(10051).ListItem.Property(Biography)]</value>
 	</variable>
 	<variable name="EmbuaryInfoDetailsLabelVar">
-		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10052)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31974] ]$INFO[Container(10052).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10052).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10053)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31975] ]$INFO[Container(10053).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10053).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10054)">$LOCALIZE[31976] $INFO[Container(10054).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10054).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="Control.HasFocus(10055)">$LOCALIZE[31976] $INFO[Container(10055).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10055).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10052)">$INFO[Container(10051).ListItem.Label,$ADDON[skin.aeon.tajo 31974] ]$INFO[Container(10052).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10052).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10053)">$INFO[Container(10051).ListItem.Label,$ADDON[skin.aeon.tajo 31975] ]$INFO[Container(10053).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10053).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10054)">$ADDON[skin.aeon.tajo 31976] $INFO[Container(10054).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10054).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="Control.HasFocus(10055)">$ADDON[skin.aeon.tajo 31976] $INFO[Container(10055).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10055).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="Control.HasFocus(10052)">$LOCALIZE[206] $INFO[Container(10052).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10052).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="Control.HasFocus(10053)">$ADDON[script.embuary.info 32009] $INFO[Container(10053).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10053).NumItems, [COLOR grey]/,)[/COLOR]]</value>
-		<value condition="Control.HasFocus(10054)">$LOCALIZE[31972] $INFO[Container(10054).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10054).NumItems, [COLOR grey]/,)[/COLOR]]</value>
+		<value condition="Control.HasFocus(10054)">$ADDON[skin.aeon.tajo 31972] $INFO[Container(10054).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10054).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 		<value condition="Control.HasFocus(10056)">$ADDON[script.embuary.info 32018] $INFO[Container(10056).CurrentItem, [COLOR grey](,[/COLOR]]$INFO[Container(10056).NumItems, [COLOR grey]/,)[/COLOR]]</value>
 	</variable>
 	<!-- List Label Vars -->
@@ -639,12 +646,12 @@
 		<value condition="ListItem.IsCollection">[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[342]:[/COLOR] $INFO[Container(59631).NumItems]</value>
 		<value condition="Container.Content(episodes)">$VAR[ItemDuration,$LOCALIZE[180]: ,]$INFO[ListItem.Premiered,  •  $LOCALIZE[20416]: ,]</value>
 		<value condition="Container.Content(movies)">$VAR[ItemDuration,$LOCALIZE[180]: ,]$INFO[ListItem.Genre,  •  $LOCALIZE[515]: ,]</value>
-		<value condition="Container.Content(tvshows)">$LOCALIZE[33054]: $INFO[ListItem.Property(TotalSeasons)] $INFO[ListItem.Label2, •  , ]($LOCALIZE[16101]: $INFO[ListItem.Property(UnwatchedEpisodes)])</value>
+		<value condition="Container.Content(tvshows)">$ADDON[skin.aeon.tajo 33054]: $INFO[ListItem.Property(TotalSeasons)] $INFO[ListItem.Label2, •  , ]($LOCALIZE[16101]: $INFO[ListItem.Property(UnwatchedEpisodes)])</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="VideoListSearch">
 		<value condition="Container.Content(musicvideos)">$VAR[ItemDuration]$INFO[ListItem.Artist, • ,]$INFO[ListItem.Album, • , ]($INFO[ListItem.Year])</value>
-		<value condition="Container.Content(tvshows)">$INFO[ListItem.Year,, • ]$LOCALIZE[33054]: $INFO[ListItem.Property(TotalSeasons),, • ]$VAR[value_ground14_label]: $VAR[value_ground14_value]</value>
+		<value condition="Container.Content(tvshows)">$INFO[ListItem.Year,, • ]$ADDON[skin.aeon.tajo 33054]: $INFO[ListItem.Property(TotalSeasons),, • ]$VAR[value_ground14_label]: $VAR[value_ground14_value]</value>
 		<value condition="Container.Content(movies)">$INFO[ListItem.Year]$VAR[ItemDuration, • ,]$INFO[ListItem.Genre, • ,]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.TvShowTitle,, • ]$INFO[ListItem.Premiered]$VAR[ItemDuration, • ,]</value>
 		<value condition="Container.Content(songs)">$INFO[ListItem.Artist]$INFO[ListItem.Album, • , ]($INFO[ListItem.Year])</value>
@@ -683,13 +690,13 @@
 	</variable>
 	<variable name="RatingAndVotesVar">
 		<value condition="String.IsEqual(ListItem.Votes,0) + !String.IsEmpty(ListItem.Rating(imdb))">$LOCALIZE[368]</value>
-		<value condition="String.IsEqual(ListItem.Votes,0) + !String.IsEmpty(ListItem.Rating(themoviedb))">$LOCALIZE[31120]</value>
+		<value condition="String.IsEqual(ListItem.Votes,0) + !String.IsEmpty(ListItem.Rating(themoviedb))">$ADDON[skin.aeon.tajo 31120]</value>
 		<value condition="String.IsEmpty(ListItem.Votes)">$LOCALIZE[563]</value>
 		<value>$INFO[ListItem.Votes,, $LOCALIZE[205]]</value>
 	</variable>
 	<variable name="OneOrMoreSeasonsVar">
 		<value condition="String.IsEqual(ListItem.Property(TotalSeasons),1)">$LOCALIZE[20373]</value>
-		<value>$LOCALIZE[33054]</value>
+		<value>$ADDON[skin.aeon.tajo 33054]</value>
 	</variable>
 	<variable name="OneOrMoreEpisodesVar">
 		<value condition="String.IsEqual(ListItem.Property(TotalEpisodes),1)">$LOCALIZE[20359]</value>
@@ -723,8 +730,8 @@
 	<variable name="SeekLabelVar">
 		<value condition="Player.IsTempo">$LOCALIZE[224]:[COLOR $INFO[Skin.String(theme_text)]] $INFO[Player.Playspeed][/COLOR]</value>
 		<value condition="[Player.Playing | [Player.Paused + !Player.Caching] | Player.ShowTime]+ !Player.Seeking">$INFO[System.Time]$INFO[Player.FinishTime, - $LOCALIZE[19081] ,]</value>
-		<value condition="!String.IsEmpty(Player.SeekStepSize)">$LOCALIZE[31046][COLOR $INFO[Skin.String(theme_text)]] $INFO[Player.SeekStepSize][/COLOR]</value>
-		<value condition="!String.IsEmpty(Player.SeekOffset)">$LOCALIZE[31046][COLOR $INFO[Skin.String(theme_text)]] $INFO[Player.SeekOffset][/COLOR]</value>
+		<value condition="!String.IsEmpty(Player.SeekStepSize)">$ADDON[skin.aeon.tajo 31046][COLOR $INFO[Skin.String(theme_text)]] $INFO[Player.SeekStepSize][/COLOR]</value>
+		<value condition="!String.IsEmpty(Player.SeekOffset)">$ADDON[skin.aeon.tajo 31046][COLOR $INFO[Skin.String(theme_text)]] $INFO[Player.SeekOffset][/COLOR]</value>
 		<value condition="Player.Caching + !Player.Seeking">$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</value>
 	</variable>
 	<variable name="OSDRightLabelVar">
@@ -838,74 +845,74 @@
 		<value>PlayMedia($ESCINFO[Container(5384).ListItem(1).FileNameAndPath],1)</value>
 	</variable>
 	<variable name="SkinSettingsDescriptionVar">
-		<value condition="Control.HasFocus(100)">[COLOR grey2]$LOCALIZE[31912][/COLOR]</value>
-		<value condition="Control.HasFocus(101)">[COLOR grey2]$LOCALIZE[31914][/COLOR]</value>
-		<value condition="Control.HasFocus(102)">[COLOR grey2]$LOCALIZE[31920][/COLOR]</value>
-		<value condition="Control.HasFocus(327)">[COLOR grey2]$LOCALIZE[32094][/COLOR]</value>
-		<value condition="Control.HasFocus(388)">[COLOR grey2]$LOCALIZE[31215][/COLOR]</value>
-		<value condition="Control.HasFocus(119)">[COLOR grey2]$LOCALIZE[31217][/COLOR]</value>
-		<value condition="Control.HasFocus(393)">[COLOR grey2]$LOCALIZE[31244][/COLOR]</value>
-		<value condition="Control.HasFocus(381)">[COLOR grey2]$LOCALIZE[31218][/COLOR]</value>
-		<value condition="Control.HasFocus(383)">[COLOR grey2]$LOCALIZE[31219][/COLOR]</value>
-		<value condition="Control.HasFocus(398)">[COLOR grey2]$LOCALIZE[31228][/COLOR]</value>
-		<value condition="Control.HasFocus(313)">[COLOR grey2]$LOCALIZE[31231][/COLOR]</value>
-		<value condition="Control.HasFocus(475)">[COLOR grey2]$LOCALIZE[31233][/COLOR]</value>
-		<value condition="Control.HasFocus(289)">[COLOR grey2]$LOCALIZE[31234][/COLOR]</value>
-		<value condition="Control.HasFocus(478)">[COLOR grey2]$LOCALIZE[31236][/COLOR]</value>
-		<value condition="Control.HasFocus(473) | Control.HasFocus(474)">[COLOR grey2]$LOCALIZE[31230][/COLOR]</value>
-		<value condition="Control.HasFocus(341)">[COLOR grey2]$LOCALIZE[31227][/COLOR]</value>
-		<value condition="Control.HasFocus(116)">[COLOR grey2]$LOCALIZE[31202][/COLOR]</value>
-		<value condition="Control.HasFocus(199)">[COLOR grey2]$LOCALIZE[31204][/COLOR]</value>
-		<value condition="Control.HasFocus(296) | Control.HasFocus(297)">[COLOR grey2]$LOCALIZE[31203][/COLOR]</value>
-		<value condition="Control.HasFocus(257)">[COLOR grey2]$LOCALIZE[31216][/COLOR]</value>
-		<value condition="Control.HasFocus(392)">[COLOR grey2]$LOCALIZE[32025][/COLOR]</value>
-		<value condition="Control.HasFocus(472)">[COLOR grey2]$LOCALIZE[31214][/COLOR]</value>
-		<value condition="Control.HasFocus(471) + String.IsEmpty(skin.string(Def_back))">[COLOR grey2]$LOCALIZE[31211][/COLOR]</value>
-		<value condition="Control.HasFocus(471) + !String.IsEmpty(skin.string(Def_back))">[COLOR grey2]$LOCALIZE[31211][CR]$LOCALIZE[31212]$INFO[Skin.String(Def_back)][/COLOR]</value>
-		<value condition="Control.HasFocus(427) | Control.HasFocus(440)">[COLOR grey2]$LOCALIZE[31186][/COLOR]</value>
-		<value condition="Control.HasFocus(103)">[COLOR grey2]$LOCALIZE[31921][/COLOR]</value>
-		<value condition="Control.HasFocus(459)">[COLOR grey2]$LOCALIZE[31189][/COLOR]</value>
-		<value condition="Control.HasFocus(104)">[COLOR grey2]$LOCALIZE[31929][/COLOR]</value>
-		<value condition="Control.HasFocus(105)">[COLOR grey2]$LOCALIZE[31161][/COLOR]</value>
-		<value condition="Control.HasFocus(106)">[COLOR grey2]$LOCALIZE[31937][/COLOR]</value>
-		<value condition="Control.HasFocus(115)">[COLOR grey2]$LOCALIZE[32000][/COLOR]</value>
-		<value condition="Control.HasFocus(227)">[COLOR grey2]$LOCALIZE[32002][/COLOR]</value>
-		<value condition="Control.HasFocus(627)">[COLOR grey2]$LOCALIZE[32130][/COLOR]</value>
-		<value condition="Control.HasFocus(237)">[COLOR grey2]$LOCALIZE[32011][/COLOR]</value>
-		<value condition="Control.HasFocus(247)">[COLOR grey2]$LOCALIZE[32018][/COLOR]</value>
-		<value condition="Control.HasFocus(253)">[COLOR grey2]$LOCALIZE[32022][/COLOR]</value>
-		<value condition="Control.HasFocus(255)">[COLOR grey2]$LOCALIZE[32035][/COLOR]</value>
-		<value condition="Control.HasFocus(379)">[COLOR grey2]$LOCALIZE[31194][/COLOR]</value>
-		<value condition="Control.HasFocus(371)">[COLOR grey2]$LOCALIZE[32045][/COLOR]</value>
-		<value condition="Control.HasFocus(117)">[COLOR grey2]$LOCALIZE[32036][/COLOR]</value>
-		<value condition="Control.HasFocus(200)">[COLOR grey2]$LOCALIZE[31917][/COLOR]</value>
-		<value condition="Control.HasFocus(201)">[COLOR grey2]$LOCALIZE[31918][/COLOR]</value>
-		<value condition="Control.HasFocus(202)">[COLOR grey2]$LOCALIZE[31919][/COLOR]</value>
-		<value condition="Control.HasFocus(203)">[COLOR grey2]$LOCALIZE[31171][/COLOR]</value>
-		<value condition="Control.HasFocus(280)">[COLOR grey2]$LOCALIZE[32103][/COLOR]</value>
-		<value condition="Control.HasFocus(204)">[COLOR grey2]$LOCALIZE[31932][/COLOR]</value>
-		<value condition="Control.HasFocus(229)">[COLOR grey2]$LOCALIZE[32037][/COLOR]</value>
-		<value condition="Control.HasFocus(291)">[COLOR grey2]$LOCALIZE[32091][/COLOR]</value>
-		<value condition="Control.HasFocus(118)">[COLOR grey2]$LOCALIZE[32038][/COLOR]</value>
-		<value condition="Control.HasFocus(292)">[COLOR grey2]$LOCALIZE[32092][/COLOR]</value>
-		<value condition="Control.HasFocus(219)">[COLOR grey2]$LOCALIZE[32039][/COLOR]</value>
-		<value condition="Control.HasFocus(300)">[COLOR grey2]$LOCALIZE[31922][/COLOR]</value>
-		<value condition="Control.HasFocus(301)">[COLOR grey2]$LOCALIZE[31924][/COLOR]</value>
-		<value condition="Control.HasFocus(304)">[COLOR grey2]$LOCALIZE[31122][/COLOR]</value>
-		<value condition="Control.HasFocus(382)">[COLOR grey2]$LOCALIZE[32066][/COLOR]</value>
-		<value condition="Control.HasFocus(305) | Control.HasFocus(307)">[COLOR grey2]$LOCALIZE[31938][/COLOR]</value>
-		<value condition="Control.HasFocus(306)">[COLOR grey2]$LOCALIZE[31151][/COLOR]</value>
-		<value condition="Control.HasFocus(401)">[COLOR grey2]$LOCALIZE[31940][/COLOR]</value>
-		<value condition="Control.HasFocus(402)">[COLOR grey2]$LOCALIZE[31942][/COLOR]</value>
-		<value condition="Control.HasFocus(404)">[COLOR grey2]$LOCALIZE[31944][/COLOR]</value>
-		<value condition="Control.HasFocus(406)">[COLOR grey2]$LOCALIZE[31962][/COLOR]</value>
-		<value condition="Control.HasFocus(90000) + String.IsEmpty(Container(90000).ListItem.Property(Path))">[COLOR grey2]$LOCALIZE[31923][/COLOR]</value>
-		<value condition="Control.HasFocus(90012)">[COLOR grey2]$LOCALIZE[31925][/COLOR]</value>
-		<value condition="Control.HasFocus(90013) | Control.HasFocus(90021)">[COLOR grey2]$LOCALIZE[31926][/COLOR]</value>
-		<value condition="Control.HasFocus(90014)">[COLOR grey2]$LOCALIZE[31930][/COLOR]</value>
-		<value condition="Control.HasFocus(90016)">[COLOR grey2]$LOCALIZE[31933][/COLOR]</value>
-		<value condition="Control.HasFocus(90017)">[COLOR grey2]$LOCALIZE[31935][/COLOR]</value>
-		<value condition="Control.HasFocus(90020)">[COLOR grey2]$LOCALIZE[31927][/COLOR]</value>
+		<value condition="Control.HasFocus(100)">[COLOR grey2]$ADDON[skin.aeon.tajo 31912][/COLOR]</value>
+		<value condition="Control.HasFocus(101)">[COLOR grey2]$ADDON[skin.aeon.tajo 31914][/COLOR]</value>
+		<value condition="Control.HasFocus(102)">[COLOR grey2]$ADDON[skin.aeon.tajo 31920][/COLOR]</value>
+		<value condition="Control.HasFocus(327)">[COLOR grey2]$ADDON[skin.aeon.tajo 32094][/COLOR]</value>
+		<value condition="Control.HasFocus(388)">[COLOR grey2]$ADDON[skin.aeon.tajo 31215][/COLOR]</value>
+		<value condition="Control.HasFocus(119)">[COLOR grey2]$ADDON[skin.aeon.tajo 31217][/COLOR]</value>
+		<value condition="Control.HasFocus(393)">[COLOR grey2]$ADDON[skin.aeon.tajo 31244][/COLOR]</value>
+		<value condition="Control.HasFocus(381)">[COLOR grey2]$ADDON[skin.aeon.tajo 31218][/COLOR]</value>
+		<value condition="Control.HasFocus(383)">[COLOR grey2]$ADDON[skin.aeon.tajo 31219][/COLOR]</value>
+		<value condition="Control.HasFocus(398)">[COLOR grey2]$ADDON[skin.aeon.tajo 31228][/COLOR]</value>
+		<value condition="Control.HasFocus(313)">[COLOR grey2]$ADDON[skin.aeon.tajo 31231][/COLOR]</value>
+		<value condition="Control.HasFocus(475)">[COLOR grey2]$ADDON[skin.aeon.tajo 31233][/COLOR]</value>
+		<value condition="Control.HasFocus(289)">[COLOR grey2]$ADDON[skin.aeon.tajo 31234][/COLOR]</value>
+		<value condition="Control.HasFocus(478)">[COLOR grey2]$ADDON[skin.aeon.tajo 31236][/COLOR]</value>
+		<value condition="Control.HasFocus(473) | Control.HasFocus(474)">[COLOR grey2]$ADDON[skin.aeon.tajo 31230][/COLOR]</value>
+		<value condition="Control.HasFocus(341)">[COLOR grey2]$ADDON[skin.aeon.tajo 31227][/COLOR]</value>
+		<value condition="Control.HasFocus(116)">[COLOR grey2]$ADDON[skin.aeon.tajo 31202][/COLOR]</value>
+		<value condition="Control.HasFocus(199)">[COLOR grey2]$ADDON[skin.aeon.tajo 31204][/COLOR]</value>
+		<value condition="Control.HasFocus(296) | Control.HasFocus(297)">[COLOR grey2]$ADDON[skin.aeon.tajo 31203][/COLOR]</value>
+		<value condition="Control.HasFocus(257)">[COLOR grey2]$ADDON[skin.aeon.tajo 31216][/COLOR]</value>
+		<value condition="Control.HasFocus(392)">[COLOR grey2]$ADDON[skin.aeon.tajo 32025][/COLOR]</value>
+		<value condition="Control.HasFocus(472)">[COLOR grey2]$ADDON[skin.aeon.tajo 31214][/COLOR]</value>
+		<value condition="Control.HasFocus(471) + String.IsEmpty(skin.string(Def_back))">[COLOR grey2]$ADDON[skin.aeon.tajo 31211][/COLOR]</value>
+		<value condition="Control.HasFocus(471) + !String.IsEmpty(skin.string(Def_back))">[COLOR grey2]$ADDON[skin.aeon.tajo 31211][CR]$ADDON[skin.aeon.tajo 31212]$INFO[Skin.String(Def_back)][/COLOR]</value>
+		<value condition="Control.HasFocus(427) | Control.HasFocus(440)">[COLOR grey2]$ADDON[skin.aeon.tajo 31186][/COLOR]</value>
+		<value condition="Control.HasFocus(103)">[COLOR grey2]$ADDON[skin.aeon.tajo 31921][/COLOR]</value>
+		<value condition="Control.HasFocus(459)">[COLOR grey2]$ADDON[skin.aeon.tajo 31189][/COLOR]</value>
+		<value condition="Control.HasFocus(104)">[COLOR grey2]$ADDON[skin.aeon.tajo 31929][/COLOR]</value>
+		<value condition="Control.HasFocus(105)">[COLOR grey2]$ADDON[skin.aeon.tajo 31161][/COLOR]</value>
+		<value condition="Control.HasFocus(106)">[COLOR grey2]$ADDON[skin.aeon.tajo 31937][/COLOR]</value>
+		<value condition="Control.HasFocus(115)">[COLOR grey2]$ADDON[skin.aeon.tajo 32000][/COLOR]</value>
+		<value condition="Control.HasFocus(227)">[COLOR grey2]$ADDON[skin.aeon.tajo 32002][/COLOR]</value>
+		<value condition="Control.HasFocus(627)">[COLOR grey2]$ADDON[skin.aeon.tajo 32130][/COLOR]</value>
+		<value condition="Control.HasFocus(237)">[COLOR grey2]$ADDON[skin.aeon.tajo 32011][/COLOR]</value>
+		<value condition="Control.HasFocus(247)">[COLOR grey2]$ADDON[skin.aeon.tajo 32018][/COLOR]</value>
+		<value condition="Control.HasFocus(253)">[COLOR grey2]$ADDON[skin.aeon.tajo 32022][/COLOR]</value>
+		<value condition="Control.HasFocus(255)">[COLOR grey2]$ADDON[skin.aeon.tajo 32035][/COLOR]</value>
+		<value condition="Control.HasFocus(379)">[COLOR grey2]$ADDON[skin.aeon.tajo 31194][/COLOR]</value>
+		<value condition="Control.HasFocus(371)">[COLOR grey2]$ADDON[skin.aeon.tajo 32045][/COLOR]</value>
+		<value condition="Control.HasFocus(117)">[COLOR grey2]$ADDON[skin.aeon.tajo 32036][/COLOR]</value>
+		<value condition="Control.HasFocus(200)">[COLOR grey2]$ADDON[skin.aeon.tajo 31917][/COLOR]</value>
+		<value condition="Control.HasFocus(201)">[COLOR grey2]$ADDON[skin.aeon.tajo 31918][/COLOR]</value>
+		<value condition="Control.HasFocus(202)">[COLOR grey2]$ADDON[skin.aeon.tajo 31919][/COLOR]</value>
+		<value condition="Control.HasFocus(203)">[COLOR grey2]$ADDON[skin.aeon.tajo 31171][/COLOR]</value>
+		<value condition="Control.HasFocus(280)">[COLOR grey2]$ADDON[skin.aeon.tajo 32103][/COLOR]</value>
+		<value condition="Control.HasFocus(204)">[COLOR grey2]$ADDON[skin.aeon.tajo 31932][/COLOR]</value>
+		<value condition="Control.HasFocus(229)">[COLOR grey2]$ADDON[skin.aeon.tajo 32037][/COLOR]</value>
+		<value condition="Control.HasFocus(291)">[COLOR grey2]$ADDON[skin.aeon.tajo 32091][/COLOR]</value>
+		<value condition="Control.HasFocus(118)">[COLOR grey2]$ADDON[skin.aeon.tajo 32038][/COLOR]</value>
+		<value condition="Control.HasFocus(292)">[COLOR grey2]$ADDON[skin.aeon.tajo 32092][/COLOR]</value>
+		<value condition="Control.HasFocus(219)">[COLOR grey2]$ADDON[skin.aeon.tajo 32039][/COLOR]</value>
+		<value condition="Control.HasFocus(300)">[COLOR grey2]$ADDON[skin.aeon.tajo 31922][/COLOR]</value>
+		<value condition="Control.HasFocus(301)">[COLOR grey2]$ADDON[skin.aeon.tajo 31924][/COLOR]</value>
+		<value condition="Control.HasFocus(304)">[COLOR grey2]$ADDON[skin.aeon.tajo 31122][/COLOR]</value>
+		<value condition="Control.HasFocus(382)">[COLOR grey2]$ADDON[skin.aeon.tajo 32066][/COLOR]</value>
+		<value condition="Control.HasFocus(305) | Control.HasFocus(307)">[COLOR grey2]$ADDON[skin.aeon.tajo 31938][/COLOR]</value>
+		<value condition="Control.HasFocus(306)">[COLOR grey2]$ADDON[skin.aeon.tajo 31151][/COLOR]</value>
+		<value condition="Control.HasFocus(401)">[COLOR grey2]$ADDON[skin.aeon.tajo 31940][/COLOR]</value>
+		<value condition="Control.HasFocus(402)">[COLOR grey2]$ADDON[skin.aeon.tajo 31942][/COLOR]</value>
+		<value condition="Control.HasFocus(404)">[COLOR grey2]$ADDON[skin.aeon.tajo 31944][/COLOR]</value>
+		<value condition="Control.HasFocus(406)">[COLOR grey2]$ADDON[skin.aeon.tajo 31962][/COLOR]</value>
+		<value condition="Control.HasFocus(90000) + String.IsEmpty(Container(90000).ListItem.Property(Path))">[COLOR grey2]$ADDON[skin.aeon.tajo 31923][/COLOR]</value>
+		<value condition="Control.HasFocus(90012)">[COLOR grey2]$ADDON[skin.aeon.tajo 31925][/COLOR]</value>
+		<value condition="Control.HasFocus(90013) | Control.HasFocus(90021)">[COLOR grey2]$ADDON[skin.aeon.tajo 31926][/COLOR]</value>
+		<value condition="Control.HasFocus(90014)">[COLOR grey2]$ADDON[skin.aeon.tajo 31930][/COLOR]</value>
+		<value condition="Control.HasFocus(90016)">[COLOR grey2]$ADDON[skin.aeon.tajo 31933][/COLOR]</value>
+		<value condition="Control.HasFocus(90017)">[COLOR grey2]$ADDON[skin.aeon.tajo 31935][/COLOR]</value>
+		<value condition="Control.HasFocus(90020)">[COLOR grey2]$ADDON[skin.aeon.tajo 31927][/COLOR]</value>
 	</variable>
 	<variable name="Thumb_views">
 		<value condition="Control.HasFocus(428)">tajo/shelf.jpg</value>
@@ -935,8 +942,8 @@
 		<value condition="Control.HasFocus(462)">tajo/discographym.jpg</value>
 	</variable>
 	<variable name="Name_views">
-		<value condition="Control.HasFocus(428) | Control.HasFocus(429) | Control.HasFocus(435)">• $LOCALIZE[342][CR]• $LOCALIZE[20434][CR]• $LOCALIZE[20343][CR]• $LOCALIZE[33054]</value>
-		<value condition="Control.HasFocus(430) | Control.HasFocus(432) | Control.HasFocus(433) | Control.HasFocus(434) | Control.HasFocus(439)">• $LOCALIZE[342][CR]• $LOCALIZE[20434][CR]• $LOCALIZE[20343][CR]• $LOCALIZE[33054][CR]• $LOCALIZE[20360]</value>
+		<value condition="Control.HasFocus(428) | Control.HasFocus(429) | Control.HasFocus(435)">• $LOCALIZE[342][CR]• $LOCALIZE[20434][CR]• $LOCALIZE[20343][CR]• $ADDON[skin.aeon.tajo 33054]</value>
+		<value condition="Control.HasFocus(430) | Control.HasFocus(432) | Control.HasFocus(433) | Control.HasFocus(434) | Control.HasFocus(439)">• $LOCALIZE[342][CR]• $LOCALIZE[20434][CR]• $LOCALIZE[20343][CR]• $ADDON[skin.aeon.tajo 33054][CR]• $LOCALIZE[20360]</value>
 		<value condition="Control.HasFocus(431) | Control.HasFocus(437) | Control.HasFocus(438)">• $LOCALIZE[342][CR]• $LOCALIZE[20434][CR]• $LOCALIZE[20343]</value>
 		<value condition="Control.HasFocus(436)">• $LOCALIZE[342][CR]• $LOCALIZE[20434]</value>
 		<value condition="Control.HasFocus(441) | Control.HasFocus(442)">• $LOCALIZE[133][CR]• $LOCALIZE[132]</value>
@@ -966,40 +973,40 @@
 		<value condition="!String.IsEmpty(Container(9000).ListItem.Property(Widget))">$INFO[Container(9000).ListItem.Property(Widget)]</value>
 	</variable>
 	<variable name="WidgetLabelVar">
-		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),1)">$LOCALIZE[31152]</value>
-		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),2)">$LOCALIZE[31031]</value>
-		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),3)">$LOCALIZE[31153]</value>
-		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),4)">$LOCALIZE[31154]</value>
-		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),5)">$LOCALIZE[31155]</value>
-		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),6)">$LOCALIZE[31156]</value>
-		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),7)">$LOCALIZE[31158]</value>
+		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),1)">$ADDON[skin.aeon.tajo 31152]</value>
+		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),2)">$ADDON[skin.aeon.tajo 31031]</value>
+		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),3)">$ADDON[skin.aeon.tajo 31153]</value>
+		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),4)">$ADDON[skin.aeon.tajo 31154]</value>
+		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),5)">$ADDON[skin.aeon.tajo 31155]</value>
+		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),6)">$ADDON[skin.aeon.tajo 31156]</value>
+		<value condition="String.IsEqual(Window(Home).Property(HomeWidget),7)">$ADDON[skin.aeon.tajo 31158]</value>
 		<value>$LOCALIZE[20386]</value>
 	</variable>
 	<variable name="InfoLineLabelVar">
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),1)">$LOCALIZE[31052]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),2)">$LOCALIZE[31053]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),3)">$LOCALIZE[31054]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),4)">$LOCALIZE[31058]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),1)">$ADDON[skin.aeon.tajo 31052]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),2)">$ADDON[skin.aeon.tajo 31053]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),3)">$ADDON[skin.aeon.tajo 31054]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),4)">$ADDON[skin.aeon.tajo 31058]</value>
 		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),5)">$LOCALIZE[20088]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),6)">$LOCALIZE[31061]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),7)">$LOCALIZE[31085]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),6)">$ADDON[skin.aeon.tajo 31061]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),7)">$ADDON[skin.aeon.tajo 31085]</value>
 		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),8)">$LOCALIZE[130]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),9)">$LOCALIZE[31097]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),10)">$LOCALIZE[31098]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),11)">$LOCALIZE[31099]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),9)">$ADDON[skin.aeon.tajo 31097]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),10)">$ADDON[skin.aeon.tajo 31098]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(InfoLine),11)">$ADDON[skin.aeon.tajo 31099]</value>
 	</variable>
 	<variable name="BackgroundLabel2Var">
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,1)">$LOCALIZE[31062]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,2)">$LOCALIZE[31063]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,3)">$LOCALIZE[31064]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,4)">$LOCALIZE[31065]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,5)">$LOCALIZE[31066]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,6)">$LOCALIZE[31084]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,7)">$LOCALIZE[31028]: $LOCALIZE[31029]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,8)">$LOCALIZE[31028]: $LOCALIZE[31030]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,9)">$LOCALIZE[31028]: $LOCALIZE[31035]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,10)">$LOCALIZE[31028]: $LOCALIZE[31036]</value>
-		<value condition="String.IsEqual(Container(90000).ListItem.Property(BGType),4) | String.IsEqual(Container(90000).ListItem.Property(BGType),5)">$INFO[Container(90000).ListItem.Thumb,$LOCALIZE[31028]: ]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,1)">$ADDON[skin.aeon.tajo 31062]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,2)">$ADDON[skin.aeon.tajo 31063]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,3)">$ADDON[skin.aeon.tajo 31064]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,4)">$ADDON[skin.aeon.tajo 31065]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,5)">$ADDON[skin.aeon.tajo 31066]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,6)">$ADDON[skin.aeon.tajo 31084]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,7)">$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31029]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,8)">$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31030]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,9)">$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31035]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,10)">$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31036]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Property(BGType),4) | String.IsEqual(Container(90000).ListItem.Property(BGType),5)">$INFO[Container(90000).ListItem.Thumb,$ADDON[skin.aeon.tajo 31028]: ]</value>
 		<value condition="String.IsEqual(Container(90000).ListItem.Property(BGType),7)">$INFO[Container(90000).ListItem.Thumb,$LOCALIZE[20012]: ]</value>
 		<value>$INFO[Container(90000).ListItem.Thumb]</value>
 	</variable>
@@ -1492,7 +1499,7 @@
 	<variable name="MinsToHourDurationVar">
 		<value condition="Integer.IsEqual(Container(10051).ListItem.Duration(mins),60) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),120) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),180) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),240) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),300) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),360) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),420) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),480) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),540) | Integer.IsEqual(Container(10051).ListItem.Duration(mins),600)">$INFO[Container(10051).ListItem.Duration(hours),,[LOWERCASE]$LOCALIZE[12392][/LOWERCASE]]</value>
 		<value condition="Integer.IsLess(Container(10051).ListItem.Duration(mins),60)">$INFO[Container(10051).ListItem.Duration(m),,[LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</value>
-		<value condition="Integer.IsLess(Container(10051).ListItem.Duration(mins),1)">$INFO[Container(10051).ListItem.Duration(ss),,$LOCALIZE[31090]]</value>
+		<value condition="Integer.IsLess(Container(10051).ListItem.Duration(mins),1)">$INFO[Container(10051).ListItem.Duration(ss),,$ADDON[skin.aeon.tajo 31090]]</value>
 		<value>$INFO[Container(10051).ListItem.Duration(h),, h] $INFO[Container(10051).ListItem.Duration(m),, [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</value>
 	</variable>
 	<variable name="mpaa">
@@ -2078,7 +2085,7 @@
 		<value condition="Container.Content(songs)">$LOCALIZE[134]</value>
 		<value condition="Container.Content(actors)">$LOCALIZE[344]</value>
 		<value condition="Container.Content(directors)">$LOCALIZE[20348]</value>
-		<value condition="Container.Content(seasons)">$LOCALIZE[33054]</value>
+		<value condition="Container.Content(seasons)">$ADDON[skin.aeon.tajo 33054]</value>
 	</variable>
 	<variable name="Original">
 		<value condition="!String.IsEmpty(ListItem.OriginalTitle) + !String.IsEqual(ListItem.OriginalTitle,ListItem.Title)">[CR][B][COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[20376]: [/B][/COLOR]$INFO[ListItem.OriginalTitle]</value>
@@ -2088,7 +2095,7 @@
 	</variable>
 	<variable name="value_ground17_label">
 		<value condition="Container.Content(seasons) + String.StartsWith(ListItem.Label,*) + [Control.IsVisible(504) | Control.IsVisible(587)]"/>
-		<value condition="Container.Content(tvshows) + !String.IsEmpty(ListItem.Property(TotalSeasons))">$LOCALIZE[33054]</value>
+		<value condition="Container.Content(tvshows) + !String.IsEmpty(ListItem.Property(TotalSeasons))">$ADDON[skin.aeon.tajo 33054]</value>
 		<value condition="!String.StartsWith(ListItem.Path,videodb://movies/sets) + !String.IsEmpty(ListItem.Year)">[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[345][/COLOR]</value>
 		<value condition="Container.Content(artists) + [!String.IsEmpty(ListItem.Property(Artist_YearsActive)) | !String.IsEmpty(ListItem.Property(Artist_Instrument))]">$LOCALIZE[21898]/$LOCALIZE[21892]</value>
 	</variable>
@@ -2107,7 +2114,7 @@
 	<variable name="value_ground11_label">
 		<value condition="Container.Content(seasons) + String.StartsWith(ListItem.Label,*) + Control.IsVisible(504)"/>
 		<value condition="[Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) | Container.Content(sets)] + !String.IsEmpty(ListItem.Country)">$LOCALIZE[21875]</value>
-		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(ListItem.Premiered)">[LOWERCASE]$LOCALIZE[31981][/LOWERCASE]</value>
+		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(ListItem.Premiered)">[LOWERCASE]$ADDON[skin.aeon.tajo 31981][/LOWERCASE]</value>
 		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Premiered)">[LOWERCASE]$LOCALIZE[20416][/LOWERCASE]</value>
 		<value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Style))">$LOCALIZE[176]</value>
 		<value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Theme))">$LOCALIZE[21895]</value>
@@ -2176,10 +2183,10 @@
 	</variable>
 	<variable name="value_plot2">
 		<value condition="ListItem.IsParentFolder"/>
-		<value condition="Container.Content(seasons) + !String.IsEmpty(ListItem.Premiered) + !String.StartsWith(ListItem.Label,*) + Control.IsVisible(596)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[31981]: [/B][/COLOR]$INFO[ListItem.Premiered,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
+		<value condition="Container.Content(seasons) + !String.IsEmpty(ListItem.Premiered) + !String.StartsWith(ListItem.Label,*) + Control.IsVisible(596)">[COLOR $INFO[Skin.String(theme_text)]][B]$ADDON[skin.aeon.tajo 31981]: [/B][/COLOR]$INFO[ListItem.Premiered,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
 		<value condition="Container.Content(seasons) + String.StartsWith(ListItem.Label,*) + [Control.IsVisible(597) | Control.IsVisible(594) | Control.IsVisible(50)]">$VAR[Seasons_Year_Label,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
 		<value condition="Container.Content(seasons) + String.StartsWith(ListItem.Label,*) + Control.IsVisible(596)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
-		<value condition="Container.Content(seasons) + !String.StartsWith(ListItem.Label,*) + [Control.IsVisible(597) | Control.IsVisible(594) | Control.IsVisible(50)]">[B][COLOR $INFO[Skin.String(theme_text)]]$VAR[value_ground17_label,,: ][/COLOR][/B][COLOR=FFFFFAF0]$VAR[value_ground17_value,,  •  ][/COLOR][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[31981]: [/B][/COLOR]$INFO[ListItem.Premiered,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
+		<value condition="Container.Content(seasons) + !String.StartsWith(ListItem.Label,*) + [Control.IsVisible(597) | Control.IsVisible(594) | Control.IsVisible(50)]">[B][COLOR $INFO[Skin.String(theme_text)]]$VAR[value_ground17_label,,: ][/COLOR][/B][COLOR=FFFFFAF0]$VAR[value_ground17_value,,  •  ][/COLOR][COLOR $INFO[Skin.String(theme_text)]][B]$ADDON[skin.aeon.tajo 31981]: [/B][/COLOR]$INFO[ListItem.Premiered,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
 		<value condition="!String.IsEmpty(ListItem.Genre)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
 		<value>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
 	</variable>

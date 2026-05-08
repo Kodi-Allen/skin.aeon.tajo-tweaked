@@ -23,7 +23,7 @@
 			<width>940</width>
 			<height>40</height>
 			<font>font15_title</font>
-			<label>$LOCALIZE[31027]</label>
+			<label>$ADDON[skin.aeon.tajo 31027]</label>
 			<align>center</align>
 			<textcolor>grey</textcolor>
 		</control>
@@ -80,84 +80,84 @@
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31023]</label>
+					<label>$ADDON[skin.aeon.tajo 31023]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,1)</onclick>
 					<onclick>Skin.SetImage(ItemToEdit.MultiFanart)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31022]</label>
+					<label>$ADDON[skin.aeon.tajo 31022]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,2)</onclick>
 					<onclick>Skin.SetPath(ItemToEdit.MultiFanart)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31062]</label>
+					<label>$ADDON[skin.aeon.tajo 31062]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,1)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31063]</label>
+					<label>$ADDON[skin.aeon.tajo 31063]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,2)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31064]</label>
+					<label>$ADDON[skin.aeon.tajo 31064]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,3)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31065]</label>
+					<label>$ADDON[skin.aeon.tajo 31065]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,4)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31066]</label>
+					<label>$ADDON[skin.aeon.tajo 31066]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,5)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<label>$LOCALIZE[31028]: $LOCALIZE[31029]</label>
+					<label>$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31029]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,7)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31028]: $LOCALIZE[31030]</label>
+					<label>$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31030]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,8)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31028]: $LOCALIZE[20012]</label>
+					<label>$ADDON[skin.aeon.tajo 31028]: $LOCALIZE[20012]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,5)</onclick>
 					<onclick>Skin.SetFile(ItemToEdit.MultiFanart,.xsp,special://profile/playlists/video/)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31028]: $LOCALIZE[31035]</label>
+					<label>$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31035]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,9)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31028]: $LOCALIZE[31036]</label>
+					<label>$ADDON[skin.aeon.tajo 31028]: $ADDON[skin.aeon.tajo 31036]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,10)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[31084]</label>
+					<label>$ADDON[skin.aeon.tajo 31084]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,6)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,6)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
