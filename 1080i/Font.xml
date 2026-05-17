@@ -546,10 +546,8 @@
 		</font>
 		<font>
 			<name>titleshelf</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<linespacing>0.95</linespacing>
-			<size>42</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>48</size>
 		</font>
 		<font>
 			<name>titleshelf2</name>
@@ -574,9 +572,8 @@
 		</font>
 		<font>
 			<name>titlelist</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<size>60</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>70</size>
 		</font>
 		<font>
 			<name>titlelist3</name>
@@ -601,9 +598,8 @@
 		</font>
 		<font>
 			<name>titletest</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<size>48</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>58</size>
 		</font>
 		<font>
 			<name>titletest2</name>
@@ -614,9 +610,8 @@
 		</font>
 		<font>
 			<name>titlemove</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<size>52</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>60</size>
 		</font>
 		<font>
 			<name>titlemove2</name>
@@ -891,6 +886,11 @@
 			<name>font13b</name>
 			<filename>Text.ttf</filename>
 			<size>29</size>
+		</font>
+		<font>
+			<name>font_HomeWidgetHeader</name>
+			<filename>Kiye Sans.ttf</filename>
+			<size>32</size>
 		</font>
 		<!-- Title Fonts -->
 		<font>
@@ -1526,10 +1526,8 @@
 		</font>
 		<font>
 			<name>titleshelf</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<linespacing>0.95</linespacing>
-			<size>42</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>48</size>
 		</font>
 		<font>
 			<name>titleshelf2</name>
@@ -1554,9 +1552,8 @@
 		</font>
 		<font>
 			<name>titlelist</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<size>60</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>70</size>
 		</font>
 		<font>
 			<name>titlelist3</name>
@@ -1581,9 +1578,8 @@
 		</font>
 		<font>
 			<name>titletest</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<size>48</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>58</size>
 		</font>
 		<font>
 			<name>titletest2</name>
@@ -1594,9 +1590,8 @@
 		</font>
 		<font>
 			<name>titlemove</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<size>52</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>60</size>
 		</font>
 		<font>
 			<name>titlemove2</name>
@@ -1871,6 +1866,11 @@
 			<name>font13b</name>
 			<filename>Quicksand.ttf</filename>
 			<size>29</size>
+		</font>
+		<font>
+			<name>font_HomeWidgetHeader</name>
+			<filename>Kiye Sans.ttf</filename>
+			<size>32</size>
 		</font>
 		<!-- Title Fonts -->
 		<font>
@@ -2770,6 +2770,11 @@
 		</font>
 		<font>
 			<name>font13b</name>
+			<filename>Arialuni.ttf</filename>
+			<size>32</size>
+		</font>
+		<font>
+			<name>font_HomeWidgetHeader</name>
 			<filename>Arialuni.ttf</filename>
 			<size>32</size>
 		</font>
