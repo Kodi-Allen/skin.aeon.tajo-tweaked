@@ -345,6 +345,12 @@
 		<value condition="!String.IsEmpty(Container(19001).ListItem.Art(poster))">$INFO[Container(19001).ListItem.Art(poster)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
+	<variable name="VideoInfoBackVar">
+		<value condition="Control.HasFocus(950) | ControlGroup(90001).HasFocus(90050) | ControlGroup(90001).HasFocus(90051) | ControlGroup(90001).HasFocus(90055) | ControlGroup(90001).HasFocus(90011) | ControlGroup(90001).HasFocus(90012) | ControlGroup(90001).HasFocus(90014) | ControlGroup(90001).HasFocus(90016) | ControlGroup(90001).HasFocus(90017)">$VAR[VideoInfoPosterVar]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(back))">$INFO[ListItem.Art(back)]</value>
+		<value condition="!String.IsEmpty(ListItem.Path) + !String.StartsWith(ListItem.Path,http) + !String.StartsWith(ListItem.Path,plugin) + !String.StartsWith(ListItem.Path,videodb)">$INFO[ListItem.Path]back.jpg</value>
+		<value>$VAR[VideoInfoPosterVar]</value>
+	</variable>
 	<variable name="Title_xsp">
 		<value condition="!String.IsEmpty(ListItem.OriginalTitle) + !String.IsEqual(ListItem.OriginalTitle,ListItem.Title)">musicdb://songs/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22album%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[ListItem.OriginalTitle]%22%5D%7D%2C%7B%22field%22%3A%22year%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[ListItem.Year]%22%5D%7D%5D%7D%2C%22type%22%3A%22songs%22%7D</value>
 		<value>musicdb://songs/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22year%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%228385%22%5D%7D%5D%7D%2C%22type%22%3A%22songs%22%7D</value>
@@ -432,6 +438,7 @@
 		<value condition="Control.HasFocus(6071)">$ADDON[skin.aeon.tajo 32067]</value>
 		<value condition="Control.HasFocus(985)">$ADDON[skin.aeon.tajo 32071]</value>
 		<value condition="Control.HasFocus(8)">$LOCALIZE[208]</value>
+		<value condition="Control.HasFocus(90008)">$LOCALIZE[208]</value>
 		<value condition="Control.HasFocus(283)">$ADDON[skin.aeon.tajo 32050]</value>
 		<value condition="Control.HasFocus(6651)">$LOCALIZE[20360]</value>
 		<value condition="Control.HasFocus(910)">$LOCALIZE[206]</value>
@@ -849,6 +856,7 @@
 		<value condition="Control.HasFocus(101)">[COLOR grey2]$ADDON[skin.aeon.tajo 31914][/COLOR]</value>
 		<value condition="Control.HasFocus(102)">[COLOR grey2]$ADDON[skin.aeon.tajo 31920][/COLOR]</value>
 		<value condition="Control.HasFocus(327)">[COLOR grey2]$ADDON[skin.aeon.tajo 32094][/COLOR]</value>
+		<value condition="Control.HasFocus(258)">[COLOR grey2]$ADDON[skin.aeon.tajo 32132][/COLOR]</value>
 		<value condition="Control.HasFocus(388)">[COLOR grey2]$ADDON[skin.aeon.tajo 31215][/COLOR]</value>
 		<value condition="Control.HasFocus(119)">[COLOR grey2]$ADDON[skin.aeon.tajo 31217][/COLOR]</value>
 		<value condition="Control.HasFocus(393)">[COLOR grey2]$ADDON[skin.aeon.tajo 31244][/COLOR]</value>
@@ -2249,10 +2257,25 @@
 	</variable>
 	<variable name="GlobalCaseVarTajoBox">
 		<value condition="ListItem.IsCollection">set.png</value>
-		<value condition="String.Contains(ListItem.Filename,3d) | ListItem.IsStereoscopic">3d.png</value>
-		<value condition="String.Contains(ListItem.Filename,hddvd) | String.Contains(ListItem.Filename,hd-dvd) | String.Contains(ListItem.Filename,hd dvd)">hddvd.png</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">tvshow.png</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,season)">season.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.FileNameAndPath,bluray3d) | String.Contains(ListItem.FileNameAndPath,bluray 3d) | String.Contains(ListItem.FileNameAndPath,blu-ray3d) | String.Contains(ListItem.FileNameAndPath,blu-ray 3d)]">3d.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.Path,bluray3d) | String.Contains(ListItem.Path,bluray 3d) | String.Contains(ListItem.Path,blu-ray3d) | String.Contains(ListItem.Path,blu-ray 3d)]">3d.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(Container.FolderPath,bluray3d) | String.Contains(Container.FolderPath,bluray 3d) | String.Contains(Container.FolderPath,blu-ray3d) | String.Contains(Container.FolderPath,blu-ray 3d)]">3d.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.FileNameAndPath,hddvd) | String.Contains(ListItem.FileNameAndPath,hd-dvd) | String.Contains(ListItem.FileNameAndPath,hd dvd)]">hddvd.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.Path,hddvd) | String.Contains(ListItem.Path,hd-dvd) | String.Contains(ListItem.Path,hd dvd)]">hddvd.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(Container.FolderPath,hddvd) | String.Contains(Container.FolderPath,hd-dvd) | String.Contains(Container.FolderPath,hd dvd)]">hddvd.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.FileNameAndPath,uhdbluray) | String.Contains(ListItem.FileNameAndPath,uhd bluray) | String.Contains(ListItem.FileNameAndPath,uhd blu-ray) | String.Contains(ListItem.FileNameAndPath,ultra hd) | String.Contains(ListItem.FileNameAndPath,4k)]">4k.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.Path,uhdbluray) | String.Contains(ListItem.Path,uhd bluray) | String.Contains(ListItem.Path,uhd blu-ray) | String.Contains(ListItem.Path,ultra hd) | String.Contains(ListItem.Path,4k)]">4k.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(Container.FolderPath,uhdbluray) | String.Contains(Container.FolderPath,uhd bluray) | String.Contains(Container.FolderPath,uhd blu-ray) | String.Contains(Container.FolderPath,ultra hd) | String.Contains(Container.FolderPath,4k)]">4k.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.FileNameAndPath,bluray) | String.Contains(ListItem.FileNameAndPath,blu-ray)]">1080p.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(ListItem.Path,bluray) | String.Contains(ListItem.Path,blu-ray)]">1080p.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + [String.Contains(Container.FolderPath,bluray) | String.Contains(Container.FolderPath,blu-ray)]">1080p.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + String.Contains(ListItem.FileNameAndPath,dvd)">480p.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + String.Contains(ListItem.Path,dvd)">480p.png</value>
+		<value condition="!Skin.HasSetting(Disable.ShelfFolderNameCases) + String.Contains(Container.FolderPath,dvd)">480p.png</value>
+		<value condition="String.Contains(ListItem.Filename,3d) | ListItem.IsStereoscopic">3d.png</value>
+		<value condition="String.Contains(ListItem.Filename,hddvd) | String.Contains(ListItem.Filename,hd-dvd) | String.Contains(ListItem.Filename,hd dvd)">hddvd.png</value>
 		<value condition="String.Contains(ListItem.VideoResolution,4k) | String.Contains(ListItem.VideoResolution,8k)">4k.png</value>
 		<value condition="String.Contains(ListItem.VideoResolution,480) | String.Contains(ListItem.VideoResolution,576) | String.Contains(ListItem.VideoResolution,540)">480p.png</value>
 		<value condition="String.Contains(ListItem.VideoResolution,720)">720p.png</value>

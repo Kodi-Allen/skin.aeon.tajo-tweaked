@@ -15,8 +15,11 @@
 	<onload condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)">RunPlugin("plugin://script.skinvariables/?info=get_encoded_string&amp;window_prop=EncodedTitle&amp;window_id=Home&amp;&amp;$INFO[ListItem.Title]")</onload>
 	<onload condition="String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)">RunPlugin("plugin://script.skinvariables/?info=get_encoded_string&amp;window_prop=EncodedTitleSeason&amp;window_id=Home&amp;&amp;$INFO[ListItem.TvShowTitle]")</onload>
 	<onload condition="!String.IsEmpty(ListItem.Art(fanart))">SetProperty(FSFanart,$INFO[ListItem.Art(fanart)],movieinformation)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.VideoInfo.BlurImage))">ClearProperty(TMDbHelper.VideoInfo.BlurImage,home)</onload>
+	<onload>RunScript(plugin.video.themoviedb.helper,blur_image=$VAR[VideoInfoBackVar],prefix=VideoInfo)</onload>
 	<onload condition="!String.IsEmpty(Window(Home).Property(FullScreen_90054))">ClearProperty(FullScreen_90054,Home)</onload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart))">ClearProperty(FSFanart,movieinformation)</onunload>
+	<onunload condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.VideoInfo.BlurImage))">ClearProperty(TMDbHelper.VideoInfo.BlurImage,home)</onunload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart1))">ClearProperty(FSFanart1,movieinformation)</onunload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart2))">ClearProperty(FSFanart2,movieinformation)</onunload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart3))">ClearProperty(FSFanart3,movieinformation)</onunload>
@@ -219,10 +222,15 @@
 			<control type="image">
 				<texture>black.png</texture>
 			</control>
-			<control type="multiimage">
-				<aspectratio>scale</aspectratio>
+			<control type="image">
+				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<fadetime>400</fadetime>
-				<imagepath background="true">$VAR[VideoInfoPosterVar]</imagepath>
+				<texture background="true">$INFO[Window(Home).Property(TMDbHelper.VideoInfo.BlurImage)]</texture>
+			</control>
+			<control type="image">
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<fadetime>400</fadetime>
+				<texture background="true" fallback="$VAR[VideoInfoPosterVar]">$VAR[VideoInfoBackVar]</texture>
 			</control>
 		</control>
 		<control type="image">
