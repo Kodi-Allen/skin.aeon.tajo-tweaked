@@ -649,12 +649,12 @@
 						<top>10</top>
 						<width>368</width>
 						<height>70</height>
-						<font>font12d</font>
+						<font>font_HomeWidgetHeader</font>
 						<align>right</align>
 						<shadowcolor>black</shadowcolor>
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>Skin.String(theme_text)</textcolor>
-						<label>[B]$INFO[Container(9000).ListItem.Property(WidgetLabel)][/B]</label>
+						<label>$INFO[Container(9000).ListItem.Property(WidgetLabel)]</label>
 					</control>
 					<control type="image">
 						<left>12</left>
@@ -772,12 +772,12 @@
 					<top>40</top>
 					<width>310</width>
 					<height>70</height>
-					<font>font15t</font>
+					<font>font_HomeWidgetHeader</font>
 					<align>right</align>
 					<shadowcolor>black</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<textcolor>Skin.String(theme_text)</textcolor>
-					<label>[B]$INFO[Container(9000).ListItem.Property(WidgetLabel)][/B]</label>
+					<label>$INFO[Container(9000).ListItem.Property(WidgetLabel)]</label>
 				</control>
 				<control type="label">
 					<visible>Control.HasFocus(8000)</visible>
@@ -786,13 +786,13 @@
 					<top>40</top>
 					<width>300</width>
 					<height>140</height>
-					<font>font15t</font>
+					<font>font_HomeWidgetHeader</font>
 					<align>right</align>
 					<aligny>top</aligny>
 					<shadowcolor>black</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<textcolor>Skin.String(theme_text)</textcolor>
-					<label>[B]$INFO[Container(9000).ListItem.Property(WidgetLabel)][/B]</label>
+					<label>$INFO[Container(9000).ListItem.Property(WidgetLabel)]</label>
 				</control>
 			</control>
 		</control>
