@@ -275,6 +275,17 @@
 						<onclick condition="!Skin.HasSetting(Kiosk.Enabled)">Skin.ToggleSetting(ColorCode)</onclick>
 						<selected>Skin.HasSetting(ColorCode)</selected>
 					</control>
+					<control type="radiobutton" id="258">
+						<textureradioonfocus colordiffuse="green">android/btn_radio_on_holo_dark.png</textureradioonfocus>
+						<textureradioonnofocus colordiffuse="green">android/btn_radio_on_holo_dark.png</textureradioonnofocus>
+						<width>1316</width>
+						<height>70</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$ADDON[skin.aeon.tajo 32131]</label>
+						<onclick condition="!Skin.HasSetting(Kiosk.Enabled)">Skin.ToggleSetting(Disable.ShelfFolderNameCases)</onclick>
+						<selected>!Skin.HasSetting(Disable.ShelfFolderNameCases)</selected>
+					</control>
 					<control type="radiobutton" id="257">
 						<textureradioonfocus colordiffuse="ffffcf48">android/btn_radio_on_holo_dark.png</textureradioonfocus>
 						<textureradioonnofocus colordiffuse="ffffcf48">android/btn_radio_on_holo_dark.png</textureradioonnofocus>
