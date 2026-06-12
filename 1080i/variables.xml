@@ -312,7 +312,7 @@
 		<!-- Custom category backgrounds (label-based, case-insensitive) -->
 		<value condition="String.Contains(Container(9000).ListItem.Label,filme) | String.Contains(Container(9000).ListItem.Label,movies)">special://skin/media/backgrounds/filme.png</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,serien) | String.Contains(Container(9000).ListItem.Label,tv shows)">special://skin/media/backgrounds/serien.jpg</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Label,TV) | String.Contains(Container(9000).ListItem.Label,live tv)">special://skin/media/backgrounds/tv.jpg</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(Item),LiveTV) | String.IsEqual(Container(9000).ListItem.Label,TV) | String.Contains(Container(9000).ListItem.Label,live tv) | String.Contains(Container(9000).ListItem.Label,live-tv) | String.Contains(Container(9000).ListItem.Property(Path),tvchannels)">special://skin/media/backgrounds/tv.jpg</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,bilder) | String.Contains(Container(9000).ListItem.Label,pictures)">special://skin/media/backgrounds/bilder.jpg</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,spiele) | String.Contains(Container(9000).ListItem.Label,games)">special://skin/media/backgrounds/spiele.jpg</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,sport)">special://skin/media/backgrounds/sport.jpg</value>
