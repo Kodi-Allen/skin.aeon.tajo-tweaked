@@ -1561,7 +1561,7 @@
 					<font>font14_bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>$ADDON[skin.aeon.tajo 32126]</label>
+					<label>$LOCALIZE[32126]</label>
 				</control>
 			</control>
 			<control type="group">
@@ -1709,7 +1709,7 @@
 				<control type="textbox">
 					<visible>Container.Content(tvshows)</visible>
 					<visible>!ListItem.IsParentFolder</visible>
-					<label>$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$ADDON[skin.aeon.tajo 31981]: [COLOR=FFFFFAF0][/B],][/COLOR]$INFO[ListItem.Genre,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[515]: [COLOR=FFFFFAF0][/B],  •  ][/COLOR]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],][/COLOR]</label>
+					<label>$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[31981]: [COLOR=FFFFFAF0][/B],][/COLOR]$INFO[ListItem.Genre,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[515]: [COLOR=FFFFFAF0][/B],  •  ][/COLOR]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],][/COLOR]</label>
 					<top>570</top>
 					<left>20</left>
 					<width>540</width>
@@ -1938,7 +1938,7 @@
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font_Extras</font>
-				<label>$ADDON[skin.aeon.tajo 31014]</label>
+				<label>$LOCALIZE[31014]</label>
 			</control>
 			<control type="image">
 				<animation effect="fade" start="0" end="100" time="100">Visible</animation>
@@ -3645,7 +3645,7 @@
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font_Extras</font>
-				<label>$ADDON[skin.aeon.tajo 31014]</label>
+				<label>$LOCALIZE[31014]</label>
 			</control>
 		</control>
 		<control type="image">

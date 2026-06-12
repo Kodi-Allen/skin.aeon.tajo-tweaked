@@ -22,7 +22,7 @@
 			<width>940</width>
 			<height>40</height>
 			<font>font15_title</font>
-			<label>$ADDON[skin.aeon.tajo 31049]</label>
+			<label>$LOCALIZE[31049]</label>
 			<align>center</align>
 			<textcolor>grey</textcolor>
 		</control>
@@ -77,22 +77,22 @@
 					<onclick>Dialog.Close(1125)</onclick>
 				</item>
 				<item>
-					<label>$ADDON[skin.aeon.tajo 31052]</label>
+					<label>$LOCALIZE[31052]</label>
 					<onclick>Skin.SetString(ItemToEdit.InfoLine,1)</onclick>
 					<onclick>Dialog.Close(1125)</onclick>
 				</item>
 				<item>
-					<label>$ADDON[skin.aeon.tajo 31053]</label>
+					<label>$LOCALIZE[31053]</label>
 					<onclick>Skin.SetString(ItemToEdit.InfoLine,2)</onclick>
 					<onclick>Dialog.Close(1125)</onclick>
 				</item>
 				<item>
-					<label>$ADDON[skin.aeon.tajo 31054]</label>
+					<label>$LOCALIZE[31054]</label>
 					<onclick>Skin.SetString(ItemToEdit.InfoLine,3)</onclick>
 					<onclick>Dialog.Close(1125)</onclick>
 				</item>
 				<item>
-					<label>$ADDON[skin.aeon.tajo 31058]</label>
+					<label>$LOCALIZE[31058]</label>
 					<onclick>Skin.SetString(ItemToEdit.InfoLine,4)</onclick>
 					<onclick>Dialog.Close(1125)</onclick>
 				</item>
@@ -102,7 +102,7 @@
 					<onclick>Dialog.Close(1125)</onclick>
 				</item>
 				<item>
-					<label>$ADDON[skin.aeon.tajo 31085]</label>
+					<label>$LOCALIZE[31085]</label>
 					<onclick>Skin.SetString(ItemToEdit.InfoLine,7)</onclick>
 					<onclick>Dialog.Close(1125)</onclick>
 				</item>

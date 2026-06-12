@@ -399,7 +399,7 @@
 		<item id="14">
 			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">3</property>
-			<label>$ADDON[skin.aeon.tajo 31192]</label>
+			<label>$LOCALIZE[31192]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -512,7 +512,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">5</property>
-			<label>$ADDON[skin.aeon.tajo 31159]</label>
+			<label>$LOCALIZE[31159]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -759,7 +759,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -824,7 +824,7 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31190]</label>
+			<label>$LOCALIZE[31190]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -841,7 +841,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31191]</label>
+			<label>$LOCALIZE[31191]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -1028,7 +1028,7 @@
 		<item id="17">
 			<property name="id">$NUMBER[17]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31972]</label>
+			<label>$LOCALIZE[31972]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -1125,7 +1125,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">11</property>
-			<label>$ADDON[skin.aeon.tajo 31308]</label>
+			<label>$LOCALIZE[31308]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -1142,7 +1142,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">11</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -1397,7 +1397,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">13</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -2147,7 +2147,7 @@
 		<item id="14">
 			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">3</property>
-			<label>$ADDON[skin.aeon.tajo 31192]</label>
+			<label>$LOCALIZE[31192]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -2446,7 +2446,7 @@
 		<item id="14">
 			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">3</property>
-			<label>$ADDON[skin.aeon.tajo 31192]</label>
+			<label>$LOCALIZE[31192]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -2581,7 +2581,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">5</property>
-			<label>$ADDON[skin.aeon.tajo 31159]</label>
+			<label>$LOCALIZE[31159]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -2664,7 +2664,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">5</property>
-			<label>$ADDON[skin.aeon.tajo 31159]</label>
+			<label>$LOCALIZE[31159]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3111,7 +3111,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3176,7 +3176,7 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31190]</label>
+			<label>$LOCALIZE[31190]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3193,7 +3193,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31191]</label>
+			<label>$LOCALIZE[31191]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3380,7 +3380,7 @@
 		<item id="17">
 			<property name="id">$NUMBER[17]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31972]</label>
+			<label>$LOCALIZE[31972]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3479,7 +3479,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3544,7 +3544,7 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31190]</label>
+			<label>$LOCALIZE[31190]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3561,7 +3561,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31191]</label>
+			<label>$LOCALIZE[31191]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3748,7 +3748,7 @@
 		<item id="17">
 			<property name="id">$NUMBER[17]</property>
 			<property name="mainmenuid">10</property>
-			<label>$ADDON[skin.aeon.tajo 31972]</label>
+			<label>$LOCALIZE[31972]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3847,7 +3847,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">11</property>
-			<label>$ADDON[skin.aeon.tajo 31308]</label>
+			<label>$LOCALIZE[31308]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -3864,7 +3864,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">11</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -4002,7 +4002,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">11</property>
-			<label>$ADDON[skin.aeon.tajo 31308]</label>
+			<label>$LOCALIZE[31308]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -4019,7 +4019,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">11</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -4399,7 +4399,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">13</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
@@ -4569,7 +4569,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">13</property>
-			<label>$ADDON[skin.aeon.tajo 31328]</label>
+			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
 			<thumb />

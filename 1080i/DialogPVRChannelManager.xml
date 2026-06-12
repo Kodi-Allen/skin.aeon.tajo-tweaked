@@ -278,7 +278,7 @@
 				<width>570</width>
 				<height>40</height>
 				<font>font14</font>
-				<label>$ADDON[skin.aeon.tajo 31511]</label>
+				<label>$LOCALIZE[31511]</label>
 				<textcolor>Skin.String(theme_text)</textcolor>
 				<textoffsetx>15</textoffsetx>
 			</control>
@@ -328,7 +328,7 @@
 					<width>570</width>
 					<height>50</height>
 					<font>font14</font>
-					<label>$ADDON[skin.aeon.tajo 31026]</label>
+					<label>$LOCALIZE[31026]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 					<textoffsetx>15</textoffsetx>
 				</control>

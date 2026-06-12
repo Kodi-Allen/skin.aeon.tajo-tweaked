@@ -48,12 +48,12 @@
 				<control type="button" id="26">
 					<description>Add Group</description>
 					<width>370</width>
-					<label>$ADDON[skin.aeon.tajo 31503]</label>
+					<label>$LOCALIZE[31503]</label>
 				</control>
 				<control type="button" id="27">
 					<description>Rename Group</description>
 					<width>370</width>
-					<label>$ADDON[skin.aeon.tajo 31504]</label>
+					<label>$LOCALIZE[31504]</label>
 				</control>
 				<control type="radiobutton" id="25">
 					<description>Hide Group</description>
@@ -63,7 +63,7 @@
 				<control type="button" id="28">
 					<description>Delete Group</description>
 					<width>370</width>
-					<label>$ADDON[skin.aeon.tajo 31505]</label>
+					<label>$LOCALIZE[31505]</label>
 				</control>
 				<control type="button" id="35">
 					<description>Regenerate Group Thumbnail</description>

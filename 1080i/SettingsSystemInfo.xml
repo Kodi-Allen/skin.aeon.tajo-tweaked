@@ -216,7 +216,7 @@
 					<top>70</top>
 					<width>360</width>
 					<height>24</height>
-					<label>$ADDON[skin.aeon.tajo 31309]</label>
+					<label>$LOCALIZE[31309]</label>
 					<align>right</align>
 					<textcolor>grey2</textcolor>
 					<font>font12_title</font>

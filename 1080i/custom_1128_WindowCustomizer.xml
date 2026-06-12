@@ -62,7 +62,7 @@
 					<description>Fallback</description>
 					<textwidth>255</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31117]</label>
+					<label>$LOCALIZE[31117]</label>
 					<onclick>Skin.Reset(ItemToEdit.MultiFanart)</onclick>
 					<onclick>SetProperty(No.Cases,True,home)</onclick>
 					<onclick>$VAR[FallbackBackgroundOnClickVar]</onclick>

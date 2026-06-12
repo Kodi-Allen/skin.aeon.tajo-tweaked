@@ -198,7 +198,7 @@
 						<textcolor>ffdadada</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<font>font_Extras</font>
-						<label>$ADDON[skin.aeon.tajo 31014]</label>
+						<label>$LOCALIZE[31014]</label>
 					</control>
 					<control type="group">
 						<visible>!String.IsEmpty(Window(Home).Property(extras_yes)) | Integer.IsGreater(Container(3322).NumItems,0)</visible>
@@ -248,7 +248,7 @@
 					<font>font14_bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>$ADDON[skin.aeon.tajo 32126]</label>
+					<label>$LOCALIZE[32126]</label>
 				</control>
 				<control type="fixedlist" id="501">
 					<viewtype label="CenterList">list</viewtype>
@@ -1067,7 +1067,7 @@
 					<textcolor>ffdadada</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font_Extras</font>
-					<label>$ADDON[skin.aeon.tajo 31014]</label>
+					<label>$LOCALIZE[31014]</label>
 				</control>
 			</control>
 			<control type="grouplist">

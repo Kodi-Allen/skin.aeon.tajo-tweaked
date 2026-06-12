@@ -317,21 +317,21 @@
 				</focusedlayout>
 				<content>
 					<item>
-						<label>$ADDON[skin.aeon.tajo 31965]</label>
+						<label>$LOCALIZE[31965]</label>
 						<property name="description">31966</property>
 						<property name="numby">Tajo</property>
 						<onclick condition="!Skin.HasSetting(Kiosk.Enabled)">ActivateWindow(1169)</onclick>
 						<icon/>
 					</item>
 					<item>
-						<label>$ADDON[skin.aeon.tajo 31969]</label>
+						<label>$LOCALIZE[31969]</label>
 						<property name="description">31970</property>
 						<property name="numby">Tajo</property>
 						<onclick>ActivateWindow(10035)</onclick>
 						<icon/>
 					</item>
 					<item>
-						<label>$ADDON[skin.aeon.tajo 31967]</label>
+						<label>$LOCALIZE[31967]</label>
 						<property name="description">31968</property>
 						<property name="numby">Tajo</property>
 						<onclick condition="!Skin.HasSetting(Kiosk.Enabled) + System.Platform.Windows + System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">RunScript(script.embuary.helper,action=toggleaddons,addonid=script.cu.lrclyrics,enable=true)</onclick>
@@ -339,7 +339,7 @@
 						<icon/>
 					</item>
 					<item>
-						<label>$LOCALIZE[14206]</label>
+						<label>Interface</label>
 						<property name="description">31400</property>
 						<property name="numby">Interface</property>
 						<onclick condition="System.Platform.Windows + System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">RunScript(script.embuary.helper,action=toggleaddons,addonid=script.cu.lrclyrics,enable=true)</onclick>
@@ -354,7 +354,7 @@
 						<icon/>
 					</item>
 					<item>
-						<label>$ADDON[skin.aeon.tajo 31502]</label>
+						<label>$LOCALIZE[31502]</label>
 						<property name="description">31409</property>
 						<property name="numby">LiveTV</property>
 						<onclick condition="!Skin.HasSetting(Kiosk.Enabled)">ActivateWindow(PVRSettings)</onclick>
@@ -396,7 +396,7 @@
 						<icon/>
 					</item>
 					<item>
-						<label>$LOCALIZE[10511]</label>
+						<label>Systeminfo</label>
 						<property name="description">31405</property>
 						<property name="numby">Info</property>
 						<onclick condition="!Skin.HasSetting(Kiosk.Enabled)">ActivateWindow(SystemInfo)</onclick>
