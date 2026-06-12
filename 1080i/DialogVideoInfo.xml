@@ -16,10 +16,14 @@
 	<onload condition="String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)">RunPlugin("plugin://script.skinvariables/?info=get_encoded_string&amp;window_prop=EncodedTitleSeason&amp;window_id=Home&amp;&amp;$INFO[ListItem.TvShowTitle]")</onload>
 	<onload condition="!String.IsEmpty(ListItem.Art(fanart))">SetProperty(FSFanart,$INFO[ListItem.Art(fanart)],movieinformation)</onload>
 	<onload condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.VideoInfo.BlurImage))">ClearProperty(TMDbHelper.VideoInfo.BlurImage,home)</onload>
-	<onload>RunScript(plugin.video.themoviedb.helper,blur_image=$VAR[VideoInfoBackVar],prefix=VideoInfo)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.VideoInfo.BlurImage.Original))">ClearProperty(TMDbHelper.VideoInfo.BlurImage.Original,home)</onload>
+	<onload>SetProperty(VideoInfo.BlurSource,$VAR[VideoInfoBlurSourceVar],home)</onload>
+	<onload>RunScript(special://skin/scripts/video_info_blur_cache.py,prefix=VideoInfo,source_prop=VideoInfo.BlurSource)</onload>
 	<onload condition="!String.IsEmpty(Window(Home).Property(FullScreen_90054))">ClearProperty(FullScreen_90054,Home)</onload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart))">ClearProperty(FSFanart,movieinformation)</onunload>
 	<onunload condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.VideoInfo.BlurImage))">ClearProperty(TMDbHelper.VideoInfo.BlurImage,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.VideoInfo.BlurImage.Original))">ClearProperty(TMDbHelper.VideoInfo.BlurImage.Original,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(Home).Property(VideoInfo.BlurSource))">ClearProperty(VideoInfo.BlurSource,home)</onunload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart1))">ClearProperty(FSFanart1,movieinformation)</onunload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart2))">ClearProperty(FSFanart2,movieinformation)</onunload>
 	<onunload condition="!String.IsEmpty(Window(movieinformation).Property(FSFanart3))">ClearProperty(FSFanart3,movieinformation)</onunload>
@@ -99,6 +103,13 @@
 			<label>$INFO[ListItem.Art(poster33)]</label>
 			<label>$INFO[ListItem.Art(poster34)]</label>
 			<label>$INFO[ListItem.Art(poster35)]</label>
+		</control>
+		<control type="label" id="4511">
+			<top>-1000</top>
+			<left>-1000</left>
+			<width>1</width>
+			<height>1</height>
+			<label>$VAR[VideoInfoBlurSourceVar]</label>
 		</control>
 		<control type="fadelabel" id="6927">
 			<top>-1000</top>
@@ -224,12 +235,12 @@
 			</control>
 			<control type="image">
 				<aspectratio align="center" aligny="center">scale</aspectratio>
-				<fadetime>400</fadetime>
+				<fadetime>150</fadetime>
 				<texture background="true">$INFO[Window(Home).Property(TMDbHelper.VideoInfo.BlurImage)]</texture>
 			</control>
 			<control type="image">
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<fadetime>400</fadetime>
+				<fadetime>150</fadetime>
 				<texture background="true" fallback="$VAR[VideoInfoPosterVar]">$VAR[VideoInfoBackVar]</texture>
 			</control>
 		</control>
@@ -294,6 +305,7 @@
 						<aligny>top</aligny>
 						<control type="label">
 							<animation effect="slide" end="0,7" time="0" condition="true">Conditional</animation>
+							<visible>String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container(19001).ListItem.Art(clearlogo))</visible>
 							<height>60</height>
 							<width>1150</width>
 							<font>titletest</font>
@@ -395,6 +407,17 @@
 							<label>$INFO[ListItem.Album] $INFO[ListItem.Year,(,)] $INFO[ListItem.Artist,- ,]</label>
 							<visible>String.IsEqual(ListItem.DBTYPE,musicvideo) + !String.IsEmpty(ListItem.Artist)</visible>
 						</control>
+					</control>
+					<control type="image">
+						<animation effect="slide" end="0,7" time="0" condition="true">Conditional</animation>
+						<visible>!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) | !String.IsEmpty(Container(19001).ListItem.Art(clearlogo))</visible>
+						<left>0</left>
+						<top>-5</top>
+						<width>1150</width>
+						<height>100</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<fadetime>200</fadetime>
+						<texture>$VAR[VideoInfoClearLogo]</texture>
 					</control>
 					<control type="image">
 						<visible>!Control.HasFocus(8545)</visible>

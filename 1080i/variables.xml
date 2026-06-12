@@ -294,6 +294,7 @@
 		<value condition="!String.IsEmpty(ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
 		<value condition="Window.IsActive(1133) + !String.IsEmpty(Container(51).ListItem.Art(fanart)) + Control.HasFocus(51)">$INFO[Container(51).ListItem.Art(fanart)]</value>
+		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRTimers.xml)] + String.IsEmpty(Skin.String(LiveTV.Fallback))">special://skin/backgrounds/default_tv.jpg</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Thumb,1)">$INFO[Window(home).Property(EmbuaryBackgroundMovies)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Thumb,2)">$INFO[Window(home).Property(EmbuaryBackgroundTVShows)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Thumb,3)">$INFO[Window(home).Property(EmbuaryBackgroundVideos)]</value>
@@ -309,7 +310,7 @@
 		<!-- Custom category backgrounds (label-based, case-insensitive) -->
 		<value condition="String.Contains(Container(9000).ListItem.Label,filme) | String.Contains(Container(9000).ListItem.Label,movies)">special://skin/media/backgrounds/filme.png</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,serien) | String.Contains(Container(9000).ListItem.Label,tv shows)">special://skin/media/backgrounds/serien.jpg</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Label,TV) | String.Contains(Container(9000).ListItem.Label,live tv)">special://skin/media/backgrounds/tv.jpg</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(Item),LiveTV) | String.IsEqual(Container(9000).ListItem.Label,TV) | String.Contains(Container(9000).ListItem.Label,live tv) | String.Contains(Container(9000).ListItem.Label,live-tv) | String.Contains(Container(9000).ListItem.Property(Path),tvchannels)">special://skin/media/backgrounds/tv.jpg</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,bilder) | String.Contains(Container(9000).ListItem.Label,pictures)">special://skin/media/backgrounds/bilder.jpg</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,spiele) | String.Contains(Container(9000).ListItem.Label,games)">special://skin/media/backgrounds/spiele.jpg</value>
 		<value condition="String.Contains(Container(9000).ListItem.Label,sport)">special://skin/media/backgrounds/sport.jpg</value>
@@ -346,9 +347,19 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="VideoInfoBackVar">
-		<value condition="Control.HasFocus(950) | ControlGroup(90001).HasFocus(90050) | ControlGroup(90001).HasFocus(90051) | ControlGroup(90001).HasFocus(90055) | ControlGroup(90001).HasFocus(90011) | ControlGroup(90001).HasFocus(90012) | ControlGroup(90001).HasFocus(90014) | ControlGroup(90001).HasFocus(90016) | ControlGroup(90001).HasFocus(90017)">$VAR[VideoInfoPosterVar]</value>
+		<value condition="ControlGroup(90001).HasFocus(90011) + !String.IsEmpty(Container(90011).ListItem.Art(back))">$INFO[Container(90011).ListItem.Art(back)]</value>
+		<value condition="ControlGroup(90001).HasFocus(90011) + !String.IsEmpty(Container(90011).ListItem.Path) + !String.StartsWith(Container(90011).ListItem.Path,http) + !String.StartsWith(Container(90011).ListItem.Path,plugin) + !String.StartsWith(Container(90011).ListItem.Path,videodb)">$INFO[Container(90011).ListItem.Path]back.jpg</value>
+		<value condition="ControlGroup(90001).HasFocus(90011)">$VAR[VideoInfoPosterVar]</value>
+		<value condition="Control.HasFocus(950) | ControlGroup(90001).HasFocus(90050) | ControlGroup(90001).HasFocus(90051) | ControlGroup(90001).HasFocus(90055) | ControlGroup(90001).HasFocus(90012) | ControlGroup(90001).HasFocus(90014) | ControlGroup(90001).HasFocus(90016) | ControlGroup(90001).HasFocus(90017)">$VAR[VideoInfoPosterVar]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(back))">$INFO[ListItem.Art(back)]</value>
 		<value condition="!String.IsEmpty(ListItem.Path) + !String.StartsWith(ListItem.Path,http) + !String.StartsWith(ListItem.Path,plugin) + !String.StartsWith(ListItem.Path,videodb)">$INFO[ListItem.Path]back.jpg</value>
+		<value>$VAR[VideoInfoPosterVar]</value>
+	</variable>
+	<variable name="VideoInfoBlurSourceVar">
+		<value condition="ControlGroup(90001).HasFocus(90011) + !String.IsEmpty(Container(90011).ListItem.Art(back))">$INFO[Container(90011).ListItem.Art(back)]</value>
+		<value condition="ControlGroup(90001).HasFocus(90011)">$VAR[VideoInfoPosterVar]</value>
+		<value condition="Control.HasFocus(950) | ControlGroup(90001).HasFocus(90050) | ControlGroup(90001).HasFocus(90051) | ControlGroup(90001).HasFocus(90055) | ControlGroup(90001).HasFocus(90012) | ControlGroup(90001).HasFocus(90014) | ControlGroup(90001).HasFocus(90016) | ControlGroup(90001).HasFocus(90017)">$VAR[VideoInfoPosterVar]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(back))">$INFO[ListItem.Art(back)]</value>
 		<value>$VAR[VideoInfoPosterVar]</value>
 	</variable>
 	<variable name="Title_xsp">
@@ -363,6 +374,11 @@
 		<value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Title]  $INFO[ListItem.Year,(,)]</value>
 		<value condition="String.IsEmpty(ListItem.Year) + !String.IsEmpty(Container(19001).ListItem.Year)">$INFO[ListItem.Title]  $INFO[Container(19001).ListItem.Year,(,)]</value>
 		<value>$INFO[ListItem.Title]  $INFO[ListItem.Year,(,)]</value>
+	</variable>
+	<variable name="VideoInfoClearLogo">
+		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Container(19001).ListItem.Art(clearlogo))">$INFO[Container(19001).ListItem.Art(clearlogo)]</value>
 	</variable>
 	<variable name="Title_Diag_Music">
 		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$INFO[ListItem.Label]</value>
