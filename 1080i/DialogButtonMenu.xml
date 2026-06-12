@@ -58,7 +58,7 @@
 						<height>60</height>
 						<textoffsetx>15</textoffsetx>
 						<align>center</align>
-						<font>titleshelf3</font>
+						<font>titleshelf</font>
 						<textcolor>Skin.String(flat_back)</textcolor>
 						<selectedcolor>Skin.String(flat_back)</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
