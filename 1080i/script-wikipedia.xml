@@ -213,7 +213,7 @@
 				<font>font12</font>
 				<align>left</align>
 				<textcolor>Skin.String(theme_text)</textcolor>
-				<label>$ADDON[skin.aeon.tajo 32072]</label>
+				<label>$LOCALIZE[32072]</label>
 			</control>
 		</control>
 	</controls>

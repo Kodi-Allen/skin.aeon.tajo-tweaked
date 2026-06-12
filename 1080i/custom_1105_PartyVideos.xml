@@ -27,7 +27,7 @@
 			<textcolor>white2</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>[B]$ADDON[skin.aeon.tajo 32084][/B]</label>
+			<label>[B]$LOCALIZE[32084][/B]</label>
 			<visible>Container(6658).IsUpdating</visible>
 			<font>font53</font>
 		</control>
@@ -37,7 +37,7 @@
 			<textcolor>Skin.String(theme_text)</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>[B]$ADDON[skin.aeon.tajo 32087][/B]</label>
+			<label>[B]$LOCALIZE[32087][/B]</label>
 			<visible>System.IdleTime(3) + !Container(6658).IsUpdating</visible>
 			<font>font53</font>
 		</control>
@@ -48,7 +48,7 @@
 			<textcolor>white2</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>[B]$ADDON[skin.aeon.tajo 32088][/B]</label>
+			<label>[B]$LOCALIZE[32088][/B]</label>
 			<font>font48</font>
 			<visible>Container(6658).IsUpdating</visible>
 		</control>
@@ -59,7 +59,7 @@
 			<textcolor>Skin.String(theme_text)</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>[B]$ADDON[skin.aeon.tajo 32109][/B]</label>
+			<label>[B]$LOCALIZE[32109][/B]</label>
 			<font>font48</font>
 			<visible>System.IdleTime(3) + !Container(6658).IsUpdating</visible>
 		</control>

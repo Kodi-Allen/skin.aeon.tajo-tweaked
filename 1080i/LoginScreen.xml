@@ -26,7 +26,7 @@
 				<font>font15</font>
 				<textcolor>grey2</textcolor>
 				<align>center</align>
-				<label>$ADDON[skin.aeon.tajo 31421]</label>
+				<label>$LOCALIZE[31421]</label>
 			</control>
 			<control type="list" id="52">
 				<left>442</left>

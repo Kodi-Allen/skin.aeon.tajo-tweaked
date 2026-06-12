@@ -34,7 +34,7 @@
 					<description>Go to playercontrols</description>
 					<textwidth>400</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31177]</label>
+					<label>$LOCALIZE[31177]</label>
 					<onclick condition="Player.HasAudio">ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="Player.HasAudio">SetFocus(50)</onclick>
 					<onclick condition="Player.HasAudio">ActivateWindow(playercontrols)</onclick>

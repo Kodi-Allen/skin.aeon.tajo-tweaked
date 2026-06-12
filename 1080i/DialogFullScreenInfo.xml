@@ -57,7 +57,7 @@
 			<align>left</align>
 			<font>font14</font>
 			<textcolor>Skin.String(theme_text)</textcolor>
-			<label>[B]$ADDON[skin.aeon.tajo 31310]: $INFO[Container(6247).NumItems,(,)][/B]</label>
+			<label>[B]$LOCALIZE[31310]: $INFO[Container(6247).NumItems,(,)][/B]</label>
 		</control>
 		<control type="panel" id="6247">
 			<visible>System.HasAddon(script.skinvariables) + !String.IsEqual(System.AddonVersion(script.skinvariables),0.2.5)</visible>
@@ -232,7 +232,7 @@
 					<align>left</align>
 					<font>font14</font>
 					<textcolor>Skin.String(theme_text)</textcolor>
-					<label>[B]$ADDON[skin.aeon.tajo 31040]:[/B]</label>
+					<label>[B]$LOCALIZE[31040]:[/B]</label>
 				</control>
 				<control type="group">
 					<top>535</top>

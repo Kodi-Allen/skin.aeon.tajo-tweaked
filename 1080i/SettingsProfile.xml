@@ -122,7 +122,7 @@
 				</control>
 				<control type="button" id="5">
 					<description>Auto Login</description>
-					<label>$ADDON[skin.aeon.tajo 33084]</label>
+					<label>$LOCALIZE[33084]</label>
 					<label2> [COLOR $INFO[Skin.String(theme_text)]]$INFO[System.ProfileAutoLogin][/COLOR]</label2>
 					<width>1316</width>
 					<height>90</height>
@@ -163,7 +163,7 @@
 					<wrapmultiline>true</wrapmultiline>
 					<textoffsetx>15</textoffsetx>
 					<font>font15_title</font>
-					<label>$INFO[Container(2).ListItem.Label2,$ADDON[skin.aeon.tajo 31320]: ]</label>
+					<label>$INFO[Container(2).ListItem.Label2,$LOCALIZE[31320]: ]</label>
 				</control>
 			</control>
 		</control>

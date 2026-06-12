@@ -24,7 +24,7 @@
 			<align>center</align>
 			<textcolor>grey</textcolor>
 			<font>font15</font>
-			<label>$ADDON[skin.aeon.tajo 31127]</label>
+			<label>$LOCALIZE[31127]</label>
 		</control>
 		<control type="scrollbar" id="30">
 			<include>ScrollBar_Vertical2</include>
@@ -55,11 +55,11 @@
 					<height>52</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>$ADDON[skin.aeon.tajo 31128]</label>
+					<label>$LOCALIZE[31128]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="radiobutton" id="326">
-					<label>$ADDON[skin.aeon.tajo 31130]</label>
+					<label>$LOCALIZE[31130]</label>
 					<width>700</width>
 					<onclick>Skin.ToggleSetting(alternatetvosd)</onclick>
 					<selected>Skin.HasSetting(alternatetvosd)</selected>
@@ -70,20 +70,20 @@
 					<height>52</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>$ADDON[skin.aeon.tajo 31131]</label>
+					<label>$LOCALIZE[31131]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="button" id="328">
 					<description>Epg timeline channel list</description>
 					<width>700</width>
-					<label>$ADDON[skin.aeon.tajo 31133]</label>
+					<label>$LOCALIZE[31133]</label>
 					<label2>[COLOR $INFO[Skin.String(theme_text)]]$VAR[GuideChannelListTypeOptionsLabelVar][/COLOR]</label2>
 					<onclick>$VAR[GuideChannelListTypeOptionsClickVar]</onclick>
 				</control>
 				<control type="button" id="329">
 					<description>Epg timeline view type</description>
 					<width>700</width>
-					<label>$ADDON[skin.aeon.tajo 31134]</label>
+					<label>$LOCALIZE[31134]</label>
 					<label2>[COLOR $INFO[Skin.String(theme_text)]]$VAR[GuideTimelineViewTypeOptionsLabelVar][/COLOR]</label2>
 					<onclick>$VAR[GuideTimelineViewOptionsClickVar]</onclick>
 				</control>
@@ -93,30 +93,30 @@
 					<height>52</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>$ADDON[skin.aeon.tajo 31135]</label>
+					<label>$LOCALIZE[31135]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="button" id="401">
 					<description>Infobar types</description>
 					<width>700</width>
-					<label>$ADDON[skin.aeon.tajo 31136]</label>
+					<label>$LOCALIZE[31136]</label>
 					<label2>[COLOR $INFO[Skin.String(theme_text)]]$VAR[LiveTvInfobarTypeOptionsLabelVar][/COLOR]</label2>
 					<onclick>$VAR[LiveTvInfobarTypeOptionsClickVar]</onclick>
 				</control>
 				<control type="radiobutton" id="406">
-					<label>$ADDON[skin.aeon.tajo 31137]</label>
+					<label>$LOCALIZE[31137]</label>
 					<onclick>Skin.ToggleSetting(infobar_hidetencrypt)</onclick>
 					<selected>Skin.HasSetting(infobar_hidetencrypt)</selected>
 					<width>700</width>
 				</control>
 				<control type="radiobutton" id="407">
-					<label>$ADDON[skin.aeon.tajo 31138]</label>
+					<label>$LOCALIZE[31138]</label>
 					<onclick>Skin.ToggleSetting(infobar_hidetuners)</onclick>
 					<selected>Skin.HasSetting(infobar_hidetuners)</selected>
 					<width>700</width>
 				</control>
 				<control type="radiobutton" id="408">
-					<label>$ADDON[skin.aeon.tajo 31139]</label>
+					<label>$LOCALIZE[31139]</label>
 					<onclick>Skin.ToggleSetting(infobar_hidesignalinfo)</onclick>
 					<selected>Skin.HasSetting(infobar_hidesignalinfo)</selected>
 					<width>700</width>

@@ -216,7 +216,7 @@
 					<width>1600</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[157] [LOWERCASE]$ADDON[skin.aeon.tajo 31173][/LOWERCASE]:[/COLOR] $INFO[Player.Process(videodecoder)]$VAR[VideoHWDecoderVar, (,)]</label>
+					<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[157] [LOWERCASE]$LOCALIZE[31173][/LOWERCASE]:[/COLOR] $INFO[Player.Process(videodecoder)]$VAR[VideoHWDecoderVar, (,)]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
@@ -225,7 +225,7 @@
 					<width>1600</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31241]:[/COLOR] $INFO[Player.Process(pixformat)]</label>
+					<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31241]:[/COLOR] $INFO[Player.Process(pixformat)]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
@@ -273,7 +273,7 @@
 					<width>1600</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31242]:[/COLOR] $INFO[System.FPS,, fps]</label>
+					<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31242]:[/COLOR] $INFO[System.FPS,, fps]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -281,7 +281,7 @@
 					<width>1600</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31309][/COLOR] $INFO[System.Memory(used.percent)]</label>
+					<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31309][/COLOR] $INFO[System.Memory(used.percent)]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>System.SupportsCPUUsage</visible>
@@ -299,7 +299,7 @@
 					<width>1600</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 31309][/COLOR] $INFO[System.Memory(used.percent)]</label>
+					<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[31309][/COLOR] $INFO[System.Memory(used.percent)]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!System.SupportsCPUUsage</visible>

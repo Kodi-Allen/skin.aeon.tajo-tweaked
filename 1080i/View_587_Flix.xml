@@ -139,7 +139,7 @@
 							<textcolor>ffdadada</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<font>font_Extras</font>
-							<label>$ADDON[skin.aeon.tajo 31014]</label>
+							<label>$LOCALIZE[31014]</label>
 						</control>
 						<control type="image">
 							<animation effect="fade" start="0" end="100" time="100">Visible</animation>
@@ -346,7 +346,7 @@
 				<font>font14_bold</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<label>$ADDON[skin.aeon.tajo 32125]</label>
+				<label>$LOCALIZE[32125]</label>
 			</control>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="-810,0" time="0" condition="Container.Content(tvshows) | Container.Content(seasons)">Conditional</animation>

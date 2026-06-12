@@ -256,7 +256,7 @@
 					<height>52</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>$ADDON[skin.aeon.tajo 31006]</label>
+					<label>$LOCALIZE[31006]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="button" id="3">
@@ -267,7 +267,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31051]</label>
+					<label>$LOCALIZE[31051]</label>
 					<altlabel>31050</altlabel>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 				</control>
@@ -283,17 +283,17 @@
 				<control type="button" id="6">
 					<description>Search</description>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31055]</label>
+					<label>$LOCALIZE[31055]</label>
 				</control>
 				<control type="button" id="7">
 					<description>Search</description>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31056]</label>
+					<label>$LOCALIZE[31056]</label>
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31057]</label>
+					<label>$LOCALIZE[31057]</label>
 				</control>
 			</control>
 		</control>

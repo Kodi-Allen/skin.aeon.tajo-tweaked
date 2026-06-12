@@ -24,7 +24,7 @@
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font15_title</font>
-				<label>$ADDON[skin.aeon.tajo 32073]</label>
+				<label>$LOCALIZE[32073]</label>
 			</control>
 			<control type="image">
 				<left>-150</left>
@@ -50,7 +50,7 @@
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$ADDON[skin.aeon.tajo 32095]</label>
+						<label>$LOCALIZE[32095]</label>
 						<onclick>Dialog.Close(1106)</onclick>
 						<onclick condition="System.hasAddon(script.globalsearch)">RunScript(script.globalsearch)</onclick>
 						<onclick condition="!System.hasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
@@ -62,7 +62,7 @@
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$ADDON[skin.aeon.tajo 32096]</label>
+						<label>$LOCALIZE[32096]</label>
 						<onclick>Dialog.Close(1106)</onclick>
 						<onclick condition="System.hasAddon(script.embuary.info)">RunScript(script.embuary.info)</onclick>
 						<onclick condition="!System.hasAddon(script.embuary.info)">InstallAddon(script.embuary.info)</onclick>
@@ -74,7 +74,7 @@
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$ADDON[skin.aeon.tajo 32071]</label>
+						<label>$LOCALIZE[32071]</label>
 						<onclick>Dialog.Close(1106)</onclick>
 						<onclick condition="System.hasAddon(script.wikipedia)">ActivateWindow(1104)</onclick>
 						<onclick condition="!System.hasAddon(script.wikipedia)">InstallAddon(script.wikipedia)</onclick>
@@ -86,7 +86,7 @@
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$ADDON[skin.aeon.tajo 31972]</label>
+						<label>$LOCALIZE[31972]</label>
 						<onclick>Dialog.Close(1106)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.youtube)">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/list/",return)</onclick>
 						<onclick condition="!System.hasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>

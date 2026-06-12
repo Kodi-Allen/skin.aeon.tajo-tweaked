@@ -59,7 +59,7 @@
 					<height>48</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>[B]$ADDON[skin.aeon.tajo 31187][/B]</label>
+					<label>[B]$LOCALIZE[31187][/B]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="label">
@@ -82,7 +82,7 @@
 				<width>450</width>
 				<height>120</height>
 				<font>font13_title</font>
-				<label>[B]$ADDON[skin.aeon.tajo 31185][/B]</label>
+				<label>[B]$LOCALIZE[31185][/B]</label>
 				<textcolor>Skin.String(theme_text)</textcolor>
 			</control>
 			<control type="grouplist" id="6068">

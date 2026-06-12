@@ -24,7 +24,7 @@
 			<height>52</height>
 			<textoffsetx>15</textoffsetx>
 			<font>font13_title</font>
-			<label>$ADDON[skin.aeon.tajo 31101]</label>
+			<label>$LOCALIZE[31101]</label>
 			<textcolor>Skin.String(theme_text)</textcolor>
 		</control>
 		<control type="image">
@@ -384,7 +384,7 @@
 					<visible>Window.IsActive(pictures)</visible>
 				</item>
 				<item>
-					<label>$ADDON[skin.aeon.tajo 32046]</label>
+					<label>$LOCALIZE[32046]</label>
 					<onclick>Container.SetViewMode(582)</onclick>
 					<onclick>Dialog.Close(1129)</onclick>
 					<visible>Window.IsActive(pictures)</visible>

@@ -29,7 +29,7 @@
 			<textoffsetx>30</textoffsetx>
 			<align>left</align>
 			<font>font15</font>
-			<label>$ADDON[skin.aeon.tajo 32073]</label>
+			<label>$LOCALIZE[32073]</label>
 			<textcolor>white</textcolor>
 			<onclick>Skin.SetString(WikiSearch)</onclick>
 			<onclick>RunScript(script.wikipedia,wikipedia=$INFO[Skin.String(WikiSearch)],language=$INFO[skin.string(Wiki_lang)])</onclick>

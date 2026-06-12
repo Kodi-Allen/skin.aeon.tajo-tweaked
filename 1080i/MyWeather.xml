@@ -55,30 +55,30 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<label>$ADDON[skin.aeon.tajo 31300]</label>
+						<label>$LOCALIZE[31300]</label>
 						<onclick>noop</onclick>
 						<icon/>
 					</item>
 					<item id="2">
-						<label>$ADDON[skin.aeon.tajo 31904]</label>
+						<label>$LOCALIZE[31904]</label>
 						<onclick>noop</onclick>
 						<icon/>
 						<visible>!String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
 					<item id="3">
-						<label>$ADDON[skin.aeon.tajo 31901]</label>
+						<label>$LOCALIZE[31901]</label>
 						<onclick>noop</onclick>
 						<icon/>
 						<visible>!String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
 					</item>
 					<item id="4">
-						<label>$ADDON[skin.aeon.tajo 31903]</label>
+						<label>$LOCALIZE[31903]</label>
 						<onclick>noop</onclick>
 						<icon/>
 						<visible>!String.IsEmpty(Window.Property(Weekend.IsFetched))</visible>
 					</item>
 					<item id="5">
-						<label>$ADDON[skin.aeon.tajo 31902]</label>
+						<label>$LOCALIZE[31902]</label>
 						<onclick>noop</onclick>
 						<icon/>
 						<visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
@@ -190,7 +190,7 @@
 						<font>font13_title</font>
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey3</textcolor>
-						<label>$INFO[Window.Property(Updated),$ADDON[skin.aeon.tajo 31301]: ]</label>
+						<label>$INFO[Window.Property(Updated),$LOCALIZE[31301]: ]</label>
 					</control>
 					<control type="label">
 						<description>current temp Value</description>
@@ -266,12 +266,12 @@
 						</control>
 						<control type="group">
 							<control type="button">
-								<label>[COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 33027]:[/COLOR][CR]$INFO[Window.Property(Today.Sunrise)]</label>
+								<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[33027]:[/COLOR][CR]$INFO[Window.Property(Today.Sunrise)]</label>
 								<include>SettingsPanelButtonsValues</include>
 							</control>
 							<control type="button">
 								<left>325</left>
-								<label>[COLOR $INFO[Skin.String(theme_text)]]$ADDON[skin.aeon.tajo 33028]:[/COLOR][CR]$INFO[Window.Property(Today.Sunset)]</label>
+								<label>[COLOR $INFO[Skin.String(theme_text)]]$LOCALIZE[33028]:[/COLOR][CR]$INFO[Window.Property(Today.Sunset)]</label>
 								<texturenofocus/>
 								<include>SettingsPanelButtonsValues</include>
 							</control>
@@ -383,7 +383,7 @@
 						</focusedlayout>
 						<content>
 							<item>
-								<label>$ADDON[skin.aeon.tajo 31909]</label>
+								<label>$LOCALIZE[31909]</label>
 								<icon/>
 								<onclick>noop</onclick>
 								<visible>!Weather.IsFetched</visible>
@@ -607,7 +607,7 @@
 						</focusedlayout>
 						<content>
 							<item>
-								<label>$ADDON[skin.aeon.tajo 31909]</label>
+								<label>$LOCALIZE[31909]</label>
 								<icon/>
 								<onclick>noop</onclick>
 								<visible>String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -821,7 +821,7 @@
 						</focusedlayout>
 						<content>
 							<item>
-								<label>$ADDON[skin.aeon.tajo 31909]</label>
+								<label>$LOCALIZE[31909]</label>
 								<icon/>
 								<onclick>noop</onclick>
 								<visible>String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
@@ -957,7 +957,7 @@
 								<align>center</align>
 								<textcolor>grey</textcolor>
 								<selectedcolor>Skin.String(theme_text)</selectedcolor>
-								<label>$INFO[ListItem.Property(ChancePrecipitation),$ADDON[skin.aeon.tajo 31908]: ]</label>
+								<label>$INFO[ListItem.Property(ChancePrecipitation),$LOCALIZE[31908]: ]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
 						</itemlayout>
@@ -1036,13 +1036,13 @@
 								<align>center</align>
 								<textcolor>grey</textcolor>
 								<selectedcolor>Skin.String(theme_text)</selectedcolor>
-								<label>$INFO[ListItem.Property(ChancePrecipitation),$ADDON[skin.aeon.tajo 31908]: ]</label>
+								<label>$INFO[ListItem.Property(ChancePrecipitation),$LOCALIZE[31908]: ]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
 						</focusedlayout>
 						<content>
 							<item>
-								<label>$ADDON[skin.aeon.tajo 31909]</label>
+								<label>$LOCALIZE[31909]</label>
 								<icon/>
 								<onclick>noop</onclick>
 								<visible>String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
@@ -1240,7 +1240,7 @@
 						</focusedlayout>
 						<content>
 							<item>
-								<label>$ADDON[skin.aeon.tajo 31909]</label>
+								<label>$LOCALIZE[31909]</label>
 								<icon/>
 								<onclick>noop</onclick>
 								<visible>String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -1916,7 +1916,7 @@
 					<height>52</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>$ADDON[skin.aeon.tajo 31006]</label>
+					<label>$LOCALIZE[31006]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="spincontrolex" id="3">
@@ -1929,7 +1929,7 @@
 					<height>52</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
-					<label>$ADDON[skin.aeon.tajo 31026]</label>
+					<label>$LOCALIZE[31026]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 				</control>
 				<control type="button" id="2">
@@ -1954,7 +1954,7 @@
 				</control>
 				<control type="button" id="2001">
 					<description>Weather backgrounds</description>
-					<label>$ADDON[skin.aeon.tajo 33068]</label>
+					<label>$LOCALIZE[33068]</label>
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<textwidth>352</textwidth>
@@ -1962,7 +1962,7 @@
 				</control>
 				<control type="button" id="2002">
 					<description>Weather icons</description>
-					<label>$ADDON[skin.aeon.tajo 31164]</label>
+					<label>$LOCALIZE[31164]</label>
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<textwidth>352</textwidth>
@@ -1973,7 +1973,7 @@
 					<textwidth>352</textwidth>
 					<font>font13_title</font>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31039]</label>
+					<label>$LOCALIZE[31039]</label>
 					<enable>no</enable>
 					<disabledcolor>Skin.String(theme_text)</disabledcolor>
 					<visible>Player.HasMedia</visible>
@@ -1982,7 +1982,7 @@
 					<description>Go to playercontrols</description>
 					<textwidth>400</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31177]</label>
+					<label>$LOCALIZE[31177]</label>
 					<onclick condition="Player.HasAudio">ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="Player.HasAudio">SetFocus(50)</onclick>
 					<onclick condition="Player.HasAudio">ActivateWindow(playercontrols)</onclick>
@@ -1997,13 +1997,13 @@
 				<top>152</top>
 				<control type="label" id="201">
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31069]</label>
+					<label>$LOCALIZE[31069]</label>
 					<visible>!Control.HasFocus(3)</visible>
 				</control>
 				<control type="label" id="202">
 					<textcolor>white</textcolor>
 					<include>ButtonCommonValues</include>
-					<label>$ADDON[skin.aeon.tajo 31069]</label>
+					<label>$LOCALIZE[31069]</label>
 					<visible>Control.HasFocus(3)</visible>
 				</control>
 			</control>
