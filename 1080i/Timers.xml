@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <timers>
 	<timer>
+		<name>videoinfoblur</name>
+		<description>Update video info blur image when the left artwork changes</description>
+		<start reset="true">Window.IsActive(movieinformation) + !String.IsEmpty(Control.GetLabel(4511)) + !String.IsEqual(Window(Home).Property(VideoInfo.BlurSource),Control.GetLabel(4511))</start>
+		<onstart>SetProperty(VideoInfo.BlurSource,$INFO[Control.GetLabel(4511)],home)</onstart>
+		<onstart>RunScript(special://skin/scripts/video_info_blur_cache.py,prefix=VideoInfo,source_prop=VideoInfo.BlurSource)</onstart>
+		<stop>!Window.IsActive(movieinformation) | String.IsEqual(Window(Home).Property(VideoInfo.BlurSource),Control.GetLabel(4511))</stop>
+	</timer>
+	<timer>
 		<name>autoclosevideoosd</name>
 		<description>Timer to auto close the video OSD</description>
 		<start reset="true">Window.IsActive(videoosd)</start>
