@@ -551,17 +551,13 @@
 		</font>
 		<font>
 			<name>titleshelf2</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<linespacing>0.8</linespacing>
-			<size>42</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>48</size>
 		</font>
 		<font>
 			<name>titleshelf3</name>
-			<filename>Titles.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<style>uppercase</style>
-			<size>48</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>55</size>
 		</font>
 		<font>
 			<name>titlesort</name>
@@ -577,17 +573,13 @@
 		</font>
 		<font>
 			<name>titlelist3</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<size>69</size>
-			<linespacing>0.85</linespacing>
+			<filename>The Bold Font.ttf</filename>
+			<size>80</size>
 		</font>
 		<font>
 			<name>titlelist4</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<size>60</size>
-			<linespacing>0.8</linespacing>
+			<filename>The Bold Font.ttf</filename>
+			<size>70</size>
 		</font>
 		<font>
 			<name>titlefanart</name>
@@ -603,10 +595,8 @@
 		</font>
 		<font>
 			<name>titletest2</name>
-			<filename>Titles.ttf</filename>
-			<linespacing>1.1</linespacing>
-			<style>uppercase</style>
-			<size>48</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>58</size>
 		</font>
 		<font>
 			<name>titlemove</name>
@@ -615,10 +605,8 @@
 		</font>
 		<font>
 			<name>titlemove2</name>
-			<filename>Titles.ttf</filename>
-			<style>uppercase</style>
-			<linespacing>0.8</linespacing>
-			<size>52</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>60</size>
 		</font>
 		<font>
 			<name>spiner</name>
@@ -1531,17 +1519,13 @@
 		</font>
 		<font>
 			<name>titleshelf2</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<linespacing>0.8</linespacing>
-			<size>42</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>48</size>
 		</font>
 		<font>
 			<name>titleshelf3</name>
-			<filename>Montserrat.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<style>uppercase</style>
-			<size>48</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>55</size>
 		</font>
 		<font>
 			<name>titlesort</name>
@@ -1557,17 +1541,13 @@
 		</font>
 		<font>
 			<name>titlelist3</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<size>69</size>
-			<linespacing>0.85</linespacing>
+			<filename>The Bold Font.ttf</filename>
+			<size>80</size>
 		</font>
 		<font>
 			<name>titlelist4</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<size>60</size>
-			<linespacing>0.8</linespacing>
+			<filename>The Bold Font.ttf</filename>
+			<size>70</size>
 		</font>
 		<font>
 			<name>titlefanart</name>
@@ -1583,10 +1563,8 @@
 		</font>
 		<font>
 			<name>titletest2</name>
-			<filename>Montserrat.ttf</filename>
-			<linespacing>1.1</linespacing>
-			<style>uppercase</style>
-			<size>48</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>58</size>
 		</font>
 		<font>
 			<name>titlemove</name>
@@ -1595,10 +1573,8 @@
 		</font>
 		<font>
 			<name>titlemove2</name>
-			<filename>Montserrat.ttf</filename>
-			<style>uppercase</style>
-			<linespacing>0.8</linespacing>
-			<size>52</size>
+			<filename>The Bold Font.ttf</filename>
+			<size>60</size>
 		</font>
 		<font>
 			<name>spiner</name>
