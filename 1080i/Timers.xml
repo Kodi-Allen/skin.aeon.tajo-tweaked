@@ -244,4 +244,12 @@
 		<onstart>PlayMedia($ESCINFO[ListItem.SongVideoURL])</onstart>
 		<onstart>SetProperty(PlayOnce,$INFO[ListItem.DBID],home)</onstart>
 	</timer>
+	<timer>
+		<name>pluginparentfanart</name>
+		<description>Resolve plugin fanart for parent folder</description>
+		<start reset="true">Window.IsActive(videos) + ListItem.IsParentFolder + !String.IsEmpty(Container.PluginName)</start>
+		<onstart>RunScript(special://skin/scripts/plugin_fanart.py)</onstart>
+		<stop>!Window.IsActive(videos) | !ListItem.IsParentFolder | String.IsEmpty(Container.PluginName)</stop>
+		<onstop>ClearProperty(AeonTajo.PluginFanart,Home)</onstop>
+	</timer>
 </timers>

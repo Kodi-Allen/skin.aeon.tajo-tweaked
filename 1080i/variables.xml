@@ -273,7 +273,9 @@
 		<value condition="String.Contains(Window(Home).Property(TMDBHelper.ListItem.Awards),1 Primetime) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)">1</value>
 	</variable>
 	<variable name="GlobalBackgroundVar">
+		<value condition="[Container.Content(movies) | Container.Content(sets)] + ListItem.IsParentFolder + !String.IsEmpty(Container.PluginName) + !String.IsEmpty(Window(Home).Property(AeonTajo.PluginFanart))">$INFO[Window(Home).Property(AeonTajo.PluginFanart)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(sets)] + ListItem.IsParentFolder">tajo/embuback.jpg</value>
+		<value condition="[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + ListItem.IsParentFolder + !String.IsEmpty(Container.PluginName) + !String.IsEmpty(Window(Home).Property(AeonTajo.PluginFanart))">$INFO[Window(Home).Property(AeonTajo.PluginFanart)]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + ListItem.IsParentFolder">tajo/embuback0.jpg</value>
 		<value condition="Window.IsActive(music) + [ListItem.IsParentFolder | String.StartsWith(ListItem.Label,*) | Container.Content(genres) | Container.Content(years) | Container.Content(directors) | Container.Content(studios) | Container.Content(tags)]">tajo/embuback3.jpg</value>
 		<value condition="Window.IsActive(music) + !Container.Content(artists) + !String.IsEmpty(ListItem.Art(fanart)) + [Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)]">$INFO[ListItem.Art(fanart)]</value>
