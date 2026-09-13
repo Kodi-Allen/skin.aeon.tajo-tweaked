@@ -2084,6 +2084,14 @@ msgctxt "#32120"
 msgid "Adjust lyrics"
 msgstr ""
 
+msgctxt "#32131"
+msgid "Media library sorted in folders by folder name"
+msgstr "Medienbibliothek nach Ordnernamen sortiert"
+
+msgctxt "#32132"
+msgid "In Shelf 3D, choose DVD, Blu-ray, 4K Ultra HD and Blu-ray 3D cases from the full file path. Matching folder names include DVD, Bluray, UHDBluray and Bluray3D."
+msgstr "Wählt in Shelf 3D die DVD-, Blu-ray-, 4K-Ultra-HD- und Blu-ray-3D-Hülle anhand des kompletten Dateipfads. Erkannte Ordnernamen sind DVD, Bluray, UHDBluray und Bluray3D."
+
 #~ msgctxt "#31029"
 #~ msgid "Recent movies"
 #~ msgstr "Neueste Filme"
