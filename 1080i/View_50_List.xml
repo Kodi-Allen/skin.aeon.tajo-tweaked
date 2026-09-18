@@ -602,6 +602,7 @@
 							<visible>!String.Contains(ListItem.Label,$LOCALIZE[20373])</visible>
 							<visible>!String.StartsWith(ListItem.Label,*)</visible>
 							<visible>!ListItem.IsParentFolder</visible>
+							<visible>[!Container.Content(seasons) + !Container.Content(tvshows)] | !String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.Property(UnwatchedEpisodes))</visible>
 							<left>30</left>
 							<width>960</width>
 							<top>55</top>
@@ -614,6 +615,7 @@
 						<control type="label">
 							<visible>String.Contains(ListItem.Label,$LOCALIZE[20373]) | String.StartsWith(ListItem.Label,*)</visible>
 							<visible>!ListItem.IsParentFolder</visible>
+							<visible>[!Container.Content(seasons) + !Container.Content(tvshows)] | !String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.Property(UnwatchedEpisodes))</visible>
 							<left>30</left>
 							<width>960</width>
 							<top>55</top>
@@ -1193,6 +1195,7 @@
 							<visible>!String.Contains(ListItem.Label,$LOCALIZE[20373])</visible>
 							<visible>!String.StartsWith(ListItem.Label,*)</visible>
 							<visible>!ListItem.IsParentFolder</visible>
+							<visible>[!Container.Content(seasons) + !Container.Content(tvshows)] | !String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.Property(UnwatchedEpisodes))</visible>
 							<left>30</left>
 							<width>960</width>
 							<top>55</top>
@@ -1205,6 +1208,7 @@
 						<control type="label">
 							<visible>String.Contains(ListItem.Label,$LOCALIZE[20373]) | String.StartsWith(ListItem.Label,*)</visible>
 							<visible>!ListItem.IsParentFolder</visible>
+							<visible>[!Container.Content(seasons) + !Container.Content(tvshows)] | !String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.Property(UnwatchedEpisodes))</visible>
 							<left>30</left>
 							<width>960</width>
 							<top>55</top>
