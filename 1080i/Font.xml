@@ -447,99 +447,99 @@
 		</font>
 		<font>
 			<name>titleartist</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<size>17</size>
 		</font>
 		<font>
 			<name>titleartist2</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<linespacing>0.85</linespacing>
 			<style>uppercase</style>
 			<size>17</size>
 		</font>
 		<font>
 			<name>titleartist3</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<linespacing>0.85</linespacing>
 			<style>uppercase</style>
 			<size>14</size>
 		</font>
 		<font>
 			<name>titlesmall3</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<size>19</size>
 		</font>
 		<font>
 			<name>titlesmall</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<size>26</size>
 		</font>
 		<font>
 			<name>titlenew</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.9</linespacing>
 			<size>22</size>
 		</font>
 		<font>
 			<name>titlenew2</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.9</linespacing>
 			<size>25</size>
 		</font>
 		<font>
 			<name>titlenew3</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.9</linespacing>
 			<size>21</size>
 		</font>
 		<font>
 			<name>titletri</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.85</linespacing>
 			<size>30</size>
 		</font>
 		<font>
 			<name>titlewall</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<size>31</size>
 		</font>
 		<font>
 			<name>titlewall2</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<linespacing>1.4</linespacing>
 			<style>uppercase</style>
 			<size>31</size>
 		</font>
 		<font>
 			<name>titlemus</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<size>38</size>
 		</font>
 		<font>
 			<name>titlemus2</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.9</linespacing>
 			<size>38</size>
 		</font>
 		<font>
 			<name>titlemus3</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>lighten uppercase</style>
 			<size>29</size>
 		</font>
 		<font>
 			<name>titlemus4</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.8</linespacing>
 			<size>38</size>
@@ -567,7 +567,7 @@
 		</font>
 		<font>
 			<name>titlesort</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.9</linespacing>
 			<size>40</size>
@@ -594,7 +594,7 @@
 		</font>
 		<font>
 			<name>titlefanart</name>
-			<filename>Titles.ttf</filename>
+			<filename>lyrics/Theboldfont.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.8</linespacing>
 			<size>77</size>
