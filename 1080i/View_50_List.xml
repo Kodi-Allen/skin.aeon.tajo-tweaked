@@ -1682,7 +1682,7 @@
 					<visible>Container.Content(episodes)</visible>
 					<visible>!ListItem.IsCollection</visible>
 					<visible>!ListItem.IsParentFolder</visible>
-					<label>$INFO[ListItem.Director,[B]$LOCALIZE[20339]: [COLOR=FFFFFAF0][/B],  •  ][/COLOR]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],][/COLOR]</label>
+					<label>$INFO[ListItem.Director,[B]$LOCALIZE[20339]: [COLOR=FFFFFAF0][/B],  •  [/COLOR]]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],[/COLOR]]</label>
 					<top>570</top>
 					<left>20</left>
 					<width>540</width>
@@ -1696,7 +1696,7 @@
 					<visible>Container.Content(movies)</visible>
 					<visible>!ListItem.IsCollection</visible>
 					<visible>!ListItem.IsParentFolder</visible>
-					<label>$INFO[ListItem.Year,[B]$LOCALIZE[345]: [COLOR=FFFFFAF0][/B],  •  ][/COLOR]$INFO[ListItem.Director,[B]$LOCALIZE[20339]: [COLOR=FFFFFAF0][/B],  •  ][/COLOR]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],][/COLOR]</label>
+					<label>$INFO[ListItem.Year,[B]$LOCALIZE[345]: [COLOR=FFFFFAF0][/B],  •  [/COLOR]]$INFO[ListItem.Director,[B]$LOCALIZE[20339]: [COLOR=FFFFFAF0][/B],  •  [/COLOR]]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],[/COLOR]]</label>
 					<top>570</top>
 					<left>20</left>
 					<width>540</width>
@@ -1709,7 +1709,7 @@
 				<control type="textbox">
 					<visible>Container.Content(tvshows)</visible>
 					<visible>!ListItem.IsParentFolder</visible>
-					<label>$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[31981]: [COLOR=FFFFFAF0][/B],][/COLOR]$INFO[ListItem.Genre,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[515]: [COLOR=FFFFFAF0][/B],  •  ][/COLOR]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],][/COLOR]</label>
+					<label>$VAR[Seasons_Year_Label]$INFO[ListItem.Premiered,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[31981]: [COLOR=FFFFFAF0][/B],[/COLOR]]$INFO[ListItem.Genre,  [COLOR=FFFFFAF0]•[/COLOR]  [B]$LOCALIZE[515]: [COLOR=FFFFFAF0][/B],  •  [/COLOR]]$INFO[ListItem.Plot,[B]$LOCALIZE[207]: [COLOR=FFFFFAF0][/B],[/COLOR]]</label>
 					<top>570</top>
 					<left>20</left>
 					<width>540</width>
