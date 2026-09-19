@@ -477,7 +477,7 @@
 							<font>font30</font>
 							<textcolor>grey</textcolor>
 							<selectedcolor>Skin.String(theme_text)</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$VAR[EpisodeListLabelVar]</label>
 						</control>
 						<control type="label">
 							<left>30</left>
@@ -536,7 +536,7 @@
 							<font>font30</font>
 							<textcolor>grey</textcolor>
 							<selectedcolor>Skin.String(theme_text)</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$VAR[EpisodeListLabelVar]</label>
 						</control>
 						<control type="image">
 							<top>1</top>
@@ -1118,7 +1118,7 @@
 							<font>font30</font>
 							<textcolor>white</textcolor>
 							<selectedcolor>Skin.String(theme_text)</selectedcolor>
-							<label>[B]$INFO[ListItem.Label][/B]</label>
+							<label>[B]$VAR[EpisodeListLabelVar][/B]</label>
 						</control>
 						<control type="label">
 							<left>30</left>

@@ -1298,6 +1298,11 @@
 		<value condition="!Integer.IsGreater(ListItem.Episode,9)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E0]</value>
 		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
 	</variable>
+	<variable name="EpisodeListLabelVar">
+		<value condition="String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Title) + String.EndsWith(ListItem.Label,ListItem.Title) + !String.IsEqual(ListItem.Label,ListItem.Title) + !String.IsEmpty(ListItem.TvShowTitle) + String.StartsWith(ListItem.Label,ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle,, - ]$VAR[EpisodeCountVar]. $INFO[ListItem.Title]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Title) + String.EndsWith(ListItem.Label,ListItem.Title) + !String.IsEqual(ListItem.Label,ListItem.Title)">$VAR[EpisodeCountVar]. $INFO[ListItem.Title]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
 	<!--Select dialog-->
 	<variable name="DialogSelectLabel2Var">
 		<value condition="String.IsEqual(Control.GetLabel(1),$LOCALIZE[25006])">$INFO[ListItem.Duration(mins),, [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</value>
