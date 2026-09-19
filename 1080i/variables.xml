@@ -2190,11 +2190,20 @@
 	<variable name="value_plot2">
 		<value condition="ListItem.IsParentFolder"/>
 		<value condition="Container.Content(seasons) + !String.IsEmpty(ListItem.Premiered) + !String.StartsWith(ListItem.Label,*) + Control.IsVisible(596)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[31981]: [/B][/COLOR]$INFO[ListItem.Premiered,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
-		<value condition="Container.Content(seasons) + String.StartsWith(ListItem.Label,*) + [Control.IsVisible(597) | Control.IsVisible(594) | Control.IsVisible(50)]">$VAR[Seasons_Year_Label,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
+		<value condition="Container.Content(seasons) + String.StartsWith(ListItem.Label,*) + [Control.IsVisible(597) | Control.IsVisible(594) | Control.IsVisible(50)]">$VAR[Seasons_Year_Label,,  •  ]$VAR[value_plot2_genre]$VAR[value_plot2_plot]</value>
 		<value condition="Container.Content(seasons) + String.StartsWith(ListItem.Label,*) + Control.IsVisible(596)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
-		<value condition="Container.Content(seasons) + !String.StartsWith(ListItem.Label,*) + [Control.IsVisible(597) | Control.IsVisible(594) | Control.IsVisible(50)]">[B][COLOR $INFO[Skin.String(theme_text)]]$VAR[value_ground17_label,,: ][/COLOR][/B][COLOR=FFFFFAF0]$VAR[value_ground17_value,,  •  ][/COLOR][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[31981]: [/B][/COLOR]$INFO[ListItem.Premiered,,  •  ][COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
+		<value condition="Container.Content(seasons) + !String.StartsWith(ListItem.Label,*) + [Control.IsVisible(597) | Control.IsVisible(594) | Control.IsVisible(50)]">[B][COLOR $INFO[Skin.String(theme_text)]]$VAR[value_ground17_label,,: ][/COLOR][/B][COLOR=FFFFFAF0]$VAR[value_ground17_value,,  •  ][/COLOR]$VAR[value_plot2_premiered]$VAR[value_plot2_genre]$VAR[value_plot2_plot]</value>
 		<value condition="!String.IsEmpty(ListItem.Genre)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  [COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
 		<value>[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
+	</variable>
+	<variable name="value_plot2_premiered">
+		<value condition="!String.IsEmpty(ListItem.Premiered)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[31981]: [/B][/COLOR]$INFO[ListItem.Premiered,,  •  ]</value>
+	</variable>
+	<variable name="value_plot2_genre">
+		<value condition="!String.IsEmpty(ListItem.Genre)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[515]: [/B][/COLOR]$INFO[ListItem.Genre]  •  </value>
+	</variable>
+	<variable name="value_plot2_plot">
+		<value condition="!String.IsEmpty(ListItem.Plot)">[COLOR $INFO[Skin.String(theme_text)]][B]$LOCALIZE[207]: [/B][/COLOR]$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="value_audiotitle">
 		<value condition="ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
