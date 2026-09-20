@@ -373,6 +373,7 @@
 						</control>
 						<control type="label">
 							<visible>!String.Contains(ListItem.Title,Skin.String(TitleSeason))</visible>
+							<visible>!String.IsEqual(ListItem.DBTYPE,episode) | [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container(19001).ListItem.Art(clearlogo))]</visible>
 							<visible>!String.IsEqual(ListItem.DBTYPE,musicvideo)</visible>
 							<width>1150</width>
 							<height>30</height>
@@ -387,6 +388,7 @@
 						</control>
 						<control type="label">
 							<visible>String.IsEqual(ListItem.DBTYPE,episode)</visible>
+							<visible>String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container(19001).ListItem.Art(clearlogo))</visible>
 							<width>1150</width>
 							<height>30</height>
 							<align>center</align>
@@ -477,7 +479,7 @@
 					</control>
 					<control type="grouplist">
 						<animation effect="zoom" end="90" time="0" condition="true">Conditional</animation>
-						<animation effect="slide" end="0,26" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode) + [!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) | !String.IsEmpty(Container(19001).ListItem.Art(clearlogo))]">Conditional</animation>
+						<animation effect="slide" end="0,32" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode) + [!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) | !String.IsEmpty(Container(19001).ListItem.Art(clearlogo))]">Conditional</animation>
 						<visible>!String.IsEqual(ListItem.DBTYPE,set)</visible>
 						<top>112</top>
 						<right>-110</right>
@@ -485,6 +487,10 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<align>center</align>
+						<control type="group">
+							<visible>String.IsEqual(ListItem.DBTYPE,episode) + [!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) | !String.IsEmpty(Container(19001).ListItem.Art(clearlogo))] + !String.IsEmpty(ListItem.Studio)</visible>
+							<width>198</width>
+						</control>
 						<control type="group">
 							<visible>!String.IsEqual(ListItem.DBTYPE,tvshow)</visible>
 							<width>320</width>
@@ -758,6 +764,7 @@
 				</control>
 				<include condition="String.IsEqual(ListItem.DBTYPE,set)">SetListInfo</include>
 				<control type="group">
+					<animation effect="slide" end="0,16" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode) + [!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) | !String.IsEmpty(Container(19001).ListItem.Art(clearlogo))]">Conditional</animation>
 					<left>3</left>
 					<top>116</top>
 					<control type="textbox">
