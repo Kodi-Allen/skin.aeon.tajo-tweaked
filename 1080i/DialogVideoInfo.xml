@@ -512,6 +512,7 @@
 							</control>
 						</control>
 						<control type="group">
+							<visible>!String.IsEmpty(ListItem.Studio)</visible>
 							<width>198</width>
 							<control type="image" id="800011">
 								<visible>!Skin.HasSetting(Coloured.icons)</visible>
@@ -550,13 +551,13 @@
 							</control>
 						</control>
 						<control type="image">
-							<visible>!String.IsEqual(Control.GetLabel(4682),resources/mpaa/NR.png)</visible>
+							<visible>!String.IsEqual(Control.GetLabel(4682),resources/mpaa/NR.png) + !String.IsEmpty(ListItem.Mpaa)</visible>
 							<width>150</width>
 							<include>MediaFlagVars</include>
 							<texture>$VAR[mpaa]</texture>
 						</control>
 						<control type="label">
-							<visible>String.IsEqual(Control.GetLabel(4682),resources/mpaa/NR.png)</visible>
+							<visible>String.IsEqual(Control.GetLabel(4682),resources/mpaa/NR.png) + !String.IsEmpty(ListItem.Mpaa)</visible>
 							<width>160</width>
 							<height>90</height>
 							<align>center</align>
