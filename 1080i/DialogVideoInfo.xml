@@ -419,6 +419,19 @@
 						<fadetime>200</fadetime>
 						<texture>$VAR[VideoInfoClearLogo]</texture>
 					</control>
+					<control type="label">
+						<visible>String.IsEqual(ListItem.DBTYPE,episode) + [!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) | !String.IsEmpty(Container(19001).ListItem.Art(clearlogo))]</visible>
+						<top>104</top>
+						<width>1150</width>
+						<height>30</height>
+						<align>center</align>
+						<aligny>top</aligny>
+						<font>font15</font>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
+						<scrollsuffix> • </scrollsuffix>
+						<label>$VAR[Title_Diag]</label>
+					</control>
 					<control type="image">
 						<visible>!Control.HasFocus(8545)</visible>
 						<visible>!Window.IsActive(1195) + !Window.IsActive(home)</visible>
@@ -464,6 +477,7 @@
 					</control>
 					<control type="grouplist">
 						<animation effect="zoom" end="90" time="0" condition="true">Conditional</animation>
+						<animation effect="slide" end="0,26" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode) + [!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) | !String.IsEmpty(Container(19001).ListItem.Art(clearlogo))]">Conditional</animation>
 						<visible>!String.IsEqual(ListItem.DBTYPE,set)</visible>
 						<top>112</top>
 						<right>-110</right>
