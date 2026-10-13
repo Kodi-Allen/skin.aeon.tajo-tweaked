@@ -193,6 +193,7 @@
 				<texture diffuse="tajo/flix2.png" background="true">blackk.jpg</texture>
 			</control>
 			<control type="image">
+				<visible>String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
 				<left>28</left>
 				<top>30</top>
 				<width>526</width>
@@ -363,6 +364,7 @@
 			</control>
 			<control type="group">
 				<visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
+				<visible>String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
 				<visible>!ListItem.IsParentFolder</visible>
 				<visible>!Container.Content(seasons) + !Container.Content(episodes)</visible>
 				<left>-42</left>
