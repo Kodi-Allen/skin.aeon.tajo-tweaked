@@ -52,8 +52,8 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="label" id="1">
-					<left>480</left>
-					<width>840</width>
+					<left>750</left>
+					<width>570</width>
 					<height>68</height>
 					<font>font53</font>
 					<textcolor>Skin.String(theme_text)</textcolor>
@@ -662,8 +662,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="label" id="1">
-				<left>480</left>
-				<width>840</width>
+				<left>750</left>
+				<width>570</width>
 				<height>68</height>
 				<font>font53</font>
 				<textcolor>Skin.String(theme_text)</textcolor>
