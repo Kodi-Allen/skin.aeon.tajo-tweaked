@@ -22,7 +22,7 @@ msgid "Aeon Tajo Tweaked"
 msgstr "Aeon Tajo Tweaked"
 
 msgctxt "Addon Description"
-msgid "Aeon Tajo Tweaked is an independent community fork for Kodi 21 (Omega), refining movie and TV views, artwork, episode information, and Live TV/PVR infobars. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5."
+msgid "Aeon Tajo Tweaked brings the classic Aeon Tajo Leia-style horizontal home menu and distinctive typography to Kodi 21 (Omega). This independent community fork also maintains movie, TV, and Live TV views. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5."
 msgstr "Aeon Tajo：所有的改变带来不变的感受。灵感源自 Aeon Nox 5（感谢 BigNoid）。"
 
 msgctxt "Addon Disclaimer"

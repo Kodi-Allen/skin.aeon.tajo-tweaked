@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 – 2026-10-18
+
+- Restored the classic Aeon Tajo Leia-style horizontal home menu on Kodi 21 Omega.
+- Restored the characteristic bold home-menu and title typography, including Kiye Sans widget headings.
+- Added maintained per-category backgrounds and related home-screen refinements from the actively used skin.
+- Kept the standard and compact Live TV infobar fix for four-digit channel numbers.
+- Replaced the initial release screenshots with original captures from the maintained Kodi 21.1 installation.
+- Removed a local sample shortcut from the generated default menu data before packaging.
+
 ## 1.0.0 – 2026-10-18
 
 - Published the customization as the independent `skin.aeon.tajo.tweaked` add-on.

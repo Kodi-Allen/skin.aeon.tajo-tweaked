@@ -111,7 +111,7 @@
 				<height>90</height>
 				<align>right</align>
 				<font>font40_bold</font>
-				<label>$ADDON[skin.aeon.tajo 32053]</label>
+				<label>$LOCALIZE[32053]</label>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -124,7 +124,7 @@
 				<height>90</height>
 				<align>left</align>
 				<font>font40_bold</font>
-				<label>$ADDON[skin.aeon.tajo 32054]</label>
+				<label>$LOCALIZE[32054]</label>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>

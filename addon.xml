@@ -1,4 +1,4 @@
-<addon id="skin.aeon.tajo.tweaked" name="Aeon Tajo Tweaked" provider-name="Kodi-Allen" version="1.0.0">
+<addon id="skin.aeon.tajo.tweaked" name="Aeon Tajo Tweaked" provider-name="Kodi-Allen" version="1.0.1">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="script.skinshortcuts" version="0.4.5"/>
@@ -18,6 +18,9 @@
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>docs/screenshots/aeon-tajo-tweaked-kodi-21-leia-home-menu-tv-shows.jpg</screenshot>
+			<screenshot>docs/screenshots/aeon-tajo-tweaked-kodi-21-leia-home-menu-live-tv.jpg</screenshot>
+			<screenshot>docs/screenshots/aeon-tajo-tweaked-kodi-21-leia-home-menu-games.jpg</screenshot>
 			<screenshot>docs/screenshots/aeon-tajo-tweaked-kodi-21-live-tv-infobar-standard.png</screenshot>
 			<screenshot>docs/screenshots/aeon-tajo-tweaked-kodi-21-live-tv-infobar-compact.jpg</screenshot>
 			<screenshot>resources/screenshot-01.jpg</screenshot>
@@ -31,7 +34,7 @@
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
-		<news>v1.0.0: Independent Kodi 21 (Omega) release with artwork and episode browsing refinements, plus Live TV infobar support for four-digit channel numbers.</news>
+		<news>v1.0.1: Restores the classic Aeon Tajo Leia-style horizontal home menu and typography on Kodi 21 Omega. Also fixes four-digit Live TV channel-number overlap.</news>
 		<summary lang="en_AU">Aeon Tajo Tweaked</summary>
 		<summary lang="en_GB">Aeon Tajo Tweaked</summary>
 		<summary lang="en_NZ">Aeon Tajo Tweaked</summary>
@@ -49,11 +52,11 @@
 		<summary lang="ru_RU">Aeon Tajo Tweaked</summary>
 		<summary lang="sk_SK">Aeon Tajo Tweaked</summary>
 		<summary lang="zh_CN">Aeon Tajo Tweaked</summary>
-		<description lang="de_DE">Aeon Tajo Tweaked ist ein eigenständiger Community-Fork für Kodi 21 (Omega) mit Verbesserungen für Film- und Serienansichten, Artwork, Episodeninformationen sowie Live-TV- und PVR-Infobars. Basierend auf Aeon Tajo von manfeed, inspiriert von Aeon Nox 5.</description>
-		<description lang="en_AU">Aeon Tajo Tweaked is an independent community fork for Kodi 21 (Omega), refining movie and TV views, artwork, episode information, and Live TV/PVR infobars. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
-		<description lang="en_GB">Aeon Tajo Tweaked is an independent community fork for Kodi 21 (Omega), refining movie and TV views, artwork, episode information, and Live TV/PVR infobars. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
-		<description lang="en_NZ">Aeon Tajo Tweaked is an independent community fork for Kodi 21 (Omega), refining movie and TV views, artwork, episode information, and Live TV/PVR infobars. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
-		<description lang="en_US">Aeon Tajo Tweaked is an independent community fork for Kodi 21 (Omega), refining movie and TV views, artwork, episode information, and Live TV/PVR infobars. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
+		<description lang="de_DE">Aeon Tajo Tweaked bringt das klassische horizontale Home-Menü und die markante Typografie von Aeon Tajo im Leia-Stil zurück auf Kodi 21 (Omega). Der eigenständige Community-Fork pflegt außerdem Film-, Serien- und Live-TV-Ansichten. Basierend auf Aeon Tajo von manfeed, inspiriert von Aeon Nox 5.</description>
+		<description lang="en_AU">Aeon Tajo Tweaked brings the classic Aeon Tajo Leia-style horizontal home menu and distinctive typography to Kodi 21 (Omega). This independent community fork also maintains movie, TV, and Live TV views. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
+		<description lang="en_GB">Aeon Tajo Tweaked brings the classic Aeon Tajo Leia-style horizontal home menu and distinctive typography to Kodi 21 (Omega). This independent community fork also maintains movie, TV, and Live TV views. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
+		<description lang="en_NZ">Aeon Tajo Tweaked brings the classic Aeon Tajo Leia-style horizontal home menu and distinctive typography to Kodi 21 (Omega). This independent community fork also maintains movie, TV, and Live TV views. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
+		<description lang="en_US">Aeon Tajo Tweaked brings the classic Aeon Tajo Leia-style horizontal home menu and distinctive typography to Kodi 21 (Omega). This independent community fork also maintains movie, TV, and Live TV views. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5.</description>
 		<description lang="es_ES">Aeon Tajo: Cambia todo para que nada cambie. Inspirado en Aeon Nox 5 (gracias a BigNoid).</description>
 		<description lang="es_MX">Aeon Tajo: Cambia todo para que nada cambie. Inspirado en Aeon Nox 5 (gracias a BigNoid).</description>
 		<description lang="fr_FR">Aeon Tajo : Change tout pour que rien ne change. Inspiré de Aeon Nox 5 (merci à BigNoid).</description>

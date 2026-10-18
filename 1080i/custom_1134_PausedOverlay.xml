@@ -29,7 +29,7 @@
 				<font>font14_title</font>
 				<textoffsetx>15</textoffsetx>
 				<textcolor>Skin.String(theme_text)</textcolor>
-				<label>[B]$ADDON[skin.aeon.tajo 31167][/B]</label>
+				<label>[B]$LOCALIZE[31167][/B]</label>
 			</control>
 			<control type="image">
 				<left>15</left>

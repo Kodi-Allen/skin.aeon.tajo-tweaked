@@ -1,53 +1,48 @@
-# Aeon Tajo Tweaked – Kodi 21 (Omega) Skin
+# Aeon Tajo Tweaked – Classic Leia Home Menu for Kodi 21 Omega
 
-**Aeon Tajo Tweaked** is an independent community fork of [Aeon Tajo](https://github.com/manfeed/skin.aeon.tajo) for **Kodi 21 (Omega)**. It keeps Aeon Tajo's artwork-focused home-cinema design while refining movie and TV views, episode information, navigation, and **Live TV/PVR infobars**.
+**Aeon Tajo Tweaked** brings the classic **Aeon Tajo Leia-style horizontal home menu** and its distinctive bold typography to **Kodi 21 (Omega)**. It is an independently installable community fork of [Aeon Tajo](https://github.com/manfeed/skin.aeon.tajo), combining the familiar Leia layout with the maintained Omega codebase.
 
-[Install from Kodi Allen Repository](https://github.com/Kodi-Allen/kodi-repo#installation) · [Download version 1.0.0](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/releases/download/v1.0.0/skin.aeon.tajo.tweaked-1.0.0.zip) · [Deutsche Beschreibung](README.de.md) · [Report an issue](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/issues)
+[Install from Kodi Allen Repository](https://github.com/Kodi-Allen/kodi-repo#installation) · [Download version 1.0.1](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/releases/download/v1.0.1/skin.aeon.tajo.tweaked-1.0.1.zip) · [Deutsche Beschreibung](README.de.md) · [Report an issue](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/issues)
 
-![Aeon Tajo Tweaked Kodi 21 Live TV infobar with a four-digit channel number](docs/screenshots/aeon-tajo-tweaked-kodi-21-live-tv-infobar-standard.png)
+![Aeon Tajo Tweaked classic Leia-style horizontal home menu on Kodi 21 Omega](docs/screenshots/aeon-tajo-tweaked-kodi-21-leia-home-menu-tv-shows.jpg)
 
-## Highlights
+## Why this version exists
 
-- Independent Kodi add-on: `skin.aeon.tajo.tweaked` can be installed alongside the original Aeon Tajo skin.
-- Movie and TV artwork refinements, including clearlogos in the Flix view.
-- Episode numbers formatted as `SxxExx`, cleaner headings, and improved runtime labels.
-- Less visual noise from empty season metadata and episode statistics.
-- Video information and media-case improvements, including a cached blur background helper.
-- Live TV/PVR infobars that correctly separate one- to four-digit channel numbers from channel names.
-- Standard and compact Live TV infobar layouts tested on Kodi 21.1.
+Current Aeon Tajo releases use a newer home-screen design. Aeon Tajo Tweaked keeps Kodi 21 Omega compatibility while restoring the older presentation many users prefer:
 
-The skin uses a 1920 × 1080, 16:9 layout. Remote-control or keyboard navigation is recommended; mouse control may not work correctly in every view.
+- Classic horizontal Aeon Tajo home menu from the Leia era.
+- Original-style bold menu and title fonts, plus Kiye Sans widget headings.
+- Category-specific home backgrounds and the familiar angled selection frame.
+- Independent add-on ID `skin.aeon.tajo.tweaked`, so it can coexist with the original skin.
+- Maintained movie, TV show, artwork, episode-information, and navigation refinements.
+- Standard and compact Live TV infobars with correct spacing for one- to four-digit channel numbers.
 
-## Screenshots
+The skin targets a 1920 × 1080, 16:9 interface. Remote-control or keyboard navigation is recommended.
 
-### Live TV and PVR on Kodi 21
+## Screenshots from the maintained Kodi installation
+
+TV shows | Live TV
+--- | ---
+![Aeon Tajo Tweaked Leia-style TV shows home menu on Kodi 21](docs/screenshots/aeon-tajo-tweaked-kodi-21-leia-home-menu-tv-shows.jpg) | ![Aeon Tajo Tweaked Leia-style Live TV home menu on Kodi 21](docs/screenshots/aeon-tajo-tweaked-kodi-21-leia-home-menu-live-tv.jpg)
+
+Games | Four-digit Live TV channel number
+--- | ---
+![Aeon Tajo Tweaked Leia-style games home menu on Kodi 21](docs/screenshots/aeon-tajo-tweaked-kodi-21-leia-home-menu-games.jpg) | ![Aeon Tajo Tweaked Kodi 21 Live TV infobar with a four-digit channel number](docs/screenshots/aeon-tajo-tweaked-kodi-21-live-tv-infobar-standard.png)
 
 Standard infobar | Compact infobar
 --- | ---
 ![Standard Kodi 21 PVR infobar in Aeon Tajo Tweaked](docs/screenshots/aeon-tajo-tweaked-kodi-21-live-tv-infobar-standard.png) | ![Compact Kodi 21 PVR infobar in Aeon Tajo Tweaked](docs/screenshots/aeon-tajo-tweaked-kodi-21-live-tv-infobar-compact.jpg)
 
-Both screenshots were captured on Kodi 21.1 with a four-digit channel number. The channel number, channel name, station logo, programme information, and media icons remain separated.
-
-### Movies, video information, and music
-
-Movie library | Flix-style movie view
---- | ---
-![Aeon Tajo movie library with cover artwork and media information](resources/screenshot-01.jpg) | ![Aeon Tajo Flix movie view with posters and detailed metadata](resources/screenshot-02.jpg)
-
-Video information | Music library
---- | ---
-![Aeon Tajo video information screen with artwork and technical metadata](resources/screenshot-05.jpg) | ![Aeon Tajo music library with artist artwork and album information](resources/screenshot-08.jpg)
-
-The bundled `resources/screenshot-*.jpg` files come from the Aeon Tajo base and illustrate its broader visual design. Views depend on library metadata, artwork, helper add-ons, and individual skin settings.
+These screenshots were captured directly from the maintained Vero 4K+ running Kodi 21.1. They show the restored home layout, typography, backgrounds, and the Live TV infobar used by this release. No third-party screenshots or personal library entries are included.
 
 ## Version and compatibility
 
-| Branch | Add-on ID | Version | Status |
+| Release line | Add-on ID | Version | Compatibility |
 | --- | --- | --- | --- |
-| [`omega`](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/tree/omega) | `skin.aeon.tajo.tweaked` | 1.0.0 | Main release for Kodi 21 (Omega); tested on Kodi 21.1. |
-| [`kodi22-leia-gui`](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/tree/kodi22-leia-gui) | Legacy development identity | 7.7.4 | Experimental branch; not part of the 1.0.0 release and not a Kodi 22 compatibility guarantee. |
+| Aeon Tajo Tweaked | `skin.aeon.tajo.tweaked` | 1.0.1 | Kodi 21 Omega; tested on Kodi 21.1. |
+| Original Aeon Tajo base | `skin.aeon.tajo` | 7.7.2 | Upstream Omega base used when the fork was created. |
 
-Version 1.0.0 is based on manfeed's Aeon Tajo 7.7.2 `omega` code line. The new name, add-on ID, and version series identify this maintained fork without replacing the original skin.
+Aeon Tajo Tweaked uses its own `1.x` version series. Version 1.0.1 includes the actively maintained Leia-style home-screen and font work that was previously developed separately. The historical `kodi22-leia-gui` branch is an integration source, not a separate Kodi 22 release or compatibility promise.
 
 ## Installation
 
@@ -59,17 +54,15 @@ Installing the repository enables normal Kodi add-on updates.
 2. In Kodi, open **Settings → System → Add-ons** and enable **Unknown sources** if required.
 3. Open **Settings → Add-ons → Install from zip file** and select the repository ZIP.
 4. Choose **Install from repository → Kodi Allen Repository → Look and feel → Skin → Aeon Tajo Tweaked**.
-5. Select **Install**, then choose the skin when Kodi asks whether to switch.
+5. Select **Install**, then switch to the skin when Kodi asks.
 
 ### Direct ZIP installation
 
-Download [`skin.aeon.tajo.tweaked-1.0.0.zip`](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/releases/download/v1.0.0/skin.aeon.tajo.tweaked-1.0.0.zip) and install it through **Add-ons → Install from zip file**. Direct installations do not receive repository updates unless the Kodi Allen Repository is also installed.
-
-Do not use GitHub's **Code → Download ZIP** archive as a Kodi add-on package; use one of the installable ZIP links above.
+Download [`skin.aeon.tajo.tweaked-1.0.1.zip`](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/releases/download/v1.0.1/skin.aeon.tajo.tweaked-1.0.1.zip) and install it through **Add-ons → Install from zip file**. GitHub's **Code → Download ZIP** archive is not a Kodi add-on package.
 
 ### Moving from the original Aeon Tajo
 
-Aeon Tajo Tweaked uses its own add-on ID and does not overwrite `skin.aeon.tajo`. Both skins can remain installed, but Kodi stores their settings separately. Configure the Tweaked skin after switching, or back up and migrate settings manually if you understand Kodi's skin settings format.
+Aeon Tajo Tweaked does not overwrite `skin.aeon.tajo`. Both skins can remain installed, but Kodi stores their settings separately. Configure the Tweaked skin after switching, or migrate settings manually only if you understand Kodi's skin settings format.
 
 ## Required helper add-ons
 
@@ -79,26 +72,17 @@ Aeon Tajo Tweaked uses its own add-on ID and does not overwrite `skin.aeon.tajo`
 | `script.embuary.helper` | 2.0.6 |
 | `script.skinvariables` | 2.1.14 |
 
-Some optional information and artwork features also integrate with TMDb Helper (`plugin.video.themoviedb.helper`) and other helper add-ons. Their features require compatible versions and separate configuration.
+Optional information and artwork features can also use TMDb Helper (`plugin.video.themoviedb.helper`) and other compatible helper add-ons.
 
-## Live TV infobar fix in 1.0.0
+## Four-digit Live TV channel numbers
 
-The normal and compact PVR infobars reserve a dedicated area for channel numbers. Four-digit numbers such as `2001`, `2900`, and `9002` no longer collide with the channel name. Long channel names remain scrollable, and logo, codec, EPG, and clock positions are unchanged.
+The normal and compact PVR infobars reserve a dedicated area for channel numbers. Four-digit numbers such as `2001`, `2900`, and `9002` no longer collide with the channel name or logo. Long channel names remain scrollable, while codec, EPG, and clock positions remain unchanged.
 
-The fix was validated with XML parsing and tested visually on a Vero 4K+ running Kodi 21.1. Standard and compact layouts were tested while Live TV playback remained active.
+## Support
 
-## Support and contributions
+[Open an issue](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/issues) with the Kodi version, operating system, skin version, affected view, reproduction steps, a screenshot, and relevant Kodi log lines. Remove passwords, tokens, API keys, server addresses, private paths, and other personal information before sharing logs.
 
-[Open an issue](https://github.com/Kodi-Allen/skin.aeon.tajo-tweaked/issues) and include:
-
-- Kodi version and operating system.
-- Aeon Tajo Tweaked version and affected view.
-- Reproduction steps, a screenshot, and relevant Kodi log lines.
-- Confirmation whether the problem also occurs with the original Aeon Tajo skin.
-
-Remove passwords, tokens, server addresses, and other private information before sharing logs.
-
-## Credits and license
+## Credits and licence
 
 - **manfeed** — original [Aeon Tajo](https://github.com/manfeed/skin.aeon.tajo) skin and the 7.7.2 Omega base.
 - **BigNoid** — Aeon Nox 5, credited as the original skin's inspiration.
