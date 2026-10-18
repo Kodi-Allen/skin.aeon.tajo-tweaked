@@ -161,7 +161,7 @@
 					<top>40</top>
 					<width>730</width>
 					<height>115</height>
-					<label>Aeon Tajo  $INFO[System.AddonVersion(skin.aeon.tajo)]</label>
+					<label>Aeon Tajo Tweaked  $INFO[System.AddonVersion(skin.aeon.tajo.tweaked)]</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<font>font15</font>
@@ -173,7 +173,7 @@
 					<top>40</top>
 					<width>730</width>
 					<height>115</height>
-					<label>Aeon Tajo  $INFO[System.AddonVersion(skin.aeon.tajo)] ultra</label>
+					<label>Aeon Tajo Tweaked  $INFO[System.AddonVersion(skin.aeon.tajo.tweaked)] ultra</label>
 					<textcolor>Skin.String(theme_text)</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<font>font15</font>

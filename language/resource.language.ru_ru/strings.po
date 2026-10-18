@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: Aeon Tajo
-# Addon id: skin.aeon.tajo
-# Addon Provider: manfeed
+# Addon Name: Aeon Tajo Tweaked
+# Addon id: skin.aeon.tajo.tweaked
+# Addon Provider: Kodi-Allen
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
@@ -18,11 +18,11 @@ msgstr ""
 "X-Generator: Weblate 5.3\n"
 
 msgctxt "Addon Summary"
-msgid "Aeon Tajo"
-msgstr "Aeon Tajo"
+msgid "Aeon Tajo Tweaked"
+msgstr "Aeon Tajo Tweaked"
 
 msgctxt "Addon Description"
-msgid "Aeon Tajo: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid)."
+msgid "Aeon Tajo Tweaked is an independent community fork for Kodi 21 (Omega), refining movie and TV views, artwork, episode information, and Live TV/PVR infobars. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5."
 msgstr "Aeon Tajo: Меняет всё так, что ничего не меняется. Вдохновлен Aeon Nox 5 (спасибо BigNoid)."
 
 msgctxt "Addon Disclaimer"
@@ -1849,7 +1849,7 @@ msgstr "Цвет выделенного текста"
 
 msgctxt "#32052"
 msgid "Watched mark colour"
-msgstr "Цвет отметки "Просмотрено""
+msgstr "Цвет отметки \"Просмотрено\""
 
 msgctxt "#32053"
 msgid "Current"
@@ -1861,7 +1861,7 @@ msgstr "Выбрано"
 
 msgctxt "#32055"
 msgid "Watched mark shape"
-msgstr "Форма отметки "Просмотрено""
+msgstr "Форма отметки \"Просмотрено\""
 
 msgctxt "#32056"
 msgid "Sliding background fanarts"

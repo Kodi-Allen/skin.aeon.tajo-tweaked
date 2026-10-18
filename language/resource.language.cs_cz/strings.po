@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: Aeon Tajo
-# Addon id: skin.aeon.tajo
-# Addon Provider: manfeed
+# Addon Name: Aeon Tajo Tweaked
+# Addon id: skin.aeon.tajo.tweaked
+# Addon Provider: Kodi-Allen
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
@@ -18,11 +18,11 @@ msgstr ""
 "X-Generator: Weblate 5.2.1\n"
 
 msgctxt "Addon Summary"
-msgid "Aeon Tajo"
+msgid "Aeon Tajo Tweaked"
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "Aeon Tajo: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid)."
+msgid "Aeon Tajo Tweaked is an independent community fork for Kodi 21 (Omega), refining movie and TV views, artwork, episode information, and Live TV/PVR infobars. Based on Aeon Tajo by manfeed and inspired by Aeon Nox 5."
 msgstr ""
 
 msgctxt "Addon Disclaimer"

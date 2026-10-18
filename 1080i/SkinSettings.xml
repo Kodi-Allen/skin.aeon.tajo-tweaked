@@ -49,7 +49,7 @@
 			<top>36</top>
 			<width>300</width>
 			<height>50</height>
-			<label>$INFO[System.AddonVersion(skin.aeon.tajo)]  ultra</label>
+			<label>$INFO[System.AddonVersion(skin.aeon.tajo.tweaked)]  ultra</label>
 			<font>font28</font>
 		</control>
 		<control type="label">
@@ -58,7 +58,7 @@
 			<top>36</top>
 			<width>300</width>
 			<height>50</height>
-			<label>$INFO[System.AddonVersion(skin.aeon.tajo)]</label>
+			<label>$INFO[System.AddonVersion(skin.aeon.tajo.tweaked)]</label>
 			<font>font28</font>
 		</control>
 		<control type="group">
